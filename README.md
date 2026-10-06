@@ -1,0 +1,2 @@
+# wifiBogor-Depok
+wifi
