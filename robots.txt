@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://naysi-e.github.io/wifiBogor-Depok/sitemap.xml
