@@ -1303,6 +1303,541 @@
             *, *::before, *::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
         }
 
+    
+        /* ==========================================
+           RESPONSIVE STABILITY PATCH
+           Desktop, laptop, tablet, and mobile
+        ========================================== */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: clip;
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            width: 100%;
+            min-width: 320px;
+            max-width: 100%;
+            overflow-x: clip;
+        }
+
+        img, video, iframe, canvas, svg {
+            max-width: 100%;
+        }
+
+        input, select, textarea, button {
+            font: inherit;
+            max-width: 100%;
+        }
+
+        section {
+            width: 100%;
+            min-width: 0;
+        }
+
+        .hero-container,
+        .poster-grid,
+        .feature-grid,
+        .area-wrap,
+        .review-wrap,
+        .area-panel,
+        .review-layout {
+            min-width: 0;
+        }
+
+        .hero-container > *,
+        .poster-card,
+        .feature,
+        .area-panel > *,
+        .review-layout > *,
+        .poster-content {
+            min-width: 0;
+        }
+
+        .hero h1,
+        .section-title h2,
+        .cta h2,
+        .brand,
+        .hero-description,
+        .section-title p,
+        .feature p,
+        .area-copy p,
+        .review-heading p,
+        .poster-content h3 {
+            overflow-wrap: anywhere;
+        }
+
+        .hero-container {
+            grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+            gap: clamp(24px, 5vw, 70px);
+        }
+
+        .logo-circle {
+            width: min(32vw, 390px);
+            height: auto;
+            aspect-ratio: 1 / 1;
+        }
+
+        .poster-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .poster-card {
+            height: auto;
+            min-height: 0;
+        }
+
+        .poster-img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: contain;
+        }
+
+        .poster-content {
+            flex: 1;
+            gap: 14px;
+        }
+
+        .poster-btn {
+            max-width: 100%;
+            overflow-wrap: anywhere;
+        }
+
+        .feature-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .area-panel {
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+        }
+
+        .review-layout {
+            grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+        }
+
+        .area-form,
+        .review-form {
+            min-width: 0;
+        }
+
+        .form-field input,
+        .form-field select,
+        .form-field textarea {
+            width: 100%;
+            min-width: 0;
+            min-height: 46px;
+            font-size: 16px;
+        }
+
+        .form-field textarea {
+            min-height: 120px;
+        }
+
+        .review-card-top {
+            flex-wrap: wrap;
+        }
+
+        .nav-placeholder {
+            display: none;
+        }
+
+        nav {
+            gap: 16px;
+        }
+
+        .brand {
+            min-width: 0;
+            line-height: 1.25;
+        }
+
+        .menu a {
+            white-space: nowrap;
+        }
+
+        .popup-overlay {
+            padding: max(10px, env(safe-area-inset-top)) 12px;
+        }
+
+        .popup-box {
+            width: 100%;
+            max-width: 430px;
+            max-height: 90vh;
+            max-height: 90dvh;
+            overflow-y: auto;
+            overscroll-behavior: contain;
+        }
+
+        .popup-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .music-button {
+            right: max(12px, env(safe-area-inset-right));
+            bottom: max(12px, env(safe-area-inset-bottom));
+        }
+
+        @media (max-width: 1024px) {
+            nav {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .hero {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .hero-container {
+                grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+                gap: 28px;
+            }
+
+            .logo-circle {
+                width: min(38vw, 320px);
+            }
+
+            .hero h1 {
+                font-size: clamp(2rem, 4.8vw, 3.2rem);
+            }
+
+            .menu {
+                gap: clamp(8px, 1.5vw, 20px);
+            }
+
+            .menu a {
+                font-size: clamp(11px, 1.2vw, 14px);
+            }
+
+            .poster-grid {
+                gap: 24px;
+            }
+        }
+
+        @media (max-width: 850px) {
+            nav {
+                min-height: 62px;
+                padding: 10px 5%;
+            }
+
+            .menu-toggle {
+                display: block;
+                flex: 0 0 auto;
+                min-width: 44px;
+                min-height: 44px;
+            }
+
+            .menu {
+                position: absolute;
+                top: calc(100% + 6px);
+                right: 4%;
+                left: 4%;
+                display: none;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 2px;
+                max-width: none;
+                padding: 10px;
+                background: rgba(10, 10, 10, .98);
+                border: 1px solid rgba(245, 217, 3, .2);
+                border-radius: 16px;
+                box-shadow: 0 15px 35px rgba(0, 0, 0, .4);
+            }
+
+            .menu.active {
+                display: flex;
+            }
+
+            .menu a {
+                display: block;
+                padding: 12px 14px;
+                font-size: 14px;
+                white-space: normal;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 105px 5% 60px;
+            }
+
+            .hero-container {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 30px;
+                text-align: center;
+            }
+
+            .logo-wrapper {
+                order: 0;
+            }
+
+            .hero-container > div:last-child {
+                order: 1;
+            }
+
+            .logo-circle {
+                width: min(65vw, 280px);
+            }
+
+            .hero h1 {
+                font-size: clamp(2.1rem, 7vw, 3rem);
+            }
+
+            .hero-description {
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 16px;
+            }
+
+            .buttons,
+            .stats {
+                justify-content: center;
+            }
+
+            .paket-section,
+            .features {
+                padding: 65px 5%;
+            }
+
+            .poster-grid,
+            .feature-grid,
+            .area-panel,
+            .review-layout {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .poster-grid {
+                max-width: 600px;
+            }
+
+            .feature-grid {
+                max-width: 600px;
+            }
+
+            .area-section,
+            .review-section {
+                padding: 60px 5%;
+            }
+
+            .cta {
+                padding: 70px 5%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            html {
+                scroll-padding-top: 72px;
+            }
+
+            .brand {
+                font-size: clamp(14px, 4vw, 18px);
+            }
+
+            .hero {
+                padding: 96px 5% 50px;
+            }
+
+            .hero-container {
+                gap: 24px;
+            }
+
+            .logo-circle {
+                width: min(62vw, 230px);
+            }
+
+            .badge {
+                font-size: 12px;
+                padding: 8px 12px;
+                line-height: 1.5;
+            }
+
+            .hero h1 {
+                font-size: clamp(1.9rem, 8.5vw, 2.6rem);
+                line-height: 1.12;
+            }
+
+            .hero-description {
+                font-size: 15px;
+                line-height: 1.65;
+            }
+
+            .buttons {
+                width: 100%;
+                max-width: 380px;
+                margin-inline: auto;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .buttons .btn {
+                width: 100%;
+                min-height: 48px;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .stats {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 10px;
+            }
+
+            .stat h3 {
+                font-size: clamp(15px, 4.4vw, 20px);
+                overflow-wrap: anywhere;
+            }
+
+            .stat p {
+                font-size: 11px;
+                overflow-wrap: anywhere;
+            }
+
+            .section-title {
+                margin-bottom: 32px;
+            }
+
+            .section-title h2,
+            .cta h2 {
+                font-size: clamp(1.75rem, 7.5vw, 2.4rem);
+            }
+
+            .section-title p,
+            .cta p {
+                font-size: 15px;
+                line-height: 1.6;
+            }
+
+            .poster-card {
+                padding: 8px;
+                border-radius: 18px;
+            }
+
+            .poster-img {
+                aspect-ratio: 4 / 3;
+            }
+
+            .poster-content {
+                padding: 15px 10px;
+            }
+
+            .poster-content h3 {
+                font-size: 20px;
+            }
+
+            .poster-btn {
+                width: 100%;
+                padding: 13px 14px;
+                border-width: 3px;
+                font-size: 14px;
+            }
+
+            .feature {
+                padding: 25px 18px;
+            }
+
+            .area-section,
+            .review-section {
+                padding: 50px 4%;
+            }
+
+            .area-form,
+            .review-form {
+                padding: 16px;
+                border-radius: 16px;
+            }
+
+            .area-copy h2,
+            .review-heading h2 {
+                font-size: clamp(1.65rem, 7.5vw, 2.2rem);
+            }
+
+            .review-summary {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .review-score {
+                font-size: 36px;
+            }
+
+            .review-card {
+                padding: 15px;
+            }
+
+            .cta {
+                padding: 55px 5%;
+            }
+
+            .popup-content {
+                padding: 16px;
+            }
+
+            footer {
+                padding: 20px 12px;
+                font-size: 12px;
+                line-height: 1.6;
+            }
+        }
+
+        @media (max-width: 380px) {
+            nav {
+                padding-left: 4%;
+                padding-right: 4%;
+            }
+
+            .brand {
+                font-size: 13px;
+            }
+
+            .hero {
+                padding-left: 4%;
+                padding-right: 4%;
+            }
+
+            .hero h1 {
+                font-size: clamp(1.75rem, 8vw, 2rem);
+            }
+
+            .stats {
+                gap: 6px;
+            }
+
+            .stat h3 {
+                font-size: 14px;
+            }
+
+            .stat p {
+                font-size: 10px;
+            }
+
+            .area-form,
+            .review-form {
+                padding: 13px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important;
+            }
+        }
+
     </style>
 </head>
 <body>
