@@ -1469,7 +1469,7 @@
 <div class="form-field"><label for="regAddress">Alamat lengkap / patokan</label><textarea id="regAddress" maxlength="300" placeholder="Nama jalan, nomor rumah, perumahan, RT/RW, dan patokan" required=""></textarea></div>
 <div class="form-field"><label for="regPackage">Paket yang dipilih</label><select id="regPackage" required=""><option value="">Pilih paket</option><option value="Paket 1">Paket 1</option><option value="Paket 2">Paket 2</option><option value="Paket 3">Paket 3</option><option value="Paket 4">Paket 4</option><option value="Paket 5">Paket 5</option></select></div>
 <div class="form-field"><label for="regNotes">Catatan tambahan (opsional)</label><textarea id="regNotes" maxlength="300" placeholder="Informasi tambahan untuk tim pemasangan"></textarea></div>
-<button class="area-submit" type="submit">📩 Kirim Pendaftaran</button>
+<button class="area-submit" type="submit">📲 Kirim Pendaftaran via WhatsApp</button>
 </form>
 </div>
 </section><section class="features" id="keunggulan">
@@ -1885,8 +1885,14 @@
                 }
         });
 
-        /* URL Web App Google Apps Script untuk menyimpan pendaftaran dan mengirim email ke admin */
-        const GOOGLE_SHEETS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbznEmOpzJlv2m5UBrMf5SheJLp_rol_Xm5ha1J2pkuouwkJNl_AxIpvmzx-_Tv1CmG3/exec';
+        /*
+         * URL Web App Google Apps Script.
+         * URL /dev yang diberikan hanya untuk pengujian editor.
+         * Di sini dipasang versi /exec dengan ID deployment yang diberikan.
+         * Jika Google menampilkan URL /exec berbeda pada Deploy > Manage deployments,
+         * ganti konstanta ini dengan URL /exec resmi tersebut.
+         */
+        const GOOGLE_SHEETS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwo60idij9gxIsGRujsLeNFpopfVnsjcOcQ9Bz3Nfqx2AgnvtiS8iUq0F_o5wjeEd_D/exec';
         const registrationForm = document.getElementById('registrationForm');
         if (registrationForm) registrationForm.addEventListener('submit', async function (event) {
             event.preventDefault();
@@ -1900,25 +1906,42 @@
                 paket: document.getElementById('regPackage').value,
                 catatan: document.getElementById('regNotes').value.trim() || '-'
             };
+            const message = [
+                'Halo WiFi Bogor-Depok, saya ingin mendaftar langganan internet.', '',
+                'Nama: ' + fields.nama,
+                'Nomor WhatsApp: ' + fields.telepon,
+                'Domisili: ' + fields.kelurahan + ', ' + fields.kecamatan + ', ' + fields.kota,
+                'Alamat: ' + fields.alamat,
+                'Paket pilihan: ' + fields.paket,
+                'Catatan: ' + fields.catatan
+            ].join('\n');
+            const waUrl = 'https://wa.me/6285718561080?text=' + encodeURIComponent(message);
+            const waWindow = window.open('about:blank', '_blank');
             const submitButton = registrationForm.querySelector('button[type="submit"]');
             const originalButtonText = submitButton ? submitButton.textContent : '';
-            if (submitButton) { submitButton.disabled = true; submitButton.textContent = 'Menyimpan pendaftaran...'; }
+            if (submitButton) { submitButton.disabled = true; submitButton.textContent = 'Mengirim pendaftaran...'; }
             try {
-                if (!GOOGLE_SHEETS_WEB_APP_URL || GOOGLE_SHEETS_WEB_APP_URL.indexOf('/exec') === -1) {
-                    throw new Error('URL Google Apps Script belum diatur.');
+                if (!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/.test(GOOGLE_SHEETS_WEB_APP_URL)) {
+                    throw new Error('URL Web App tidak valid. Gunakan URL produksi yang berakhiran /exec.');
+                }
+                if (!fields.nama || !fields.telepon || !fields.kota || !fields.kecamatan || !fields.alamat || !fields.paket) {
+                    throw new Error('Mohon lengkapi semua kolom wajib sebelum mengirim.');
                 }
                 const body = new URLSearchParams({ ...fields, sumber: 'Website WiFi Bogor-Depok' });
-                /* Apps Script memproses penyimpanan dan mengirim email admin. Mode no-cors membuat respons tidak dapat dibaca browser. */
+                /* no-cors membuat respons server tidak bisa dibaca browser; pengiriman tidak bisa dipastikan dari halaman ini. */
                 await fetch(GOOGLE_SHEETS_WEB_APP_URL, {
                     method: 'POST',
                     mode: 'no-cors',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
-                    body: body.toString()
+                    body: body.toString(),
+                    redirect: 'follow'
                 });
-                alert('Pendaftaran selesai. Terima kasih, data pendaftaran Anda telah kami terima.');
-                registrationForm.reset();
+                if (waWindow) waWindow.location.href = waUrl; else window.location.href = waUrl;
+                alert('Permintaan pendaftaran telah dikirim dari website. Karena Google Apps Script memakai koneksi lintas-domain, halaman ini tidak dapat memastikan penyimpanan berhasil. Mohon cek Google Sheets; WhatsApp akan dibuka untuk mengirim pesan ke admin.');
             } catch (error) {
-                alert('Pendaftaran belum dapat dikirim. Silakan coba lagi atau hubungi admin.');
+                if (waWindow) waWindow.close();
+                console.error('Gagal mengirim pendaftaran:', error);
+                alert('Pendaftaran gagal dikirim: ' + (error && error.message ? error.message : 'periksa koneksi internet dan URL Web App.'));
             } finally {
                 if (submitButton) { submitButton.disabled = false; submitButton.textContent = originalButtonText; }
             }
