@@ -1,15 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>WiFi Bogor-Depok | Internet Cepat & Stabil</title>
-
-    <meta name="description"
-        content="WiFi Bogor-Depok - Internet cepat, stabil dan terjangkau untuk rumah, keluarga dan usaha.">
-
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WiFi Bogor-Depok | Internet Cepat &amp; Stabil</title>
+<meta content="WiFi Bogor-Depok - Internet cepat, stabil dan terjangkau untuk rumah, keluarga dan usaha." name="description"/>
+<style>
 
         * {
             margin: 0;
@@ -538,7 +535,7 @@
            PAKET
         ================================= */
         .paket-section {
-
+            display: none; /* Paket disembunyikan sampai domisili dipilih */
             padding: 100px 7%;
 
             background: rgb(0, 0, 0);
@@ -1165,167 +1162,215 @@
             }
         }
 
+
+
+        /* AREA CHECKER & ULASAN */
+        .area-section, .review-section { padding: 85px 7%; background:#080d12; color:#f5f7fa; }
+        .area-wrap, .review-wrap { max-width:1100px; margin:auto; }
+        .area-panel { display:grid; grid-template-columns:1fr 1.1fr; gap:28px; align-items:center; }
+        .area-copy h2, .review-heading h2 { font-size:clamp(30px,4vw,43px); color:#f5d903; margin:12px 0; }
+        .area-copy p, .review-heading p { color:#c1c8d0; line-height:1.75; }
+        .area-form, .review-form { background:#121a22; border:1px solid #293744; padding:28px; border-radius:22px; box-shadow:0 18px 45px rgba(0,0,0,.22); }
+        .form-field { margin-bottom:16px; }
+        .form-field label { display:block; color:#f3f4f6; font-weight:700; margin-bottom:8px; }
+        .form-field input, .form-field select, .form-field textarea { width:100%; padding:13px 14px; border:1px solid #394957; border-radius:11px; background:#080d12; color:#fff; font:inherit; outline:none; }
+        .form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color:#f5d903; box-shadow:0 0 0 3px rgba(245,217,3,.12); }
+        .form-field textarea { min-height:105px; resize:vertical; }
+        .area-submit, .review-submit { width:100%; border:0; border-radius:12px; padding:14px 18px; font-weight:800; cursor:pointer; background:linear-gradient(90deg,#f5d903,#d4a900); color:#101010; font-size:15px; transition:.2s; }
+        .area-submit:hover, .review-submit:hover { transform:translateY(-2px); }
+        .area-result { display:none; margin-top:16px; padding:14px; border-radius:12px; line-height:1.6; background:#172a20; color:#d8fbe2; border:1px solid #2e6943; }
+        .area-note { font-size:12px!important; margin-top:12px; color:#9ca8b4!important; }
+        .review-section { background:linear-gradient(135deg,#0d1c28,#030608); }
+        .review-heading { text-align:center; max-width:720px; margin:0 auto 34px; }
+        .review-summary { display:flex; justify-content:center; align-items:center; gap:14px; margin-top:18px; }
+        .review-score { font-size:42px; font-weight:900; color:#f5d903; }
+        .stars { color:#f5d903; letter-spacing:2px; font-size:20px; }
+        .review-layout { display:grid; grid-template-columns:.85fr 1.15fr; gap:25px; align-items:start; }
+        .rating-input { display:flex; gap:7px; flex-direction:row-reverse; justify-content:flex-end; margin:4px 0 18px; }
+        .rating-input input { position:absolute; opacity:0; pointer-events:none; }
+        .rating-input label { cursor:pointer; font-size:31px; color:#53606c; transition:.15s; }
+        .rating-input label:hover, .rating-input label:hover ~ label, .rating-input input:checked ~ label { color:#f5d903; }
+        .review-list { display:grid; gap:14px; }
+        .review-card { background:#121a22; border:1px solid #293744; border-radius:16px; padding:20px; }
+        .review-card-top { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:9px; }
+        .review-card strong { color:#fff; }
+        .review-card time { color:#8c9aa7; font-size:12px; }
+        .review-card p { color:#c7d0d8; line-height:1.65; overflow-wrap:anywhere; }
+        .review-area { font-size:12px; color:#9eacb8; margin-top:10px; }
+        .empty-reviews { padding:25px; border:1px dashed #394957; border-radius:16px; color:#aab6c1; text-align:center; }
+        .review-warning { color:#9ca8b4; font-size:12px; line-height:1.6; margin-top:12px; }
+        @media(max-width:800px) { .area-section,.review-section{padding:65px 5%;} .area-panel,.review-layout{grid-template-columns:1fr;} .area-form,.review-form{padding:21px;} }
+
+
+
+        /* ==========================================
+           RESPONSIVE FINAL OVERRIDES
+           Laptop, tablet, and mobile phone
+        ========================================== */
+        :root { color-scheme: dark; }
+        html { width:100%; max-width:100%; scroll-padding-top:85px; }
+        body { width:100%; min-width:320px; max-width:100%; overflow-x:clip; }
+        img, video, iframe { max-width:100%; }
+        input, select, textarea, button { max-width:100%; }
+        section { width:100%; }
+        .hero-container, .poster-grid, .feature-grid, .area-wrap, .review-wrap { min-width:0; }
+        .hero-container > *, .poster-card, .feature, .area-panel > *, .review-layout > * { min-width:0; }
+        .hero h1 { font-size:clamp(2.15rem, 5vw, 3.75rem); overflow-wrap:anywhere; }
+        .section-title h2, .cta h2 { font-size:clamp(1.8rem, 4vw, 2.8rem); overflow-wrap:anywhere; }
+        .hero-description, .section-title p, .feature p, .area-copy p, .review-heading p { overflow-wrap:anywhere; }
+        .poster-card { height:auto; min-height:0; }
+        .poster-img { height:auto; aspect-ratio: 4 / 3; object-fit:contain; }
+        .poster-content { gap:14px; }
+        .poster-btn { max-width:100%; overflow-wrap:anywhere; }
+        .area-form, .review-form { min-width:0; }
+        .review-card-top { flex-wrap:wrap; }
+        .rating-input { flex-direction:row-reverse; justify-content:flex-end; flex-wrap:wrap; }
+        .rating-input label { font-size:clamp(1.7rem, 6vw, 2rem); }
+        .review-summary { flex-wrap:wrap; }
+        .form-field input, .form-field select, .form-field textarea { min-height:46px; font-size:16px; }
+        .form-field textarea { min-height:120px; }
+        .btn, .poster-btn, .area-submit, .review-submit { min-height:46px; }
+        nav { gap:16px; }
+        .brand { line-height:1.25; }
+
+        @media (min-width:1200px) {
+            .hero-container { gap:clamp(35px, 5vw, 80px); }
+            .logo-circle { width:min(32vw, 390px); height:min(32vw, 390px); }
+            .poster-grid { grid-template-columns:repeat(2, minmax(0, 1fr)); }
+        }
+        @media (max-width:850px) {
+            nav { padding:12px 5%; }
+            .menu { max-width:90vw; }
+            .hero { min-height:auto; }
+            .hero-container { grid-template-columns:minmax(0,1fr); gap:32px; }
+            .logo-wrapper { order:0; }
+            .hero-container > div:last-child { order:1; }
+            .logo-circle { width:min(65vw, 280px); height:min(65vw, 280px); }
+            .poster-grid { grid-template-columns:minmax(0,1fr); }
+            .feature-grid { grid-template-columns:minmax(0,1fr); }
+            .area-panel, .review-layout { grid-template-columns:minmax(0,1fr); }
+            .area-section, .review-section { padding:64px 5%; }
+        }
+        @media (max-width:600px) {
+            html { scroll-padding-top:72px; }
+            nav { min-height:62px; padding:10px 4%; }
+            .brand { font-size:clamp(15px, 4vw, 18px); white-space:normal; }
+            .menu { right:4%; left:4%; max-width:none; }
+            .menu a { font-size:14px; padding:12px; }
+            .hero { padding:100px 5% 55px; }
+            .hero-container { gap:25px; }
+            .logo-circle { width:min(62vw, 230px); height:min(62vw, 230px); }
+            .hero h1 { font-size:clamp(2rem, 9vw, 2.7rem); }
+            .hero-description { font-size:15px; line-height:1.65; }
+            .buttons { width:100%; max-width:380px; margin-inline:auto; flex-direction:column; gap:12px; }
+            .buttons .btn { width:100%; justify-content:center; }
+            .stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+            .stat h3 { font-size:clamp(16px, 4.5vw, 21px); overflow-wrap:anywhere; }
+            .stat p { font-size:11px; }
+            .paket-section, .features { padding:56px 5%; }
+            .poster-card { padding:8px; }
+            .poster-img { aspect-ratio:4 / 3; height:auto; }
+            .poster-content { padding:15px 10px; }
+            .poster-btn { width:100%; padding:13px 14px; font-size:14px; }
+            .feature { padding:25px 18px; }
+            .area-section, .review-section { padding:52px 4%; }
+            .area-form, .review-form { padding:18px; border-radius:16px; }
+            .area-copy h2, .review-heading h2 { font-size:clamp(27px, 8vw, 36px); }
+            .review-summary { gap:10px; }
+            .review-score { font-size:36px; }
+            .review-card { padding:15px; }
+            .cta { padding:58px 5%; }
+            .cta p { font-size:16px; }
+            .popup-overlay { padding:10px; }
+            .popup-box { width:100%; max-width:380px; max-height:90dvh; overflow-y:auto; }
+            .popup-image { height:auto; object-fit:contain; }
+            .popup-content { padding:16px; }
+            .music-button { right:12px; bottom:12px; width:46px; height:46px; }
+        }
+        @media (max-width:380px) {
+            .brand { font-size:14px; }
+            .menu-toggle { font-size:25px; }
+            .hero { padding-inline:4%; }
+            .hero h1 { font-size:31px; }
+            .stats { gap:6px; }
+            .stat h3 { font-size:15px; }
+            .stat p { font-size:10px; }
+            .area-form, .review-form { padding:14px; }
+            .form-field input, .form-field select, .form-field textarea { padding:11px; }
+            .review-card-top { align-items:flex-start; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
+        }
+
     </style>
 </head>
-
 <body>
-
-    <!-- =================================
+<!-- =================================
          MUSIK WEBSITE
     ================================= -->
-
-    <audio id="musikWeb" autoplay loop muted>
-        <source src="v1.mpeg" type="audio/mpeg">
+<audio autoplay="" id="musikWeb" loop="" muted="">
+<source src="v1.mpeg" type="audio/mpeg"/>
         Browser Anda tidak mendukung audio.
     </audio>
-
-    <!-- Tombol musik -->
-    <button
-        id="musicButton"
-        class="music-button"
-        type="button"
-        title="Matikan Musik"
-        aria-label="Matikan Musik"
-    >
+<!-- Tombol musik -->
+<button aria-label="Matikan Musik" class="music-button" id="musicButton" title="Matikan Musik" type="button">
         🔊
     </button>
-
-    <!-- =================================
+<!-- =================================
          POPUP PROMO 3.jpeg
     ================================= -->
-
-    <div
-        class="popup-overlay"
-        id="promoPopup"
-    >
-
-        <div class="popup-box">
-
-            <button
-                class="popup-close"
-                onclick="closePopup()"
-            >
+<div class="popup-overlay" id="promoPopup">
+<div class="popup-box">
+<button class="popup-close" onclick="closePopup()">
                 ×
             </button>
-
-
-            <img
-                src="11.jpeg"
-                alt="Promo WiFi Bogor-Depok"
-                class="popup-image"
-            >
-
-
-            <div class="popup-content">
-
-                <h2>
+<img alt="Promo WiFi Bogor-Depok" class="popup-image" src="11.jpeg"/>
+<div class="popup-content">
+<h2>
                     🔥 PROMO SPESIAL
                 </h2>
-
-                <p>
+<p>
                     Dapatkan promo internet terbaik
                     dari WiFi Bogor-Depok.
                 </p>
-
-                <a
-                    href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok%2C%20saya%20ingin%20ambil%20promo%20"
-                    rel="noopener noreferrer"
-                    class="poster-btn"
-            >
+<a class="poster-btn" href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok%2C%20saya%20ingin%20ambil%20promo%20" rel="noopener noreferrer">
                     📲 Ambil Promo
                 </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =================================
+</div>
+</div>
+</div>
+<!-- =================================
          NAVBAR
     ================================= -->
-
-    <nav>
-
-        <div class="brand">
+<nav>
+<div class="brand">
 
             WiFi
             <span>Bogor-Depok</span>
-
-        </div>
-
-
-        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
-
-        <div class="menu">
-
-            <a href="#about">
-                Home
-            </a>
-
-            <a href="#paket">
-                Paket
-            </a>
-
-            <a href="#keunggulan">
-                Keunggulan
-            </a>
-
-            <a href="#kontak">
-                Kontak
-            </a>
-
-        </div>
-
-    </nav>
-
-
-
-    <!-- =================================
-         HERO
-    ================================= -->
-
-    <section
-        class="hero"
-        id="about"
-    >
-
-        <div class="hero-container">
-
-
-            <!-- LOGO -->
-
-            <div class="logo-wrapper">
-
-                <div class="logo-circle"></div>
-
-            </div>
-
-
-
-            <!-- TEXT -->
-
-            <div>
-
-                <div class="badge">
+</div>
+<button aria-expanded="false" aria-label="Buka menu" class="menu-toggle" id="menuToggle">☰</button>
+<div class="menu"><a href="#about">Home</a><a href="#cek-area">Cek Area</a><a href="#keunggulan">Keunggulan</a><a href="#ulasan">Rating &amp; Ulasan</a><a href="#kontak">Kontak</a></div>
+</nav><section class="hero" id="about">
+<div class="hero-container">
+<!-- LOGO -->
+<div class="logo-wrapper">
+<div class="logo-circle"></div>
+</div>
+<!-- TEXT -->
+<div>
+<div class="badge">
 
                     📶 INTERNET FIBER
-                    BOGOR & DEPOK
+                    BOGOR &amp; DEPOK
 
                 </div>
-
-
-                <h1>
+<h1>
 
                     WiFi
                     <span>Bogor-Depok</span>
-
-                </h1>
-
-
-                <p class="hero-description">
+</h1>
+<p class="hero-description">
 
                     Nikmati koneksi internet cepat,
                     stabil, dan nyaman untuk kebutuhan
@@ -1333,402 +1378,236 @@
                     hiburan, dan bisnis Anda.
 
                 </p>
-
-
-                <div class="buttons">
-
-                    <a
-                        href="#paket"
-                        class="btn btn-primary"
-                    >
-                        🚀 Lihat Paket
+<div class="buttons">
+<a class="btn btn-primary" href="#cek-area">
+                        📍 Cek Wilayah &amp; Paket
                     </a>
-
-
-                    <a
-                        href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok,%20saya%20ingin%20informasi%20paket%20internet."
-                        target="_blank"
-                        class="btn btn-secondary"
-                    >
+<a class="btn btn-secondary" href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok,%20saya%20ingin%20informasi%20paket%20internet." target="_blank">
                         💬 Hubungi Kami
                     </a>
-
-                </div>
-
-
-                <div class="stats">
-
-
-                    <div class="stat">
-
-                        <h3>
+</div>
+<div class="stats">
+<div class="stat">
+<h3>
                             200+
                         </h3>
-
-                        <p>
+<p>
                             Mbps
                         </p>
-
-                    </div>
-
-
-                    <div class="stat">
-
-                        <h3>
+</div>
+<div class="stat">
+<h3>
                             24/7
                         </h3>
-
-                        <p>
+<p>
                             Koneksi
                         </p>
-
-                    </div>
-
-
-                    <div class="stat">
-
-                        <h3>
+</div>
+<div class="stat">
+<h3>
                             Bogor
                         </h3>
-
-                        <p>
-                            & Depok
+<p>
+                            &amp; Depok
                         </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =================================
-         PAKET
-    ================================= -->
-
-    <section
-        class="paket-section"
-        id="paket"
-    >
-
-        <div class="section-title">
-
-            <div class="small">
-                PILIHAN TERBAIK
-            </div>
-
-            <h2>
-                Paket
-                <span>Internet</span>
-            </h2>
-
-            <p>
-                Pilih paket yang sesuai
-                dengan kebutuhan Anda.
-            </p>
-
-        </div>
-
-
-        <div class="poster-grid">
-
-
-            <!-- POSTER 1 -->
-
-            <div class="poster-card">
-
-                <img
-                    src="01.jpeg"
-                    class="poster-img"
-                    alt="Paket Internet WiFi Bogor Depok"
-                >
-
-
-                <div class="poster-content">
-
-                    <h3>
-                        Paket 1
-                    </h3>
-
-                <a
-                    href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok%2C%20saya%20ingin%20tanya%20paket%20Internet%20yang%20tersedia%20paket%201." 
-                    class="poster-btn"
-                >
-                        💬 Langganan Sekarang
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- POSTER 2 -->
-
-            <div class="poster-card">
-
-                <img
-                    src="02.jpeg"
-                    class="poster-img"
-                    alt="Paket Internet WiFi Bogor Depok"
-                >
-
-
-                <div class="poster-content">
-
-                    <h3>
-                        Paket 2
-                    </h3>
-
-                <a
-                    href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok%2C%20saya%20ingin%20tanya%20paket%20Internet%20yang%20tersedia%20paket%202." 
-                    class="poster-btn"
-                >
-                        💬 Langganan Sekarang
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- POSTER 3 -->
-
-            <div class="poster-card">
-
-                <img
-                    src="03.jpeg"
-                    class="poster-img"
-                    alt="Paket Internet WiFi Bogor Depok"
-                >
-
-
-                <div class="poster-content">
-
-                    <h3>
-                        Paket 3
-                    </h3>
-
-                <a
-                    href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok%2C%20saya%20ingin%20tanya%20paket%20Internet%20yang%20tersedia%20paket%203." 
-                    class="poster-btn"
-                >
-                        💬 Langganan Sekarang
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- POSTER 4 -->
-
-            <div class="poster-card">
-
-                <img
-                    src="04.jpeg"
-                    class="poster-img"
-                    alt="Paket Internet WiFi Bogor Depok"
-                >
-
-
-                <div class="poster-content">
-
-                    <h3>
-                        Paket 4
-                    </h3>
-
-                <a
-                    href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok%2C%20saya%20ingin%20tanya%20paket%20Internet%20yang%20tersedia%20paket%204." 
-                    class="poster-btn"
-                >
-                    💬 Langganan Sekarang
-                </a>
-
-
-                </div>
-
-            </div>
-
-            <!-- POSTER 5 -->
-
-            <div class="poster-card">
-
-                <img
-                    src="05.jpeg"
-                    class="poster-img"
-                    alt="Paket Internet WiFi Bogor Depok"
-                >
-
-
-                <div class="poster-content">
-
-                    <h3>
-                        Paket 5
-                    </h3>
-
-                    <a
-                        href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok,%20saya%20ingin%20tanya%20paket%20Internet%20yang%20tersedia%20paket%205."
-                        target="_blank"
-                        class="poster-btn"
-                    >
-                        💬 Langganan Sekarang
-                    </a>
-
-                </div>
-
-            </div>
-
-
-    <!-- =================================
-         KEUNGGULAN
-    ================================= -->
-
-    <section
-        class="features"
-        id="keunggulan"
-    >
-
-        <div class="section-title">
-
-            <div class="small">
+</div>
+</div>
+</div>
+</div>
+</section><section class="area-section" id="cek-area">
+<div class="area-wrap area-panel">
+<div class="area-copy">
+<div class="section-title" style="text-align:left;margin-bottom:20px">
+<div class="small">CEK JANGKAUAN JARINGAN</div>
+<h2 style="color:#fff">Cek Ketersediaan <span style="color:#f5d903">Layanan</span></h2>
+</div>
+<p>Pilih kota/kabupaten dan kecamatan domisili terlebih dahulu. Setelah wilayah dipilih dan tombol ditekan, pilihan paket akan ditampilkan. Selanjutnya, pilih “Langganan Sekarang” untuk mengisi form pendaftaran.</p>
+<p style="margin-top:14px;color:#f5d903;font-weight:700">📍 Bogor • Kabupaten Bogor • Depok</p>
+</div>
+<form class="area-form" id="areaForm">
+<div class="form-field">
+<label for="areaCity">Kota / Kabupaten</label>
+<select id="areaCity" required="">
+<option value="">Pilih kota/kabupaten</option>
+<option value="Kota Bogor">Kota Bogor</option>
+<option value="Kabupaten Bogor">Kabupaten Bogor</option>
+<option value="Kota Depok">Kota Depok</option>
+</select>
+</div>
+<div class="form-field">
+<label for="areaDistrict">Kecamatan</label>
+<select disabled="" id="areaDistrict" required="">
+<option value="">Pilih kota/kabupaten terlebih dahulu</option>
+</select>
+</div>
+<div class="form-field">
+<label for="areaVillage">Kelurahan / Desa (opsional)</label>
+<input id="areaVillage" maxlength="80" placeholder="Contoh: Cibinong atau Beji" type="text"/>
+</div>
+<div class="form-field">
+<label for="areaAddress">Alamat / patokan (opsional)</label>
+<input id="areaAddress" maxlength="160" placeholder="Nama jalan, perumahan, atau patokan" type="text"/>
+</div>
+<button class="area-submit" type="submit">🔎 Lihat Paket di Wilayah Saya</button>
+<div aria-live="polite" class="area-result" id="areaResult" role="status"></div>
+<p class="area-note">Catatan: daftar paket mengikuti data yang diatur pada website. Pastikan data cakupan setiap kecamatan diperbarui oleh admin agar hasil sesuai kondisi jaringan sebenarnya.</p>
+</form>
+</div>
+</section><section class="area-section" id="pendaftaran" style="display:none">
+<div class="area-wrap" style="max-width:760px">
+<div class="section-title">
+<div class="small">PENDAFTARAN PELANGGAN</div>
+<h2 style="color:#fff">Form <span style="color:#f5d903">Pendaftaran</span></h2>
+<p>Lengkapi data berikut untuk melanjutkan permohonan pemasangan WiFi.</p>
+</div>
+<form class="area-form" id="registrationForm">
+<div class="form-field"><label for="regName">Nama lengkap</label><input autocomplete="name" id="regName" maxlength="100" placeholder="Masukkan nama lengkap" required="" type="text"/></div>
+<div class="form-field"><label for="regPhone">Nomor WhatsApp aktif</label><input autocomplete="tel" id="regPhone" maxlength="20" placeholder="Contoh: 08xxxxxxxxxx" required="" type="tel"/></div>
+<div class="form-field"><label for="regCity">Kota / Kabupaten</label><input id="regCity" readonly="" required="" type="text"/></div>
+<div class="form-field"><label for="regDistrict">Kecamatan</label><input id="regDistrict" readonly="" required="" type="text"/></div>
+<div class="form-field"><label for="regVillage">Kelurahan / Desa</label><input id="regVillage" maxlength="80" placeholder="Masukkan kelurahan/desa" type="text"/></div>
+<div class="form-field"><label for="regAddress">Alamat lengkap / patokan</label><textarea id="regAddress" maxlength="300" placeholder="Nama jalan, nomor rumah, perumahan, RT/RW, dan patokan" required=""></textarea></div>
+<div class="form-field"><label for="regPackage">Paket yang dipilih</label><select id="regPackage" required=""><option value="">Pilih paket</option><option value="Paket 1">Paket 1</option><option value="Paket 2">Paket 2</option><option value="Paket 3">Paket 3</option><option value="Paket 4">Paket 4</option><option value="Paket 5">Paket 5</option></select></div>
+<div class="form-field"><label for="regNotes">Catatan tambahan (opsional)</label><textarea id="regNotes" maxlength="300" placeholder="Informasi tambahan untuk tim pemasangan"></textarea></div>
+<button class="area-submit" type="submit">📩 Kirim Pendaftaran</button>
+</form>
+</div>
+</section><section class="features" id="keunggulan">
+<div class="section-title">
+<div class="small">
                 KENAPA KAMI?
             </div>
-
-            <h2>
+<h2>
                 Internet untuk
                 <span>Semua</span>
-            </h2>
-
-            <p>
+</h2>
+<p>
                 Dirancang untuk mendukung
                 aktivitas digital Anda.
             </p>
-
-        </div>
-
-
-        <div class="feature-grid">
-
-
-            <div class="feature">
-
-                <div class="feature-icon">
+</div>
+<div class="feature-grid">
+<div class="feature">
+<div class="feature-icon">
                     ⚡
                 </div>
-
-                <h3>
+<h3>
                     Cepat
                 </h3>
-
-                <p>
+<p>
                     Nikmati akses internet
                     dengan kecepatan tinggi
                     untuk berbagai kebutuhan
                     digital.
                 </p>
-
-            </div>
-
-
-
-            <div class="feature">
-
-                <div class="feature-icon">
+</div>
+<div class="feature">
+<div class="feature-icon">
                     📶
                 </div>
-
-                <h3>
+<h3>
                     Stabil
                 </h3>
-
-                <p>
+<p>
                     Koneksi stabil untuk
                     streaming, bekerja,
                     belajar dan bermain.
                 </p>
-
-            </div>
-
-
-
-            <div class="feature">
-
-                <div class="feature-icon">
+</div>
+<div class="feature">
+<div class="feature-icon">
                     🌐
                 </div>
-
-                <h3>
+<h3>
                     Terhubung
                 </h3>
-
-                <p>
+<p>
                     Menghubungkan keluarga,
                     pekerjaan dan bisnis
                     dengan dunia digital.
                 </p>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =================================
-         KONTAK
-    ================================= -->
-
-    <section
-        class="cta"
-        id="kontak"
-    >
-
-        <h2>
+</div>
+</div>
+</section><section class="review-section" id="ulasan">
+<div class="review-wrap">
+<div class="review-heading">
+<div class="small">PENGALAMAN PELANGGAN</div>
+<h2>Rating &amp; <span style="color:#f5d903">Ulasan</span></h2>
+<p>Bagikan pengalaman Anda menggunakan WiFi Bogor-Depok agar calon pelanggan lain bisa mendapatkan gambaran yang lebih baik.</p>
+<div class="review-summary">
+<div class="review-score" id="averageRating">—</div>
+<div style="text-align:left"><div class="stars" id="averageStars">☆☆☆☆☆</div><div id="reviewCount" style="font-size:13px;color:#aab6c1">Belum ada ulasan</div></div>
+</div>
+</div>
+<div class="review-layout">
+<form class="review-form" id="reviewForm">
+<h3 style="color:#fff;margin-bottom:20px">Tulis Ulasan Anda</h3>
+<div class="form-field">
+<label>Berikan rating</label>
+<div aria-label="Pilih rating dari 1 sampai 5" class="rating-input">
+<input id="rate5" name="rating" required="" type="radio" value="5"/><label for="rate5" title="5 bintang">★</label>
+<input id="rate4" name="rating" type="radio" value="4"/><label for="rate4" title="4 bintang">★</label>
+<input id="rate3" name="rating" type="radio" value="3"/><label for="rate3" title="3 bintang">★</label>
+<input id="rate2" name="rating" type="radio" value="2"/><label for="rate2" title="2 bintang">★</label>
+<input id="rate1" name="rating" type="radio" value="1"/><label for="rate1" title="1 bintang">★</label>
+</div>
+</div>
+<div class="form-field"><label for="reviewName">Nama</label><input id="reviewName" maxlength="50" placeholder="Nama Anda" required="" type="text"/></div>
+<div class="form-field"><label for="reviewArea">Wilayah (opsional)</label><input id="reviewArea" maxlength="80" placeholder="Contoh: Cibinong, Kabupaten Bogor" type="text"/></div>
+<div class="form-field"><label for="reviewComment">Komentar</label><textarea id="reviewComment" maxlength="600" placeholder="Ceritakan pengalaman Anda..." required=""></textarea></div>
+<button class="review-submit" type="submit">Kirim Ulasan</button>
+<p class="review-warning">Demo ini menyimpan ulasan di browser/perangkat yang digunakan (localStorage), bukan ke server. Ulasan belum otomatis terlihat di perangkat lain.</p>
+</form>
+<div>
+<h3 style="color:#fff;margin:0 0 16px">Ulasan Pelanggan</h3>
+<div class="review-list" id="reviewList"><div class="empty-reviews">Belum ada ulasan. Jadilah yang pertama memberikan rating dan komentar!</div></div>
+</div>
+</div>
+</div>
+</section><section class="cta" id="kontak">
+<h2>
             Siap Terhubung?
         </h2>
-
-        <p>
+<p>
             Dapatkan informasi paket dan
             ketersediaan jaringan
             WiFi Bogor-Depok.
         </p>
-
-
-        <a
-            href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok,%20saya%20ingin%20informasi%20berlangganan."
-            target="_blank"
-            class="btn"
-        >
+<a class="btn" href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok,%20saya%20ingin%20informasi%20berlangganan." target="_blank">
             💬 Chat WhatsApp Sekarang
         </a>
+</section>
+<!-- =================================
+         HERO
+    ================================= -->
 
-    </section>
+<!-- FORM PENDAFTARAN LANGGANAN -->
+
+<!-- =================================
+         KEUNGGULAN
+    ================================= -->
+
+<!-- =================================
+         KONTAK
+    ================================= -->
+<!-- CEK KETERSEDIAAN AREA -->
+
+<!-- RATING DAN KOMENTAR PELANGGAN -->
 
 
-
-    <!-- =================================
+<!-- =================================
          FOOTER
     ================================= -->
-
-    <footer>
+<footer>
 
         © 2026 WiFi Bogor-Depok
-        • Connecting Bogor & Depok
+        • Connecting Bogor &amp; Depok
 
     </footer>
-
-
-
-    <!-- =================================
+<!-- =================================
          JAVASCRIPT POPUP
     ================================= -->
-
-    <script>
+<script>
 
 
 
@@ -1881,8 +1760,225 @@
             }
         );
 
+
+
+        /* CEK WILAYAH: daftar kecamatan untuk pilihan pengguna */
+        const areaOptions = {
+            "Kota Bogor": ["Bogor Barat", "Bogor Selatan", "Bogor Tengah", "Bogor Timur", "Bogor Utara", "Tanah Sareal"],
+            "Kabupaten Bogor": ["Babakan Madang", "Bojonggede", "Caringin", "Cariu", "Ciampea", "Ciawi", "Cibinong", "Cibungbulang", "Cigombong", "Cigudeg", "Cijeruk", "Cileungsi", "Ciomas", "Cisarua", "Ciseeng", "Citeureup", "Dramaga", "Gunung Putri", "Gunung Sindur", "Jasinga", "Jonggol", "Kemang", "Klapanunggal", "Leuwiliang", "Leuwisadeng", "Megamendung", "Nanggung", "Pamijahan", "Pamijahan", "Parung", "Parung Panjang", "Ranca Bungur", "Rumpin", "Sukajaya", "Sukamakmur", "Sukaraja", "Tajurhalang", "Tamansari", "Tanjungsari", "Tenjo", "Tenjolaya"],
+            "Kota Depok": ["Beji", "Bojongsari", "Cilodong", "Cimanggis", "Cinere", "Cipayung", "Limo", "Pancoran Mas", "Sawangan", "Sukmajaya", "Tapos"]
+        };
+        const areaCity = document.getElementById('areaCity');
+        const areaDistrict = document.getElementById('areaDistrict');
+        if (areaCity && areaDistrict) {
+            areaCity.addEventListener('change', function () {
+                areaDistrict.innerHTML = '';
+                const first = document.createElement('option');
+                first.value = '';
+                first.textContent = this.value ? 'Pilih kecamatan' : 'Pilih kota/kabupaten terlebih dahulu';
+                areaDistrict.appendChild(first);
+                (areaOptions[this.value] || []).forEach(function (district) {
+                    const option = document.createElement('option');
+                    option.value = district;
+                    option.textContent = district;
+                    areaDistrict.appendChild(option);
+                });
+                areaDistrict.disabled = !this.value;
+            });
+        }
+        /* CEK PAKET BERDASARKAN WILAYAH — data dapat disesuaikan admin */
+        const areaForm = document.getElementById('areaForm');
+        const areaPackageData = {
+            // Ganti daftar paket per kecamatan sesuai cakupan jaringan yang benar.
+            // Contoh: "Cibinong": [1, 2, 4]
+            "default": [1, 2, 3, 4, 5]
+        };
+        const packageImageFiles = {
+            1: '01.jpeg', 2: '02.jpeg', 3: '03.jpeg', 4: '04.jpeg', 5: '05.jpeg'
+        };
+        if (areaForm) areaForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const city = areaCity.value;
+            const district = areaDistrict.value;
+            const village = document.getElementById('areaVillage').value.trim();
+            if (!city || !district) return;
+
+            // Pilihan paket hanya ditampilkan di kolom Daftar WiFi setelah domisili dipilih.
+            const result = document.getElementById('areaResult');
+            const configuredPackages = areaPackageData[district];
+            const packageIds = Array.isArray(configuredPackages) ? configuredPackages : areaPackageData.default;
+            const isAreaConfigured = Array.isArray(configuredPackages);
+            result.innerHTML = '';
+            result.style.display = 'block';
+            result.style.background = '#121a22';
+            result.style.borderColor = '#394957';
+            result.style.color = '#f5f7fa';
+
+            const heading = document.createElement('h3');
+            heading.style.cssText = 'margin:0 0 8px;color:#f5d903;font-size:20px';
+            heading.textContent = 'Daftar WiFi';
+            const location = document.createElement('p');
+            location.style.cssText = 'margin:0 0 14px;color:#c1c8d0';
+            location.textContent = district + ', ' + city + (village ? ' — ' + village : '');
+            const note = document.createElement('p');
+            note.style.cssText = 'margin:0 0 16px;font-size:12px;color:#c1c8d0';
+            note.textContent = isAreaConfigured
+                ? 'Paket di bawah ini tercatat untuk kecamatan yang dipilih.'
+                : 'Data paket khusus kecamatan ini belum diatur. Berikut daftar paket umum di website, bukan konfirmasi cakupan jaringan di alamat Anda.';
+            result.append(heading, location, note);
+
+            if (!packageIds.length) {
+                const empty = document.createElement('p');
+                empty.textContent = 'Belum ada paket yang tercatat untuk wilayah ini. Silakan periksa kembali nanti.';
+                result.appendChild(empty);
+                return;
+            }
+
+            const grid = document.createElement('div');
+            grid.style.cssText = 'display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px';
+            packageIds.forEach(function (id) {
+                const card = document.createElement('div');
+                card.style.cssText = 'background:#080d12;border:1px solid #394957;border-radius:12px;padding:10px;overflow:hidden';
+                const img = document.createElement('img');
+                img.src = packageImageFiles[id];
+                img.alt = 'Informasi Paket ' + id;
+                img.loading = 'lazy';
+                img.style.cssText = 'display:block;width:100%;height:auto;max-height:170px;object-fit:contain;border-radius:8px';
+                const label = document.createElement('div');
+                label.style.cssText = 'margin-top:8px;text-align:center;font-weight:800;color:#f5d903';
+                label.textContent = 'Paket ' + id;
+                const subscribe = document.createElement('button');
+                subscribe.type = 'button';
+                subscribe.className = 'poster-btn subscribe-btn';
+                subscribe.setAttribute('data-package', String(id));
+                subscribe.textContent = '💬 Langganan Sekarang';
+                subscribe.style.cssText = 'display:block;width:100%;margin-top:10px;border:0;cursor:pointer;font-size:12px';
+                card.append(img, label, subscribe);
+                grid.appendChild(card);
+            });
+            result.appendChild(grid);
+            setTimeout(function () {
+                result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
+        });
+
+        /* LANGGANAN: tombol pada kolom Daftar WiFi membuka form pendaftaran */
+        document.getElementById('areaResult').addEventListener('click', function (event) {
+            const button = event.target.closest('.subscribe-btn');
+            if (!button) return;
+            const packageId = button.getAttribute('data-package');
+                const regSection = document.getElementById('pendaftaran');
+                const paketSelect = document.getElementById('regPackage');
+                if (paketSelect) paketSelect.value = 'Paket ' + packageId;
+
+                document.getElementById('regCity').value = areaCity ? areaCity.value : '';
+                document.getElementById('regDistrict').value = areaDistrict ? areaDistrict.value : '';
+                document.getElementById('regVillage').value = document.getElementById('areaVillage').value.trim();
+                document.getElementById('regAddress').value = document.getElementById('areaAddress').value.trim();
+
+                if (regSection) {
+                    regSection.style.display = 'block';
+                    setTimeout(function () {
+                        regSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        document.getElementById('regName').focus({ preventScroll: true });
+                    }, 100);
+                }
+        });
+
+        /* URL Web App Google Apps Script untuk menyimpan pendaftaran */
+        const GOOGLE_SHEETS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbznEmOpzJlv2m5UBrMf5SheJLp_rol_Xm5ha1J2pkuouwkJNl_AxIpvmzx-_Tv1CmG3/exec';
+        const registrationForm = document.getElementById('registrationForm');
+        if (registrationForm) registrationForm.addEventListener('submit', async function (event) {
+            event.preventDefault();
+            const fields = {
+                nama: document.getElementById('regName').value.trim(),
+                telepon: document.getElementById('regPhone').value.trim(),
+                kota: document.getElementById('regCity').value.trim(),
+                kecamatan: document.getElementById('regDistrict').value.trim(),
+                kelurahan: document.getElementById('regVillage').value.trim() || '-',
+                alamat: document.getElementById('regAddress').value.trim(),
+                paket: document.getElementById('regPackage').value,
+                catatan: document.getElementById('regNotes').value.trim() || '-'
+            };
+            const submitButton = registrationForm.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton ? submitButton.textContent : '';
+            if (submitButton) { submitButton.disabled = true; submitButton.textContent = 'Menyimpan pendaftaran...'; }
+            try {
+                if (!GOOGLE_SHEETS_WEB_APP_URL || GOOGLE_SHEETS_WEB_APP_URL.indexOf('/exec') === -1) {
+                    throw new Error('URL Google Apps Script belum diatur.');
+                }
+                const body = new URLSearchParams({ ...fields, sumber: 'Website WiFi Bogor-Depok' });
+                /* mode no-cors menghindari blokir CORS browser; status simpan perlu diverifikasi di Sheets */
+                await fetch(GOOGLE_SHEETS_WEB_APP_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+                    body: body.toString()
+                });
+                alert('Permintaan pendaftaran sudah dikirim. Data akan dicatat di Google Sheets dan notifikasi dikirim ke email admin. Terima kasih!');
+                registrationForm.reset();
+            } catch (error) {
+                alert('Pendaftaran belum dapat dikirim. Silakan coba lagi atau hubungi admin.');
+            } finally {
+                if (submitButton) { submitButton.disabled = false; submitButton.textContent = originalButtonText; }
+            }
+        });
+
+        /* RATING DAN ULASAN DEMO: tersimpan di browser ini */
+        const reviewStorageKey = 'wifiBogorDepokReviewsV1';
+        function readReviews() {
+            try { return JSON.parse(localStorage.getItem(reviewStorageKey) || '[]'); }
+            catch (error) { return []; }
+        }
+        function renderReviews() {
+            const reviews = readReviews();
+            const list = document.getElementById('reviewList');
+            const average = document.getElementById('averageRating');
+            const stars = document.getElementById('averageStars');
+            const count = document.getElementById('reviewCount');
+            if (!list || !average || !stars || !count) return;
+            if (!reviews.length) {
+                average.textContent = '—'; stars.textContent = '☆☆☆☆☆'; count.textContent = 'Belum ada ulasan';
+                list.innerHTML = '<div class="empty-reviews">Belum ada ulasan. Jadilah yang pertama memberikan rating dan komentar!</div>';
+                return;
+            }
+            const avg = reviews.reduce((sum, item) => sum + Number(item.rating), 0) / reviews.length;
+            average.textContent = avg.toFixed(1);
+            stars.textContent = '★'.repeat(Math.round(avg)) + '☆'.repeat(5 - Math.round(avg));
+            count.textContent = reviews.length + (reviews.length === 1 ? ' ulasan' : ' ulasan');
+            list.innerHTML = '';
+            reviews.slice().reverse().forEach(function (item) {
+                const card = document.createElement('article'); card.className = 'review-card';
+                const top = document.createElement('div'); top.className = 'review-card-top';
+                const name = document.createElement('strong'); name.textContent = item.name;
+                const date = document.createElement('time'); date.textContent = item.date;
+                top.append(name, date);
+                const rating = document.createElement('div'); rating.className = 'stars'; rating.textContent = '★'.repeat(Number(item.rating)) + '☆'.repeat(5 - Number(item.rating));
+                const comment = document.createElement('p'); comment.textContent = item.comment;
+                card.append(top, rating, comment);
+                if (item.area) { const area = document.createElement('div'); area.className = 'review-area'; area.textContent = '📍 ' + item.area; card.appendChild(area); }
+                list.appendChild(card);
+            });
+        }
+        const reviewForm = document.getElementById('reviewForm');
+        if (reviewForm) reviewForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const selected = reviewForm.querySelector('input[name="rating"]:checked');
+            const name = document.getElementById('reviewName').value.trim();
+            const area = document.getElementById('reviewArea').value.trim();
+            const comment = document.getElementById('reviewComment').value.trim();
+            if (!selected || !name || !comment) { alert('Silakan pilih rating, isi nama, dan tulis komentar.'); return; }
+            const reviews = readReviews();
+            reviews.push({ rating: Number(selected.value), name: name, area: area, comment: comment, date: new Date().toLocaleDateString('id-ID', {day:'2-digit', month:'short', year:'numeric'}) });
+            try {
+                localStorage.setItem(reviewStorageKey, JSON.stringify(reviews));
+                reviewForm.reset(); renderReviews();
+            } catch (error) {
+                alert('Ulasan tidak dapat disimpan di browser ini. Coba gunakan browser lain.');
+            }
+        });
+        renderReviews();
+
     </script>
-
-
 </body>
 </html>
