@@ -173,8 +173,8 @@
 <div class="form-field"><label for="regDistrict">Kecamatan</label><input id="regDistrict" readonly="" required="" type="text"/></div>
 <div class="form-field"><label for="regVillage">Kelurahan / Desa</label><input id="regVillage" maxlength="80" placeholder="Masukkan kelurahan/desa" type="text"/></div>
 <div class="form-field"><label for="regAddress">Alamat lengkap / patokan</label><textarea id="regAddress" maxlength="300" placeholder="Nama jalan, nomor rumah, perumahan, RT/RW, dan patokan" required=""></textarea></div>
-<div class="form-field"><label for="regPackage">Paket yang dipilih</label><select id="regPackage" required=""><option value="">Pilih paket</option><option value="Mini 30 (Internet Only)">Mini 30 (Internet Only)</option><option value="Streaming 200">Streaming 200</option><option value="Streaming 250">Streaming 250</option><option value="Streaming 300">Streaming 300</option><option value="Streaming 400">Streaming 400</option><option value="Streaming 500">Streaming 500</option></select></div>
-<div class="form-field"><label for="regDuration">Pilihan masa berlangganan</label><select id="regDuration" required><option value="">Pilih masa berlangganan</option><option value="3 bulan">3 bulan</option><option value="6 bulan">6 bulan</option><option value="9 bulan">9 bulan</option><option value="12 bulan">12 bulan</option></select></div>
+<div class="form-field"><label for="regPackage">Paket yang dipilih</label><select id="regPackage" required=""><option value="">Pilih paket</option><option value="Mini 30">Mini 30 (Internet Only)</option><option value="Streaming 200">Streaming 200</option><option value="Streaming 250">Streaming 250</option><option value="Streaming 300">Streaming 300</option><option value="Streaming 400">Streaming 400</option><option value="Streaming 500">Streaming 500</option></select></div>
+<div class="form-field"><label for="regDuration">Pilihan masa berlangganan</label><select id="regDuration" required><option value="">Pilih masa berlangganan</option><option value="1 bulan">1 bulan</option><option value="3 bulan">3 bulan</option><option value="6 bulan">6 bulan</option><option value="12 bulan">12 bulan</option></select></div>
 <div class="form-field"><label for="regNotes">Catatan tambahan (opsional)</label><textarea id="regNotes" maxlength="300" placeholder="Informasi tambahan untuk tim pemasangan"></textarea></div>
 <button class="area-submit" type="submit">💬 Kirim Pendaftaran via WhatsApp</button>
 </form>
@@ -504,14 +504,14 @@
             0: '001.jpeg', 1: '01.jpeg', 2: '02.jpeg', 3: '03.jpeg', 4: '04.jpeg', 5: '05.jpeg'
         };
         const packageNames = {
-            0: 'Mini 30 (Internet Only)',
+            0: 'Mini 30',
             1: 'Streaming 200',
             2: 'Streaming 250',
             3: 'Streaming 300',
             4: 'Streaming 400',
             5: 'Streaming 500'
         };
-        const durationOptions = ['3 bulan', '6 bulan', '9 bulan', '12 bulan'];
+        const durationOptions = ['1 bulan', '3 bulan', '6 bulan', '12 bulan'];
         if (areaForm) areaForm.addEventListener('submit', function (event) {
             event.preventDefault();
             const city = areaCity.value;
@@ -579,6 +579,12 @@
                 const label = document.createElement('div');
                 label.style.cssText = 'margin-top:8px;text-align:center;font-weight:800;color:#f5d903';
                 label.textContent = packageNames[id];
+                if (id === 0) {
+                    const subtitle = document.createElement('div');
+                    subtitle.textContent = 'Internet Only';
+                    subtitle.style.cssText = 'margin-top:3px;text-align:center;font-size:12px;font-weight:600;color:#c1c8d0';
+                    label.appendChild(subtitle);
+                }
                 const durationLabel = document.createElement('label');
                 durationLabel.textContent = 'Masa berlangganan';
                 durationLabel.style.cssText = 'display:block;margin-top:10px;font-size:12px;color:#c1c8d0';
