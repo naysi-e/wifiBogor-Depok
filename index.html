@@ -1,5105 +1,735 @@
 <!DOCTYPE html>
-
 <html lang="id">
 <head>
-<meta name="google-site-verification" content="8bjA-3czHYCgKAn4UtpiVcWq8bgvZeQPQfuHKcyORfA" />
-<meta charset="utf-8"/>
-<meta content="width=dev<!DOCTYPE html>
-
-<html lang="id">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>WiFi Bogor Depok | Paket Internet & Pemasangan</title>
-<meta name="description" content="Cari paket dan layanan pemasangan WiFi untuk rumah dan usaha di Bogor dan Depok. Periksa ketersediaan area, lihat pilihan paket, dan daftar melalui website WiFi Bogor-Depok."/>
-<meta name="robots" content="index, follow, max-image-preview:large"/>
-<link rel="canonical" href="https://naysi-e.github.io/wifiBogor-Depok/"/>
-<meta property="og:type" content="website"/>
-<meta property="og:locale" content="id_ID"/>
-<meta property="og:site_name" content="WiFi Bogor-Depok"/>
-<meta property="og:title" content="WiFi Bogor Depok | Paket Internet & Pemasangan"/>
-<meta property="og:description" content="Lihat pilihan paket internet, periksa ketersediaan area, dan ajukan pemasangan WiFi di Bogor dan Depok."/>
-<meta property="og:url" content="https://naysi-e.github.io/wifiBogor-Depok/"/>
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="WiFi Bogor Depok | Paket Internet & Pemasangan"/>
-<meta name="twitter:description" content="Lihat pilihan paket internet dan ajukan pemasangan WiFi di Bogor dan Depok."/>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "WiFi Bogor-Depok",
-  "url": "https://naysi-e.github.io/wifiBogor-Depok/",
-  "inLanguage": "id-ID",
-  "description": "Informasi paket internet dan pemasangan WiFi untuk wilayah Bogor dan Depok."
-}
-</script>
-<style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            color: #222;
-            background: #000000;
-            overflow-x: hidden;
-        }
-
-
-        /* =================================
-           NAVBAR
-        ================================= */
-
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-
-            width: 100%;
-            padding: 15px 7%;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            background: rgba(0, 0, 0, 0.9);
-            backdrop-filter: blur(15px);
-
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-
-            z-index: 999;
-        }
-
-        .brand {
-            font-size: 22px;
-            font-weight: bold;
-            color: #1769c2;
-        }
-
-        .brand span {
-            color: #35a65a;
-        }
-
-        .menu {
-            display: flex;
-            gap: 28px;
-        }
-
-        .menu a {
-            text-decoration: none;
-            color: #f1e0ba;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .menu a:hover {
-            color: #1769c2;
-        }
-
-        /* =================================
-           POPUP PROMO
-        ================================= */
-
-        .popup-overlay {
-            position: fixed;
-            inset: 0;
-
-            z-index: 99999;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            padding: 20px;
-
-            background: rgba(0,0,0,0.78);
-            backdrop-filter: blur(7px);
-
-            opacity: 0;
-            visibility: hidden;
-
-            transition: opacity 0.35s ease,
-                        visibility 0.35s ease;
-        }
-
-        .popup-overlay.show {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .popup-box {
-            position: relative;
-
-            width: 100%;
-            max-width: 430px;
-
-            background: rgb(225, 210, 180);
-
-            border-radius: 25px;
-
-            overflow: hidden;
-
-            box-shadow:
-                0 25px 80px #f3c6666f;
-
-            transform: scale(0.8) translateY(30px);
-
-            transition: 0.35s ease;
-        }
-
-        .popup-overlay.show .popup-box {
-            transform: scale(1) translateY(0);
-        }
-
-        .popup-close {
-            position: absolute;
-
-            top: 12px;
-            right: 12px;
-
-            width: 40px;
-            height: 40px;
-
-            border: none;
-            border-radius: 50%;
-
-            background: rgba(32, 31, 31, 0.65);
-
-            color: rgb(244, 241, 241);
-
-            font-size: 27px;
-            line-height: 40px;
-
-            cursor: pointer;
-
-            z-index: 10;
-
-            transition: 0.3s;
-        }
-
-        .popup-close:hover {
-            background: #050505;
-            transform: rotate(90deg);
-        }
-
-        .popup-image {
-            width: 100%;
-            display: block;
-        }
-
-        .popup-content {
-            padding: 25px;
-
-            text-align: center;
-        }
-
-        .popup-content h2 {
-            color: #003a73;
-
-            margin-bottom: 10px;
-
-            font-size: 25px;
-        }
-
-        .popup-content p {
-            color: #666;
-
-            line-height: 1.6;
-
-            margin-bottom: 20px;
-        }
-
-        .popup-wa:hover {
-            transform: translateY(-3px);
-
-            box-shadow:
-                0 10px 25px rgba(54, 13, 202, 0.3);
-        }
-
-        .popup-later:hover {
-            color: #dae1e8;
-        }
-
-
-        /* =================================
-           HERO
-        ================================= */
-
-        .hero {
-            min-height: 100vh;
-
-            padding: 130px 8% 80px;
-
-            display: flex;
-            align-items: center;
-
-            position: relative;
-
-            background:
-                radial-gradient(
-                    circle at 10% 20%,
-                    rgba(255, 232, 118, 0.18),
-                    transparent 30%
-                ),
-
-                radial-gradient(
-                    circle at 90% 80%,
-                    rgba(245, 217, 3, 0.18),
-                    transparent 30%
-                ),
-
-                linear-gradient(
-                    135deg,
-                    #121212,
-                    #000000
-                );
-        }
-
-
-        .hero::before {
-            content: "";
-
-            position: absolute;
-
-            width: 400px;
-            height: 400px;
-
-            border-radius: 50%;
-
-            background: rgba(231, 242, 132, 0.08);
-
-            top: -150px;
-            right: -150px;
-        }
-
-        .hero::after {
-            content: "";
-
-            position: absolute;
-
-            width: 300px;
-            height: 300px;
-
-            border-radius: 50%;
-
-            background: rgba(66,168,95,0.08);
-
-            bottom: -120px;
-            left: -100px;
-        }
-
-
-        .hero-container {
-
-            width: 100%;
-            max-width: 1200px;
-
-            margin: auto;
-
-            display: grid;
-
-            grid-template-columns:
-                0.9fr 1.1fr;
-
-            gap: 80px;
-
-            align-items: center;
-
-            position: relative;
-
-            z-index: 2;
-        }
-
-        
-        /* =================================
-           LOGO
-        ================================= */
-
-        .logo-wrapper {
-            display: flex;
-
-            justify-content: center;
-            align-items: center;
-        }
-
-        .logo-circle {
-
-            width: 390px;
-            height: 390px;
-
-            border-radius: 50%;
-
-            background-image:
-                url("06.jpeg");
-
-            background-size: cover;
-
-            background-position: center;
-
-            background-repeat: no-repeat;
-
-            background-color: rgb(245, 217, 3, 0.18);
-
-            border: 10px solid
-                rgba(245, 217, 3, 0.18);
-
-            box-shadow:
-                0 25px 70px
-                rgba(137, 126, 0, 0.525);
-
-            animation:
-                floating 5s ease-in-out infinite;
-
-            position: relative;
-        }
-
-        .logo-circle::after {
-
-            content: "";
-
-            position: absolute;
-
-            inset: -15px;
-
-            border-radius: 50%;
-
-            border: 2px solid
-                rgba(23,105,194,0.15);
-
-            animation:
-                pulse 3s infinite;
-        }
-
-
-        /* =================================
-           HERO TEXT
-        ================================= */
-
-        .badge {
-
-            display: inline-block;
-
-            padding: 9px 18px;
-
-            border-radius: 30px;
-
-            background:
-                rgba(66,168,95,0.12);
-
-            color: #adada9;
-
-            font-weight: bold;
-
-            margin-bottom: 18px;
-        }
-
-        .hero h1 {
-
-            font-size: 60px;
-
-            line-height: 1.05;
-
-            color: #1769c2;
-
-            margin-bottom: 20px;
-        }
-
-        .hero h1 span {
-            color: #35a65a;
-        }
-
-        .hero-description {
-
-            font-size: 18px;
-
-            line-height: 1.8;
-
-            color: #adada9;
-
-            max-width: 650px;
-
-            margin-bottom: 30px;
-        }
-
-
-        /* =================================
-           BUTTON
-        ================================= */
-
-        .buttons {
-
-            display: flex;
-
-            gap: 15px;
-
-            flex-wrap: wrap;
-        }
-
-        .btn {
-
-            display: inline-flex;
-
-            align-items: center;
-
-            gap: 8px;
-
-            padding: 15px 27px;
-
-            border-radius: 40px;
-
-            text-decoration: none;
-
-            font-weight: bold;
-
-            transition: 0.3s;
-        }
-
-        .btn-primary {
-
-            color: white;
-
-            background:
-                linear-gradient(
-                    90deg,
-                    #767617,
-                    #000000
-                );
-
-            box-shadow:
-                0 10px 25px
-                rgba(137, 126, 0, 0.525);;
-
-            border: 2px solid (137, 126, 0, 0.525);
-        }
-
-        .btn-primary:hover {
-
-            transform: translateY(-15px);
-
-            box-shadow:
-                0 15px 35px
-                rgba(23, 194, 23, 0.35);
-        }
-
-        .btn-secondary {
-
-            color: #fafcfe;
-
-            background: 
-                linear-gradient(
-                    90deg,
-                    #767617,
-                    #000000
-                );
-
-            box-shadow:
-                0 10px 25px
-                rgba(137, 126, 0, 0.525);
-
-            border: 2px solid (137, 126, 0, 0.525);
-        }
-
-        .btn-secondary:hover {
-
-            transform: translateY(-15px);
-
-            box-shadow:
-                0 15px 35px
-                rgba(23, 194, 23, 0.35);
-        }
-
-
-        /* =================================
-           STAT
-        ================================= */
-
-        .stats {
-
-            display: flex;
-
-            gap: 35px;
-
-            margin-top: 35px;
-
-            flex-wrap: wrap;
-        }
-
-        .stat h3 {
-
-            font-size: 25px;
-
-            color: #1769c2;
-        }
-
-        .stat p {
-
-            font-size: 13px;
-
-            color: #adada9;
-;
-
-            margin-top: 4px;
-        }
-
-
-        /* =================================
-           SECTION
-        ================================= */
-
-        section {
-            scroll-margin-top: 80px;
-        }
-
-
-        /* =================================
-           PAKET
-        ================================= */
-        .paket-section {
-            display: none; /* Paket disembunyikan sampai domisili dipilih */
-            padding: 100px 7%;
-
-            background: rgb(0, 0, 0);
-
-            position: relative;
-        }
-
-        .section-title {
-
-            text-align: center;
-
-            margin-bottom: 55px;
-        }
-
-        .section-title .small {
-
-            color: #42a85f;
-
-            font-weight: bold;
-
-            letter-spacing: 3px;
-
-            text-transform: uppercase;
-        }
-
-        .section-title h2 {
-
-            font-size: 45px;
-
-            color: #1769c2;
-
-            margin: 10px 0;
-        }
-
-        .section-title h2 span {
-
-            color: #42a85f;
-        }
-
-        .section-title p {
-
-            color: #777;
-
-            font-size: 17px;
-        }
-
-
-        /* =================================
-           POSTER GRID
-        ================================= */
-
-        .poster-grid {
-
-            max-width: 1200px;
-
-            margin: auto;
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(2, 1fr);
-
-            gap: 40px;
-        }
-
-        .poster-card {
-
-            width: 100%;
-            height: 620px;
-
-            display: flex;
-            flex-direction: column;
-
-            background: rgb(61, 60, 60);
-
-            border-radius: 25px;
-
-            padding: 12px;
-
-            box-shadow:
-            0 15px 50px
-            rgba(0,0,0,0.12);
-
-            transition: 0.4s;
-
-            overflow: hidden;
-
-            border: 1px solid #ffffff;
-        }
-        
-
-        .poster-card:hover {
-
-            transform: translateY(-12px);
-
-            box-shadow:
-                0 25px 60px
-                rgba(0,0,0,0.18);
-        }
-
-        .poster-img {
-
-            width: 100%;
-            height: 450px;
-
-            display: block;
-
-            object-fit: cover;
-            object-position: center;
-
-            border-radius: 18px;
-
-            transition: 0.4s;
-
-            flex-shrink: 0;
-        }
-
-        .poster-card:hover .poster-img {
-
-            transform: scale(1.02);
-        }
-
-        .poster-content {
-
-            flex: 1;
-
-            padding: 22px;
-
-            text-align: center;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .poster-content h3 {
-
-            font-size: 23px;
-
-            color: #ffffff;
-
-            margin-bottom: 8px;
-        }
-
-        .poster-content p {
-
-            color: #6e6c6c;
-
-            line-height: 1.6;
-
-            margin-bottom: 20px;
-        }
-
-        .poster-btn {
-
-            display: inline-block;
-
-            padding: 18px 40px;
-
-            border-radius: 30px;
-
-            background:
-                linear-gradient(
-                    90deg,
-                    #232323,
-                    #232323
-                );
-
-                box-shadow:
-                0 12px 25px
-                rgba(233, 221, 87, 0.525);
-
-            border: 5px solid #a39427a6;
-
-            color: rgba(255, 255, 255, 0.895);
-
-            text-decoration: none;
-
-            font-weight: bold;
-
-            transition: 0.3s;
-        }
-
-        .poster-btn:hover {
-
-            transform: scale(1.05);
-        }
-
-
-        /* =================================
-           KEUNGGULAN
-        ================================= */
-
-        .features {
-
-            padding: 100px 7%;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #092034,
-                    #000000
-                );
-        }
-
-        .feature-grid {
-
-            max-width: 1100px;
-
-            margin: auto;
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(3,1fr);
-
-            gap: 25px;
-        }
-
-        .feature {
-
-            background:
-                rgba(185, 183, 183, 0.9);
-
-            padding: 35px 25px;
-
-            border-radius: 20px;
-
-            text-align: center;
-
-            box-shadow:
-                0 10px 30px
-                rgba(0,0,0,0.07);
-
-            transition: 0.3s;
-        }
-
-        .feature:hover {
-
-            transform: translateY(-8px);
-        }
-
-        .feature-icon {
-
-            width: 70px;
-            height: 70px;
-
-            margin:
-                auto auto 18px;
-
-            border-radius: 50%;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            font-size: 32px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #767617,
-                    #000000
-                );
-
-            color: rgb(0, 0, 0);
-        }
-
-        .feature h3 {
-
-            color: #1769c2;
-
-            margin-bottom: 10px;
-        }
-
-        .feature p {
-
-            color: #666;
-
-            line-height: 1.6;
-        }
-
-
-        /* =================================
-           CTA
-        ================================= */
-
-        .cta {
-
-            padding: 100px 20px;
-
-            text-align: center;
-
-            color: white;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #020202,
-                    #0f4254,
-                    #000101
-                );
-
-            position: relative;
-
-            overflow: hidden;
-        }
-
-        .cta h2 {
-
-            font-size: 45px;
-
-            margin-bottom: 15px;
-        }
-
-        .cta p {
-
-            font-size: 18px;
-
-            margin-bottom: 30px;
-        }
-
-        .cta .btn {
-
-            background: white;
-
-            color: #1769c2;
-
-            padding: 16px 30px;
-        }
-
-        .cta .btn:hover {
-
-            transform: translateY(-5px);
-
-            box-shadow:
-                0 15px 30px
-                rgba(0,0,0,0.2);
-        }
-
-
-        /* =================================
-           FOOTER
-        ================================= */
-
-        footer {
-
-            padding: 25px;
-
-            text-align: center;
-
-            background: #fff;
-
-            color: #777;
-
-            font-size: 14px;
-        }
-
-
-        /* =================================
-           ANIMATION
-        ================================= */
-
-        @keyframes floating {
-
-            0%,100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-15px);
-            }
-        }
-
-        @keyframes pulse {
-
-            0% {
-
-                transform: scale(1);
-
-                opacity: 0.8;
-            }
-
-            100% {
-
-                transform: scale(1.08);
-
-                opacity: 0;
-            }
-        }
-
-
-
-        /* =================================
-           TOMBOL MUSIK
-        ================================= */
-
-        .music-button {
-            position: fixed;
-            right: 25px;
-            bottom: 25px;
-            width: 55px;
-            height: 55px;
-            border: none;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #000000, #e0ca65);
-            color: white;
-            font-size: 25px;
-            cursor: pointer;
-            z-index: 100000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.35);
-            transition: 0.3s ease;
-        }
-
-        .music-button:hover {
-            transform: scale(1.1);
-        }
-
-        .music-button:active {
-            transform: scale(0.95);
-        }
-
-        /* =================================
-           MOBILE
-        ================================= */
-
-
-        /* RESPONSIVE HP & TABLET */
-        .menu-toggle { display:none; border:0; background:transparent; color:#f1e0ba; font-size:28px; cursor:pointer; padding:6px; }
-        img { max-width:100%; height:auto; }
-        a, button { -webkit-tap-highlight-color:transparent; }
-
-        @media (max-width:850px) {
-            nav { padding:12px 5%; min-height:62px; }
-            .brand { font-size:18px; white-space:nowrap; }
-            .menu-toggle { display:block; z-index:1001; }
-            .menu { position:absolute; top:100%; right:5%; left:5%; display:none; flex-direction:column; gap:0; padding:10px; background:rgba(10,10,10,.98); border:1px solid rgba(245,217,3,.2); border-radius:16px; box-shadow:0 15px 35px rgba(0,0,0,.4); }
-            .menu.active { display:flex; }
-            .menu a { display:block; padding:13px 15px; font-size:14px; border-radius:10px; }
-            .menu a:hover { background:rgba(255,255,255,.08); }
-            .hero { min-height:auto; padding:115px 5% 65px; }
-            .hero-container { grid-template-columns:1fr; gap:35px; text-align:center; }
-            .logo-circle { width:min(72vw,300px); height:min(72vw,300px); border-width:7px; }
-            .hero h1 { font-size:clamp(34px,9vw,48px); line-height:1.1; }
-            .hero-description { font-size:16px; line-height:1.7; margin-left:auto; margin-right:auto; }
-            .buttons { justify-content:center; }
-            .btn { min-height:48px; padding:13px 20px; }
-            .stats { justify-content:center; gap:25px; }
-            .paket-section, .features { padding:70px 5%; }
-            .section-title { margin-bottom:35px; }
-            .section-title h2 { font-size:clamp(30px,8vw,40px); }
-            .section-title p { font-size:15px; line-height:1.6; }
-            .poster-grid { grid-template-columns:1fr; gap:25px; max-width:600px; }
-            .poster-card { padding:8px; border-radius:18px; }
-            .poster-content { padding:16px 10px 18px; }
-            .poster-content h3 { font-size:20px; }
-            .poster-btn { width:100%; padding:14px 18px; border-width:3px; }
-            .feature-grid { grid-template-columns:1fr; max-width:600px; gap:18px; }
-            .feature { padding:28px 20px; }
-            .cta { padding:70px 5%; }
-            .cta h2 { font-size:clamp(30px,8vw,40px); }
-            .cta p { font-size:16px; line-height:1.6; }
-            .music-button { width:50px; height:50px; right:16px; bottom:16px; font-size:22px; }
-            .popup-overlay { padding:12px; }
-            .popup-box { max-width:min(94vw,390px); max-height:92vh; overflow-y:auto; border-radius:20px; }
-            .popup-content { padding:16px; }
-            .popup-content h2 { font-size:20px; }
-            .popup-content p { font-size:14px; line-height:1.5; }
-        }
-        @media (max-width:480px) {
-            .hero { padding-top:100px; }
-            .logo-circle { width:min(68vw,240px); height:min(68vw,240px); }
-            .badge { font-size:12px; padding:8px 12px; }
-            .hero-description { font-size:15px; }
-            .buttons { flex-direction:column; width:100%; max-width:360px; margin:auto; }
-            .btn { width:100%; justify-content:center; }
-            .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
-            .stat h3 { font-size:19px; }
-            .stat p { font-size:11px; }
-            .paket-section, .features { padding:55px 4%; }
-            .poster-grid { gap:18px; }
-            .feature-icon { width:60px; height:60px; font-size:27px; }
-            footer { padding:20px 12px; font-size:12px; }
-        }
-        @media (min-width:851px) { .menu a { white-space:nowrap; } }
-        @media(max-width:850px) {
-
-            nav {
-
-                padding: 15px 5%;
-            }
-
-            .menu {
-
-                gap: 12px;
-            }
-
-            .menu a {
-
-                font-size: 12px;
-            }
-
-            .hero {
-
-                padding:
-                    120px 6% 70px;
-            }
-
-            .hero-container {
-
-                grid-template-columns: 1fr;
-
-                text-align: center;
-
-                gap: 50px;
-            }
-
-            .logo-circle {
-
-                width: 280px;
-
-                height: 280px;
-            }
-
-            .hero h1 {
-
-                font-size: 42px;
-            }
-
-            .hero-description {
-
-                font-size: 16px;
-            }
-
-            .buttons {
-
-                justify-content: center;
-            }
-
-            .stats {
-
-                justify-content: center;
-            }
-
-            .poster-grid {
-
-                grid-template-columns: 1fr;
-            }
-
-            .feature-grid {
-
-                grid-template-columns: 1fr;
-            }
-
-            .section-title h2 {
-
-                font-size: 34px;
-            }
-
-            .cta h2 {
-
-                font-size: 34px;
-            }
-
-            .popup-box {
-
-                max-width: 360px;
-            }
-
-            .popup-content {
-
-                padding: 20px;
-            }
-        }
-
-
-        @media(max-width:500px) {
-
-            .brand {
-
-                font-size: 17px;
-            }
-
-            .menu {
-
-                gap: 8px;
-            }
-
-            .menu a {
-
-                font-size: 10px;
-            }
-
-            .logo-circle {
-
-                width: 240px;
-
-                height: 240px;
-            }
-
-            .hero h1 {
-
-                font-size: 36px;
-            }
-
-            .stats {
-
-                gap: 20px;
-            }
-
-            .popup-box {
-
-                max-width: 330px;
-            }
-
-            .popup-content h2 {
-
-                font-size: 21px;
-            }
-        }
-
-
-
-        /* AREA CHECKER & ULASAN */
-        .area-section, .review-section { padding: 85px 7%; background:#080d12; color:#f5f7fa; }
-        .area-wrap, .review-wrap { max-width:1100px; margin:auto; }
-        .area-panel { display:grid; grid-template-columns:1fr 1.1fr; gap:28px; align-items:center; }
-        .area-copy h2, .review-heading h2 { font-size:clamp(30px,4vw,43px); color:#f5d903; margin:12px 0; }
-        .area-copy p, .review-heading p { color:#c1c8d0; line-height:1.75; }
-        .area-form, .review-form { background:#121a22; border:1px solid #293744; padding:28px; border-radius:22px; box-shadow:0 18px 45px rgba(0,0,0,.22); }
-        .form-field { margin-bottom:16px; }
-        .form-field label { display:block; color:#f3f4f6; font-weight:700; margin-bottom:8px; }
-        .form-field input, .form-field select, .form-field textarea { width:100%; padding:13px 14px; border:1px solid #394957; border-radius:11px; background:#080d12; color:#fff; font:inherit; outline:none; }
-        .form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color:#f5d903; box-shadow:0 0 0 3px rgba(245,217,3,.12); }
-        .form-field textarea { min-height:105px; resize:vertical; }
-        .area-submit, .review-submit { width:100%; border:0; border-radius:12px; padding:14px 18px; font-weight:800; cursor:pointer; background:linear-gradient(90deg,#f5d903,#d4a900); color:#101010; font-size:15px; transition:.2s; }
-        .area-submit:hover, .review-submit:hover { transform:translateY(-2px); }
-        .area-result { display:none; margin-top:16px; padding:14px; border-radius:12px; line-height:1.6; background:#172a20; color:#d8fbe2; border:1px solid #2e6943; }
-        .area-note { font-size:12px!important; margin-top:12px; color:#9ca8b4!important; }
-        .review-section { background:linear-gradient(135deg,#0d1c28,#030608); }
-        .review-heading { text-align:center; max-width:720px; margin:0 auto 34px; }
-        .review-summary { display:flex; justify-content:center; align-items:center; gap:14px; margin-top:18px; }
-        .review-score { font-size:42px; font-weight:900; color:#f5d903; }
-        .stars { color:#f5d903; letter-spacing:2px; font-size:20px; }
-        .review-layout { display:grid; grid-template-columns:.85fr 1.15fr; gap:25px; align-items:start; }
-        .rating-input { display:flex; gap:7px; flex-direction:row-reverse; justify-content:flex-end; margin:4px 0 18px; }
-        .rating-input input { position:absolute; opacity:0; pointer-events:none; }
-        .rating-input label { cursor:pointer; font-size:31px; color:#53606c; transition:.15s; }
-        .rating-input label:hover, .rating-input label:hover ~ label, .rating-input input:checked ~ label { color:#f5d903; }
-        .review-list { display:grid; gap:14px; }
-        .review-card { background:#121a22; border:1px solid #293744; border-radius:16px; padding:20px; }
-        .review-card-top { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:9px; }
-        .review-card strong { color:#fff; }
-        .review-card time { color:#8c9aa7; font-size:12px; }
-        .review-card p { color:#c7d0d8; line-height:1.65; overflow-wrap:anywhere; }
-        .review-area { font-size:12px; color:#9eacb8; margin-top:10px; }
-        .empty-reviews { padding:25px; border:1px dashed #394957; border-radius:16px; color:#aab6c1; text-align:center; }
-        .review-warning { color:#9ca8b4; font-size:12px; line-height:1.6; margin-top:12px; }
-        @media(max-width:800px) { .area-section,.review-section{padding:65px 5%;} .area-panel,.review-layout{grid-template-columns:1fr;} .area-form,.review-form{padding:21px;} }
-
-
-
-        /* ==========================================
-           RESPONSIVE FINAL OVERRIDES
-           Laptop, tablet, and mobile phone
-        ========================================== */
-        :root { color-scheme: dark; }
-        html { width:100%; max-width:100%; scroll-padding-top:85px; }
-        body { width:100%; min-width:320px; max-width:100%; overflow-x:clip; }
-        img, video, iframe { max-width:100%; }
-        input, select, textarea, button { max-width:100%; }
-        section { width:100%; }
-        .hero-container, .poster-grid, .feature-grid, .area-wrap, .review-wrap { min-width:0; }
-        .hero-container > *, .poster-card, .feature, .area-panel > *, .review-layout > * { min-width:0; }
-        .hero h1 { font-size:clamp(2.15rem, 5vw, 3.75rem); overflow-wrap:anywhere; }
-        .section-title h2, .cta h2 { font-size:clamp(1.8rem, 4vw, 2.8rem); overflow-wrap:anywhere; }
-        .hero-description, .section-title p, .feature p, .area-copy p, .review-heading p { overflow-wrap:anywhere; }
-        .poster-card { height:auto; min-height:0; }
-        .poster-img { height:auto; aspect-ratio: 4 / 3; object-fit:contain; }
-        .poster-content { gap:14px; }
-        .poster-btn { max-width:100%; overflow-wrap:anywhere; }
-        .area-form, .review-form { min-width:0; }
-        .review-card-top { flex-wrap:wrap; }
-        .rating-input { flex-direction:row-reverse; justify-content:flex-end; flex-wrap:wrap; }
-        .rating-input label { font-size:clamp(1.7rem, 6vw, 2rem); }
-        .review-summary { flex-wrap:wrap; }
-        .form-field input, .form-field select, .form-field textarea { min-height:46px; font-size:16px; }
-        .form-field textarea { min-height:120px; }
-        .btn, .poster-btn, .area-submit, .review-submit { min-height:46px; }
-        nav { gap:16px; }
-        .brand { line-height:1.25; }
-
-        @media (min-width:1200px) {
-            .hero-container { gap:clamp(35px, 5vw, 80px); }
-            .logo-circle { width:min(32vw, 390px); height:min(32vw, 390px); }
-            .poster-grid { grid-template-columns:repeat(2, minmax(0, 1fr)); }
-        }
-        @media (max-width:850px) {
-            nav { padding:12px 5%; }
-            .menu { max-width:90vw; }
-            .hero { min-height:auto; }
-            .hero-container { grid-template-columns:minmax(0,1fr); gap:32px; }
-            .logo-wrapper { order:0; }
-            .hero-container > div:last-child { order:1; }
-            .logo-circle { width:min(65vw, 280px); height:min(65vw, 280px); }
-            .poster-grid { grid-template-columns:minmax(0,1fr); }
-            .feature-grid { grid-template-columns:minmax(0,1fr); }
-            .area-panel, .review-layout { grid-template-columns:minmax(0,1fr); }
-            .area-section, .review-section { padding:64px 5%; }
-        }
-        @media (max-width:600px) {
-            html { scroll-padding-top:72px; }
-            nav { min-height:62px; padding:10px 4%; }
-            .brand { font-size:clamp(15px, 4vw, 18px); white-space:normal; }
-            .menu { right:4%; left:4%; max-width:none; }
-            .menu a { font-size:14px; padding:12px; }
-            .hero { padding:100px 5% 55px; }
-            .hero-container { gap:25px; }
-            .logo-circle { width:min(62vw, 230px); height:min(62vw, 230px); }
-            .hero h1 { font-size:clamp(2rem, 9vw, 2.7rem); }
-            .hero-description { font-size:15px; line-height:1.65; }
-            .buttons { width:100%; max-width:380px; margin-inline:auto; flex-direction:column; gap:12px; }
-            .buttons .btn { width:100%; justify-content:center; }
-            .stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
-            .stat h3 { font-size:clamp(16px, 4.5vw, 21px); overflow-wrap:anywhere; }
-            .stat p { font-size:11px; }
-            .paket-section, .features { padding:56px 5%; }
-            .poster-card { padding:8px; }
-            .poster-img { aspect-ratio:4 / 3; height:auto; }
-            .poster-content { padding:15px 10px; }
-            .poster-btn { width:100%; padding:13px 14px; font-size:14px; }
-            .feature { padding:25px 18px; }
-            .area-section, .review-section { padding:52px 4%; }
-            .area-form, .review-form { padding:18px; border-radius:16px; }
-            .area-copy h2, .review-heading h2 { font-size:clamp(27px, 8vw, 36px); }
-            .review-summary { gap:10px; }
-            .review-score { font-size:36px; }
-            .review-card { padding:15px; }
-            .cta { padding:58px 5%; }
-            .cta p { font-size:16px; }
-            .popup-overlay { padding:10px; }
-            .popup-box { width:100%; max-width:380px; max-height:90dvh; overflow-y:auto; }
-            .popup-image { height:auto; object-fit:contain; }
-            .popup-content { padding:16px; }
-            .music-button { right:12px; bottom:12px; width:46px; height:46px; }
-        }
-        @media (max-width:380px) {
-            .brand { font-size:14px; }
-            .menu-toggle { font-size:25px; }
-            .hero { padding-inline:4%; }
-            .hero h1 { font-size:31px; }
-            .stats { gap:6px; }
-            .stat h3 { font-size:15px; }
-            .stat p { font-size:10px; }
-            .area-form, .review-form { padding:14px; }
-            .form-field input, .form-field select, .form-field textarea { padding:11px; }
-            .review-card-top { align-items:flex-start; }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
-        }
-
-    
-        /* ==========================================
-           RESPONSIVE STABILITY PATCH
-           Desktop, laptop, tablet, and mobile
-        ========================================== */
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        html {
-            width: 100%;
-            max-width: 100%;
-            overflow-x: clip;
-            -webkit-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-            scroll-padding-top: 90px;
-        }
-
-        body {
-            width: 100%;
-            min-width: 320px;
-            max-width: 100%;
-            overflow-x: clip;
-        }
-
-        img, video, iframe, canvas, svg {
-            max-width: 100%;
-        }
-
-        input, select, textarea, button {
-            font: inherit;
-            max-width: 100%;
-        }
-
-        section {
-            width: 100%;
-            min-width: 0;
-        }
-
-        .hero-container,
-        .poster-grid,
-        .feature-grid,
-        .area-wrap,
-        .review-wrap,
-        .area-panel,
-        .review-layout {
-            min-width: 0;
-        }
-
-        .hero-container > *,
-        .poster-card,
-        .feature,
-        .area-panel > *,
-        .review-layout > *,
-        .poster-content {
-            min-width: 0;
-        }
-
-        .hero h1,
-        .section-title h2,
-        .cta h2,
-        .brand,
-        .hero-description,
-        .section-title p,
-        .feature p,
-        .area-copy p,
-        .review-heading p,
-        .poster-content h3 {
-            overflow-wrap: anywhere;
-        }
-
-        .hero-container {
-            grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
-            gap: clamp(24px, 5vw, 70px);
-        }
-
-        .logo-circle {
-            width: min(32vw, 390px);
-            height: auto;
-            aspect-ratio: 1 / 1;
-        }
-
-        .poster-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .poster-card {
-            height: auto;
-            min-height: 0;
-        }
-
-        .poster-img {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 4 / 3;
-            object-fit: contain;
-        }
-
-        .poster-content {
-            flex: 1;
-            gap: 14px;
-        }
-
-        .poster-btn {
-            max-width: 100%;
-            overflow-wrap: anywhere;
-        }
-
-        .feature-grid {
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-        }
-
-        .area-panel {
-            grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
-        }
-
-        .review-layout {
-            grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
-        }
-
-        .area-form,
-        .review-form {
-            min-width: 0;
-        }
-
-        .form-field input,
-        .form-field select,
-        .form-field textarea {
-            width: 100%;
-            min-width: 0;
-            min-height: 46px;
-            font-size: 16px;
-        }
-
-        .form-field textarea {
-            min-height: 120px;
-        }
-
-        .review-card-top {
-            flex-wrap: wrap;
-        }
-
-        .nav-placeholder {
-            display: none;
-        }
-
-        nav {
-            gap: 16px;
-        }
-
-        .brand {
-            min-width: 0;
-            line-height: 1.25;
-        }
-
-        .menu a {
-            white-space: nowrap;
-        }
-
-        .popup-overlay {
-            padding: max(10px, env(safe-area-inset-top)) 12px;
-        }
-
-        .popup-box {
-            width: 100%;
-            max-width: 430px;
-            max-height: 90vh;
-            max-height: 90dvh;
-            overflow-y: auto;
-            overscroll-behavior: contain;
-        }
-
-        .popup-image {
-            display: block;
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-        }
-
-        .music-button {
-            right: max(12px, env(safe-area-inset-right));
-            bottom: max(12px, env(safe-area-inset-bottom));
-        }
-
-        @media (max-width: 1024px) {
-            nav {
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-
-            .hero {
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-
-            .hero-container {
-                grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-                gap: 28px;
-            }
-
-            .logo-circle {
-                width: min(38vw, 320px);
-            }
-
-            .hero h1 {
-                font-size: clamp(2rem, 4.8vw, 3.2rem);
-            }
-
-            .menu {
-                gap: clamp(8px, 1.5vw, 20px);
-            }
-
-            .menu a {
-                font-size: clamp(11px, 1.2vw, 14px);
-            }
-
-            .poster-grid {
-                gap: 24px;
-            }
-        }
-
-        @media (max-width: 850px) {
-            nav {
-                min-height: 62px;
-                padding: 10px 5%;
-            }
-
-            .menu-toggle {
-                display: block;
-                flex: 0 0 auto;
-                min-width: 44px;
-                min-height: 44px;
-            }
-
-            .menu {
-                position: absolute;
-                top: calc(100% + 6px);
-                right: 4%;
-                left: 4%;
-                display: none;
-                flex-direction: column;
-                align-items: stretch;
-                gap: 2px;
-                max-width: none;
-                padding: 10px;
-                background: rgba(10, 10, 10, .98);
-                border: 1px solid rgba(245, 217, 3, .2);
-                border-radius: 16px;
-                box-shadow: 0 15px 35px rgba(0, 0, 0, .4);
-            }
-
-            .menu.active {
-                display: flex;
-            }
-
-            .menu a {
-                display: block;
-                padding: 12px 14px;
-                font-size: 14px;
-                white-space: normal;
-            }
-
-            .hero {
-                min-height: auto;
-                padding: 105px 5% 60px;
-            }
-
-            .hero-container {
-                grid-template-columns: minmax(0, 1fr);
-                gap: 30px;
-                text-align: center;
-            }
-
-            .logo-wrapper {
-                order: 0;
-            }
-
-            .hero-container > div:last-child {
-                order: 1;
-            }
-
-            .logo-circle {
-                width: min(65vw, 280px);
-            }
-
-            .hero h1 {
-                font-size: clamp(2.1rem, 7vw, 3rem);
-            }
-
-            .hero-description {
-                margin-left: auto;
-                margin-right: auto;
-                font-size: 16px;
-            }
-
-            .buttons,
-            .stats {
-                justify-content: center;
-            }
-
-            .paket-section,
-            .features {
-                padding: 65px 5%;
-            }
-
-            .poster-grid,
-            .feature-grid,
-            .area-panel,
-            .review-layout {
-                grid-template-columns: minmax(0, 1fr);
-            }
-
-            .poster-grid {
-                max-width: 600px;
-            }
-
-            .feature-grid {
-                max-width: 600px;
-            }
-
-            .area-section,
-            .review-section {
-                padding: 60px 5%;
-            }
-
-            .cta {
-                padding: 70px 5%;
-            }
-        }
-
-        @media (max-width: 600px) {
-            html {
-                scroll-padding-top: 72px;
-            }
-
-            .brand {
-                font-size: clamp(14px, 4vw, 18px);
-            }
-
-            .hero {
-                padding: 96px 5% 50px;
-            }
-
-            .hero-container {
-                gap: 24px;
-            }
-
-            .logo-circle {
-                width: min(62vw, 230px);
-            }
-
-            .badge {
-                font-size: 12px;
-                padding: 8px 12px;
-                line-height: 1.5;
-            }
-
-            .hero h1 {
-                font-size: clamp(1.9rem, 8.5vw, 2.6rem);
-                line-height: 1.12;
-            }
-
-            .hero-description {
-                font-size: 15px;
-                line-height: 1.65;
-            }
-
-            .buttons {
-                width: 100%;
-                max-width: 380px;
-                margin-inline: auto;
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            .buttons .btn {
-                width: 100%;
-                min-height: 48px;
-                justify-content: center;
-                text-align: center;
-            }
-
-            .stats {
-                display: grid;
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-                gap: 10px;
-            }
-
-            .stat h3 {
-                font-size: clamp(15px, 4.4vw, 20px);
-                overflow-wrap: anywhere;
-            }
-
-            .stat p {
-                font-size: 11px;
-                overflow-wrap: anywhere;
-            }
-
-            .section-title {
-                margin-bottom: 32px;
-            }
-
-            .section-title h2,
-            .cta h2 {
-                font-size: clamp(1.75rem, 7.5vw, 2.4rem);
-            }
-
-            .section-title p,
-            .cta p {
-                font-size: 15px;
-                line-height: 1.6;
-            }
-
-            .poster-card {
-                padding: 8px;
-                border-radius: 18px;
-            }
-
-            .poster-img {
-                aspect-ratio: 4 / 3;
-            }
-
-            .poster-content {
-                padding: 15px 10px;
-            }
-
-            .poster-content h3 {
-                font-size: 20px;
-            }
-
-            .poster-btn {
-                width: 100%;
-                padding: 13px 14px;
-                border-width: 3px;
-                font-size: 14px;
-            }
-
-            .feature {
-                padding: 25px 18px;
-            }
-
-            .area-section,
-            .review-section {
-                padding: 50px 4%;
-            }
-
-            .area-form,
-            .review-form {
-                padding: 16px;
-                border-radius: 16px;
-            }
-
-            .area-copy h2,
-            .review-heading h2 {
-                font-size: clamp(1.65rem, 7.5vw, 2.2rem);
-            }
-
-            .review-summary {
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-
-            .review-score {
-                font-size: 36px;
-            }
-
-            .review-card {
-                padding: 15px;
-            }
-
-            .cta {
-                padding: 55px 5%;
-            }
-
-            .popup-content {
-                padding: 16px;
-            }
-
-            footer {
-                padding: 20px 12px;
-                font-size: 12px;
-                line-height: 1.6;
-            }
-        }
-
-        @media (max-width: 380px) {
-            nav {
-                padding-left: 4%;
-                padding-right: 4%;
-            }
-
-            .brand {
-                font-size: 13px;
-            }
-
-            .hero {
-                padding-left: 4%;
-                padding-right: 4%;
-            }
-
-            .hero h1 {
-                font-size: clamp(1.75rem, 8vw, 2rem);
-            }
-
-            .stats {
-                gap: 6px;
-            }
-
-            .stat h3 {
-                font-size: 14px;
-            }
-
-            .stat p {
-                font-size: 10px;
-            }
-
-            .area-form,
-            .review-form {
-                padding: 13px;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            *,
-            *::before,
-            *::after {
-                scroll-behavior: auto !important;
-                animation-duration: .01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: .01ms !important;
-            }
-        }
-
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WiFi Bogor-Depok - Internet cepat, stabil, dan terjangkau untuk rumah, keluarga, dan usaha.">
+  <meta name="theme-color" content="#080d12">
+  <title>WiFi Bogor-Depok | Internet Cepat &amp; Stabil</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- =================================
-         MUSIK WEBSITE
-    ================================= -->
-<audio autoplay="" id="musikWeb" loop="" muted="">
-<source src="v1.mpeg" type="audio/mpeg"/>
-        Browser Anda tidak mendukung audio.
-    </audio>
-<!-- Tombol musik -->
-<button aria-label="Matikan Musik" class="music-button" id="musicButton" title="Matikan Musik" type="button">
-        🔊
-    </button>
-<!-- =================================
-         POPUP PROMO 3.jpeg
-    ================================= -->
-<div class="popup-overlay" id="promoPopup">
-<div class="popup-box">
-<button class="popup-close" onclick="closePopup()">
-                ×
-            </button>
-<img alt="Promo WiFi Bogor-Depok" class="popup-image" src="11.jpeg"/>
-<div class="popup-content">
-<h2>
-                    🔥 PROMO SPESIAL
-                </h2>
-<p>
-                    Dapatkan promo internet terbaik
-                    dari WiFi Bogor-Depok.
-                </p>
-<a class="poster-btn" href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok%2C%20saya%20ingin%20ambil%20promo%20" rel="noopener noreferrer">
-                    📲 Ambil Promo
-                </a>
-</div>
-</div>
-</div>
-<!-- =================================
-         NAVBAR
-    ================================= -->
-<nav>
-<div class="brand">
+  <!-- MUSIK WEBSITE -->
+  <audio id="musikWeb" autoplay loop muted playsinline>
+    <source src="v1.mpeg" type="audio/mpeg">
+    Browser Anda tidak mendukung audio.
+  </audio>
+  <button
+    class="music-button"
+    id="musicButton"
+    type="button"
+    aria-label="Nyalakan musik"
+    title="Nyalakan musik">🔇</button>
 
-            WiFi
-            <span>Bogor-Depok</span>
-</div>
-<button aria-expanded="false" aria-label="Buka menu" class="menu-toggle" id="menuToggle">☰</button>
-<div class="menu"><a href="#about">Home</a><a href="#cek-area">Cek Area</a><a href="#keunggulan">Keunggulan</a><a href="#ulasan">Rating &amp; Ulasan</a><a href="#kontak">Kontak</a></div>
-</nav><section class="hero" id="about">
-<div class="hero-container">
-<!-- LOGO -->
-<div class="logo-wrapper">
-<div class="logo-circle"></div>
-</div>
-<!-- TEXT -->
-<div>
-<div class="badge">
+  <!-- POPUP PROMO -->
+  <div class="popup-overlay" id="promoPopup" aria-hidden="true">
+    <div class="popup-box" role="dialog" aria-modal="true" aria-labelledby="promoTitle">
+      <button class="popup-close" id="popupClose" type="button" aria-label="Tutup popup">×</button>
+      <img class="popup-image" src="11.jpeg" alt="Promo WiFi Bogor-Depok">
+      <div class="popup-content">
+        <h2 id="promoTitle">🔥 PROMO SPESIAL</h2>
+        <p>Dapatkan promo internet terbaik dari WiFi Bogor-Depok.</p>
+        <a class="poster-btn" href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok%2C%20saya%20ingin%20ambil%20promo" target="_blank" rel="noopener noreferrer">📲 Ambil Promo</a>
+      </div>
+    </div>
+  </div>
 
-                    📶 INTERNET FIBER
-                    BOGOR &amp; DEPOK
+  <!-- NAVIGASI -->
+  <nav>
+    <div class="brand">WiFi <span>Bogor-Depok</span></div>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <div class="menu">
+      <a href="#about">Home</a>
+      <a href="#cek-area">Cek Area</a>
+      <a href="#keunggulan">Keunggulan</a>
+      <a href="#ulasan">Rating &amp; Ulasan</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+  </nav>
 
-                </div>
-<h1>
-
-                    WiFi
-                    <span>Bogor-Depok</span>
-</h1>
-<p class="hero-description">
-
-                    Nikmati koneksi internet cepat,
-                    stabil, dan nyaman untuk kebutuhan
-                    rumah, pekerjaan, pendidikan,
-                    hiburan, dan bisnis Anda.
-
-                </p>
-<div class="buttons">
-<a class="btn btn-primary" href="#cek-area">
-                        📍 Cek Wilayah &amp; Paket
-                    </a>
-<a class="btn btn-secondary" href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok,%20saya%20ingin%20informasi%20paket%20internet." target="_blank">
-                        💬 Hubungi Kami
-                    </a>
-</div>
-<div class="stats">
-<div class="stat">
-<h3>
-                            200+
-                        </h3>
-<p>
-                            Mbps
-                        </p>
-</div>
-<div class="stat">
-<h3>
-                            24/7
-                        </h3>
-<p>
-                            Koneksi
-                        </p>
-</div>
-<div class="stat">
-<h3>
-                            Bogor
-                        </h3>
-<p>
-                            &amp; Depok
-                        </p>
-</div>
-</div>
-</div>
-</div>
-</section><section class="area-section" id="cek-area">
-<div class="area-wrap area-panel">
-<div class="area-copy">
-<div class="section-title" style="text-align:left;margin-bottom:20px">
-<div class="small">CEK JANGKAUAN JARINGAN</div>
-<h2 style="color:#fff">Cek Ketersediaan <span style="color:#f5d903">Layanan</span></h2>
-</div>
-<p>Pilih kota/kabupaten dan kecamatan domisili terlebih dahulu. Setelah wilayah dipilih dan tombol ditekan, pilihan paket akan ditampilkan. Selanjutnya, pilih “Langganan Sekarang” untuk mengisi form pendaftaran.</p>
-<p style="margin-top:14px;color:#f5d903;font-weight:700">📍 Bogor • Kabupaten Bogor • Depok</p>
-</div>
-<form class="area-form" id="areaForm">
-<div class="form-field">
-<label for="areaCity">Kota / Kabupaten</label>
-<select id="areaCity" required="">
-<option value="">Pilih kota/kabupaten</option>
-<option value="Kota Bogor">Kota Bogor</option>
-<option value="Kabupaten Bogor">Kabupaten Bogor</option>
-<option value="Kota Depok">Kota Depok</option>
-</select>
-</div>
-<div class="form-field">
-<label for="areaDistrict">Kecamatan</label>
-<select disabled="" id="areaDistrict" required="">
-<option value="">Pilih kota/kabupaten terlebih dahulu</option>
-</select>
-</div>
-<div class="form-field">
-<label for="areaVillage">Kelurahan / Desa (opsional)</label>
-<input id="areaVillage" maxlength="80" placeholder="Contoh: Cibinong atau Beji" type="text"/>
-</div>
-<div class="form-field">
-<label for="areaAddress">Alamat / patokan (opsional)</label>
-<input id="areaAddress" maxlength="160" placeholder="Nama jalan, perumahan, atau patokan" type="text"/>
-</div>
-<button class="area-submit" type="submit">🔎 Lihat Paket di Wilayah Saya</button>
-<div aria-live="polite" class="area-result" id="areaResult" role="status"></div>
-<p class="area-note">Catatan: daftar paket mengikuti data yang diatur pada website. Pastikan data cakupan setiap kecamatan diperbarui oleh admin agar hasil sesuai kondisi jaringan sebenarnya.</p>
-</form>
-</div>
-</section><section class="area-section" id="pendaftaran" style="display:none">
-<div class="area-wrap" style="max-width:760px">
-<div class="section-title">
-<div class="small">PENDAFTARAN PELANGGAN</div>
-<h2 style="color:#fff">Form <span style="color:#f5d903">Pendaftaran</span></h2>
-<p>Lengkapi data berikut untuk melanjutkan permohonan pemasangan WiFi.</p>
-</div>
-<form class="area-form" id="registrationForm">
-<div class="form-field"><label for="regName">Nama lengkap</label><input autocomplete="name" id="regName" maxlength="100" placeholder="Masukkan nama lengkap" required="" type="text"/></div>
-<div class="form-field"><label for="regPhone">Nomor WhatsApp aktif</label><input autocomplete="tel" id="regPhone" maxlength="20" placeholder="Contoh: 08xxxxxxxxxx" required="" type="tel"/></div>
-<div class="form-field"><label for="regCity">Kota / Kabupaten</label><input id="regCity" readonly="" required="" type="text"/></div>
-<div class="form-field"><label for="regDistrict">Kecamatan</label><input id="regDistrict" readonly="" required="" type="text"/></div>
-<div class="form-field"><label for="regVillage">Kelurahan / Desa</label><input id="regVillage" maxlength="80" placeholder="Masukkan kelurahan/desa" type="text"/></div>
-<div class="form-field"><label for="regAddress">Alamat lengkap / patokan</label><textarea id="regAddress" maxlength="300" placeholder="Nama jalan, nomor rumah, perumahan, RT/RW, dan patokan" required=""></textarea></div>
-<div class="form-field"><label for="regPackage">Paket yang dipilih</label><select id="regPackage" required=""><option value="">Pilih paket</option><option value="Paket 1">Paket 1</option><option value="Paket 2">Paket 2</option><option value="Paket 3">Paket 3</option><option value="Paket 4">Paket 4</option><option value="Paket 5">Paket 5</option></select></div>
-<div class="form-field"><label for="regNotes">Catatan tambahan (opsional)</label><textarea id="regNotes" maxlength="300" placeholder="Informasi tambahan untuk tim pemasangan"></textarea></div>
-<button class="area-submit" type="submit">📲 Kirim Pendaftaran via WhatsApp</button>
-</form>
-</div>
-</section><section class="features" id="keunggulan">
-<div class="section-title">
-<div class="small">
-                KENAPA KAMI?
-            </div>
-<h2>
-                Internet untuk
-                <span>Semua</span>
-</h2>
-<p>
-                Dirancang untuk mendukung
-                aktivitas digital Anda.
-            </p>
-</div>
-<div class="feature-grid">
-<div class="feature">
-<div class="feature-icon">
-                    ⚡
-                </div>
-<h3>
-                    Cepat
-                </h3>
-<p>
-                    Nikmati akses internet
-                    dengan kecepatan tinggi
-                    untuk berbagai kebutuhan
-                    digital.
-                </p>
-</div>
-<div class="feature">
-<div class="feature-icon">
-                    📶
-                </div>
-<h3>
-                    Stabil
-                </h3>
-<p>
-                    Koneksi stabil untuk
-                    streaming, bekerja,
-                    belajar dan bermain.
-                </p>
-</div>
-<div class="feature">
-<div class="feature-icon">
-                    🌐
-                </div>
-<h3>
-                    Terhubung
-                </h3>
-<p>
-                    Menghubungkan keluarga,
-                    pekerjaan dan bisnis
-                    dengan dunia digital.
-                </p>
-</div>
-</div>
-</section><section class="review-section" id="ulasan">
-<div class="review-wrap">
-<div class="review-heading">
-<div class="small">PENGALAMAN PELANGGAN</div>
-<h2>Rating &amp; <span style="color:#f5d903">Ulasan</span></h2>
-<p>Bagikan pengalaman Anda menggunakan WiFi Bogor-Depok agar calon pelanggan lain bisa mendapatkan gambaran yang lebih baik.</p>
-<div class="review-summary">
-<div class="review-score" id="averageRating">—</div>
-<div style="text-align:left"><div class="stars" id="averageStars">☆☆☆☆☆</div><div id="reviewCount" style="font-size:13px;color:#aab6c1">Belum ada ulasan</div></div>
-</div>
-</div>
-<div class="review-layout">
-<form class="review-form" id="reviewForm">
-<h3 style="color:#fff;margin-bottom:20px">Tulis Ulasan Anda</h3>
-<div class="form-field">
-<label>Berikan rating</label>
-<div aria-label="Pilih rating dari 1 sampai 5" class="rating-input">
-<input id="rate5" name="rating" required="" type="radio" value="5"/><label for="rate5" title="5 bintang">★</label>
-<input id="rate4" name="rating" type="radio" value="4"/><label for="rate4" title="4 bintang">★</label>
-<input id="rate3" name="rating" type="radio" value="3"/><label for="rate3" title="3 bintang">★</label>
-<input id="rate2" name="rating" type="radio" value="2"/><label for="rate2" title="2 bintang">★</label>
-<input id="rate1" name="rating" type="radio" value="1"/><label for="rate1" title="1 bintang">★</label>
-</div>
-</div>
-<div class="form-field"><label for="reviewName">Nama</label><input id="reviewName" maxlength="50" placeholder="Nama Anda" required="" type="text"/></div>
-<div class="form-field"><label for="reviewArea">Wilayah (opsional)</label><input id="reviewArea" maxlength="80" placeholder="Contoh: Cibinong, Kabupaten Bogor" type="text"/></div>
-<div class="form-field"><label for="reviewComment">Komentar</label><textarea id="reviewComment" maxlength="600" placeholder="Ceritakan pengalaman Anda..." required=""></textarea></div>
-<button class="review-submit" type="submit">Kirim Ulasan</button>
-<p class="review-warning">Demo ini menyimpan ulasan di browser/perangkat yang digunakan (localStorage), bukan ke server. Ulasan belum otomatis terlihat di perangkat lain.</p>
-</form>
-<div>
-<h3 style="color:#fff;margin:0 0 16px">Ulasan Pelanggan</h3>
-<div class="review-list" id="reviewList"><div class="empty-reviews">Belum ada ulasan. Jadilah yang pertama memberikan rating dan komentar!</div></div>
-</div>
-</div>
-</div>
-</section><section class="cta" id="kontak">
-<h2>
-            Siap Terhubung?
-        </h2>
-<p>
-            Dapatkan informasi paket dan
-            ketersediaan jaringan
-            WiFi Bogor-Depok.
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-container">
+      <div class="logo-wrapper"><div class="logo-circle"></div></div>
+      <div>
+        <div class="badge">📶 INTERNET FIBER BOGOR &amp; DEPOK</div>
+        <h1>WiFi <span>Bogor-Depok</span></h1>
+        <p class="hero-description">
+          Nikmati koneksi internet cepat, stabil, dan nyaman untuk kebutuhan rumah,
+          pekerjaan, pendidikan, hiburan, dan bisnis Anda.
         </p>
-<a class="btn" href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok,%20saya%20ingin%20informasi%20berlangganan." target="_blank">
-            💬 Chat WhatsApp Sekarang
-        </a>
-</section>
-<!-- =================================
-         HERO
-    ================================= -->
-
-<!-- FORM PENDAFTARAN LANGGANAN -->
-
-<!-- =================================
-         KEUNGGULAN
-    ================================= -->
-
-<!-- =================================
-         KONTAK
-    ================================= -->
-<!-- CEK KETERSEDIAAN AREA -->
-
-<!-- RATING DAN KOMENTAR PELANGGAN -->
-
-
-<!-- =================================
-         FOOTER
-    ================================= -->
-<footer>
-
-        © 2026 WiFi Bogor-Depok
-        • Connecting Bogor &amp; Depok
-
-    </footer>
-<!-- =================================
-         JAVASCRIPT POPUP
-    ================================= -->
-<script>
-
-
-
-        /* MENU HP */
-        const menuToggle = document.getElementById("menuToggle");
-        const menu = document.querySelector(".menu");
-        if (menuToggle && menu) {
-            menuToggle.addEventListener("click", function () {
-                const opened = menu.classList.toggle("active");
-                menuToggle.setAttribute("aria-expanded", opened ? "true" : "false");
-                menuToggle.innerHTML = opened ? "✕" : "☰";
-            });
-            menu.querySelectorAll("a").forEach(function (link) {
-                link.addEventListener("click", function () {
-                    menu.classList.remove("active");
-                    menuToggle.setAttribute("aria-expanded", "false");
-                    menuToggle.innerHTML = "☰";
-                });
-            });
-        }
-
-        /* =================================
-           KONTROL MUSIK
-        ================================= */
-
-        const musik = document.getElementById("musikWeb");
-        const tombolMusik = document.getElementById("musicButton");
-
-        if (musik && tombolMusik) {
-
-            // Coba nyalakan musik otomatis saat halaman dibuka.
-            // Browser dapat memblokir autoplay bersuara.
-            musik.muted = true;
-            musik.play().then(function () {
-                musik.muted = false;
-                tombolMusik.innerHTML = "🔊";
-                tombolMusik.title = "Matikan Musik";
-                tombolMusik.setAttribute("aria-label", "Matikan Musik");
-            }).catch(function () {
-                tombolMusik.innerHTML = "🔇";
-                tombolMusik.title = "Nyalakan Musik";
-                tombolMusik.setAttribute("aria-label", "Nyalakan Musik");
-            });
-
-            tombolMusik.addEventListener("click", function () {
-                if (musik.paused) {
-                    musik.muted = false;
-                    musik.play().then(function () {
-                        tombolMusik.innerHTML = "🔊";
-                        tombolMusik.title = "Matikan Musik";
-                        tombolMusik.setAttribute("aria-label", "Matikan Musik");
-                    });
-                } else {
-                    musik.pause();
-                    tombolMusik.innerHTML = "🔇";
-                    tombolMusik.title = "Nyalakan Musik";
-                    tombolMusik.setAttribute("aria-label", "Nyalakan Musik");
-                }
-            });
-        }
-
-        /* Popup otomatis muncul saat website dibuka */
-
-        window.addEventListener(
-            "load",
-            function() {
-
-                setTimeout(
-                    function() {
-
-                        const popup =
-                            document.getElementById(
-                                "promoPopup"
-                            );
-
-                        if (popup) {
-
-                            popup.classList.add(
-                                "show"
-                            );
-
-                        }
-
-                    },
-                    500
-                );
-
-            }
-        );
-
-
-        /* Tutup popup */
-
-        function closePopup() {
-
-            const popup =
-                document.getElementById(
-                    "promoPopup"
-                );
-
-            if (popup) {
-
-                popup.classList.remove(
-                    "show"
-                );
-
-            }
-
-        }
-
-
-        /* Klik area luar popup */
-
-        document.addEventListener(
-            "click",
-            function(event) {
-
-                const popup =
-                    document.getElementById(
-                        "promoPopup"
-                    );
-
-                if (
-                    popup &&
-                    event.target === popup
-                ) {
-
-                    closePopup();
-
-                }
-
-            }
-        );
-
-
-        /* Tekan ESC untuk menutup */
-
-        document.addEventListener(
-            "keydown",
-            function(event) {
-
-                if (
-                    event.key === "Escape"
-                ) {
-
-                    closePopup();
-
-                }
-
-            }
-        );
-
-
-
-        /* CEK WILAYAH: daftar kecamatan untuk pilihan pengguna */
-        const areaOptions = {
-            "Kota Bogor": ["Bogor Barat", "Bogor Selatan", "Bogor Tengah", "Bogor Timur", "Bogor Utara", "Tanah Sareal"],
-            "Kabupaten Bogor": ["Babakan Madang", "Bojonggede", "Caringin", "Cariu", "Ciampea", "Ciawi", "Cibinong", "Cibungbulang", "Cigombong", "Cigudeg", "Cijeruk", "Cileungsi", "Ciomas", "Cisarua", "Ciseeng", "Citeureup", "Dramaga", "Gunung Putri", "Gunung Sindur", "Jasinga", "Jonggol", "Kemang", "Klapanunggal", "Leuwiliang", "Leuwisadeng", "Megamendung", "Nanggung", "Pamijahan", "Pamijahan", "Parung", "Parung Panjang", "Ranca Bungur", "Rumpin", "Sukajaya", "Sukamakmur", "Sukaraja", "Tajurhalang", "Tamansari", "Tanjungsari", "Tenjo", "Tenjolaya"],
-            "Kota Depok": ["Beji", "Bojongsari", "Cilodong", "Cimanggis", "Cinere", "Cipayung", "Limo", "Pancoran Mas", "Sawangan", "Sukmajaya", "Tapos"]
-        };
-        const areaCity = document.getElementById('areaCity');
-        const areaDistrict = document.getElementById('areaDistrict');
-        if (areaCity && areaDistrict) {
-            areaCity.addEventListener('change', function () {
-                areaDistrict.innerHTML = '';
-                const first = document.createElement('option');
-                first.value = '';
-                first.textContent = this.value ? 'Pilih kecamatan' : 'Pilih kota/kabupaten terlebih dahulu';
-                areaDistrict.appendChild(first);
-                (areaOptions[this.value] || []).forEach(function (district) {
-                    const option = document.createElement('option');
-                    option.value = district;
-                    option.textContent = district;
-                    areaDistrict.appendChild(option);
-                });
-                areaDistrict.disabled = !this.value;
-            });
-        }
-        /* CEK PAKET BERDASARKAN WILAYAH — data dapat disesuaikan admin */
-        const areaForm = document.getElementById('areaForm');
-        const areaPackageData = {
-            // Ganti daftar paket per kecamatan sesuai cakupan jaringan yang benar.
-            // Contoh: "Cibinong": [1, 2, 4]
-            "default": [1, 2, 3, 4, 5]
-        };
-        const packageImageFiles = {
-            1: '01.jpeg', 2: '02.jpeg', 3: '03.jpeg', 4: '04.jpeg', 5: '05.jpeg'
-        };
-        if (areaForm) areaForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-            const city = areaCity.value;
-            const district = areaDistrict.value;
-            const village = document.getElementById('areaVillage').value.trim();
-            if (!city || !district) return;
-
-            // Pilihan paket hanya ditampilkan di kolom Daftar WiFi setelah domisili dipilih.
-            const result = document.getElementById('areaResult');
-            const configuredPackages = areaPackageData[district];
-            const packageIds = Array.isArray(configuredPackages) ? configuredPackages : areaPackageData.default;
-            const isAreaConfigured = Array.isArray(configuredPackages);
-            result.innerHTML = '';
-            result.style.display = 'block';
-            result.style.background = '#121a22';
-            result.style.borderColor = '#394957';
-            result.style.color = '#f5f7fa';
-
-            const heading = document.createElement('h3');
-            heading.style.cssText = 'margin:0 0 8px;color:#f5d903;font-size:20px';
-            heading.textContent = 'Daftar WiFi';
-            const location = document.createElement('p');
-            location.style.cssText = 'margin:0 0 14px;color:#c1c8d0';
-            location.textContent = district + ', ' + city + (village ? ' — ' + village : '');
-            const note = document.createElement('p');
-            note.style.cssText = 'margin:0 0 16px;font-size:12px;color:#c1c8d0';
-            note.textContent = isAreaConfigured
-                ? 'Paket di bawah ini tercatat untuk kecamatan yang dipilih.'
-                : 'Data paket khusus kecamatan ini belum diatur. Berikut daftar paket umum di website, bukan konfirmasi cakupan jaringan di alamat Anda.';
-            result.append(heading, location, note);
-
-            if (!packageIds.length) {
-                const empty = document.createElement('p');
-                empty.textContent = 'Belum ada paket yang tercatat untuk wilayah ini. Silakan periksa kembali nanti.';
-                result.appendChild(empty);
-                return;
-            }
-
-            const grid = document.createElement('div');
-            grid.style.cssText = 'display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px';
-            packageIds.forEach(function (id) {
-                const card = document.createElement('div');
-                card.style.cssText = 'background:#080d12;border:1px solid #394957;border-radius:12px;padding:10px;overflow:hidden';
-                const img = document.createElement('img');
-                img.src = packageImageFiles[id];
-                img.alt = 'Informasi Paket ' + id;
-                img.loading = 'lazy';
-                img.style.cssText = 'display:block;width:100%;height:auto;max-height:170px;object-fit:contain;border-radius:8px';
-                const label = document.createElement('div');
-                label.style.cssText = 'margin-top:8px;text-align:center;font-weight:800;color:#f5d903';
-                label.textContent = 'Paket ' + id;
-                const subscribe = document.createElement('button');
-                subscribe.type = 'button';
-                subscribe.className = 'poster-btn subscribe-btn';
-                subscribe.setAttribute('data-package', String(id));
-                subscribe.textContent = '💬 Langganan Sekarang';
-                subscribe.style.cssText = 'display:block;width:100%;margin-top:10px;border:0;cursor:pointer;font-size:12px';
-                card.append(img, label, subscribe);
-                grid.appendChild(card);
-            });
-            result.appendChild(grid);
-            setTimeout(function () {
-                result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }, 100);
-        });
-
-        /* LANGGANAN: tombol pada kolom Daftar WiFi membuka form pendaftaran */
-        document.getElementById('areaResult').addEventListener('click', function (event) {
-            const button = event.target.closest('.subscribe-btn');
-            if (!button) return;
-            const packageId = button.getAttribute('data-package');
-                const regSection = document.getElementById('pendaftaran');
-                const paketSelect = document.getElementById('regPackage');
-                if (paketSelect) paketSelect.value = 'Paket ' + packageId;
-
-                document.getElementById('regCity').value = areaCity ? areaCity.value : '';
-                document.getElementById('regDistrict').value = areaDistrict ? areaDistrict.value : '';
-                document.getElementById('regVillage').value = document.getElementById('areaVillage').value.trim();
-                document.getElementById('regAddress').value = document.getElementById('areaAddress').value.trim();
-
-                if (regSection) {
-                    regSection.style.display = 'block';
-                    setTimeout(function () {
-                        regSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        document.getElementById('regName').focus({ preventScroll: true });
-                    }, 100);
-                }
-        });
-
-        /*
-         * URL Web App Google Apps Script.
-         * URL /dev yang diberikan hanya untuk pengujian editor.
-         * Di sini dipasang versi /exec dengan ID deployment yang diberikan.
-         * Jika Google menampilkan URL /exec berbeda pada Deploy > Manage deployments,
-         * ganti konstanta ini dengan URL /exec resmi tersebut.
-         */
-        const GOOGLE_SHEETS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwo60idij9gxIsGRujsLeNFpopfVnsjcOcQ9Bz3Nfqx2AgnvtiS8iUq0F_o5wjeEd_D/exec';
-        const registrationForm = document.getElementById('registrationForm');
-        if (registrationForm) registrationForm.addEventListener('submit', async function (event) {
-            event.preventDefault();
-            const fields = {
-                nama: document.getElementById('regName').value.trim(),
-                telepon: document.getElementById('regPhone').value.trim(),
-                kota: document.getElementById('regCity').value.trim(),
-                kecamatan: document.getElementById('regDistrict').value.trim(),
-                kelurahan: document.getElementById('regVillage').value.trim() || '-',
-                alamat: document.getElementById('regAddress').value.trim(),
-                paket: document.getElementById('regPackage').value,
-                catatan: document.getElementById('regNotes').value.trim() || '-'
-            };
-            const message = [
-                'Halo WiFi Bogor-Depok, saya ingin mendaftar langganan internet.', '',
-                'Nama: ' + fields.nama,
-                'Nomor WhatsApp: ' + fields.telepon,
-                'Domisili: ' + fields.kelurahan + ', ' + fields.kecamatan + ', ' + fields.kota,
-                'Alamat: ' + fields.alamat,
-                'Paket pilihan: ' + fields.paket,
-                'Catatan: ' + fields.catatan
-            ].join('\n');
-            const waUrl = 'https://wa.me/6285718561080?text=' + encodeURIComponent(message);
-            const waWindow = window.open('about:blank', '_blank');
-            const submitButton = registrationForm.querySelector('button[type="submit"]');
-            const originalButtonText = submitButton ? submitButton.textContent : '';
-            if (submitButton) { submitButton.disabled = true; submitButton.textContent = 'Mengirim pendaftaran...'; }
-            try {
-                if (!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/.test(GOOGLE_SHEETS_WEB_APP_URL)) {
-                    throw new Error('URL Web App tidak valid. Gunakan URL produksi yang berakhiran /exec.');
-                }
-                if (!fields.nama || !fields.telepon || !fields.kota || !fields.kecamatan || !fields.alamat || !fields.paket) {
-                    throw new Error('Mohon lengkapi semua kolom wajib sebelum mengirim.');
-                }
-                const body = new URLSearchParams({ ...fields, sumber: 'Website WiFi Bogor-Depok' });
-                /* no-cors membuat respons server tidak bisa dibaca browser; pengiriman tidak bisa dipastikan dari halaman ini. */
-                await fetch(GOOGLE_SHEETS_WEB_APP_URL, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
-                    body: body.toString(),
-                    redirect: 'follow'
-                });
-                if (waWindow) waWindow.location.href = waUrl; else window.location.href = waUrl;
-                alert('Permintaan pendaftaran telah dikirim dari website. Karena Google Apps Script memakai koneksi lintas-domain, halaman ini tidak dapat memastikan penyimpanan berhasil. Mohon cek Google Sheets; WhatsApp akan dibuka untuk mengirim pesan ke admin.');
-            } catch (error) {
-                if (waWindow) waWindow.close();
-                console.error('Gagal mengirim pendaftaran:', error);
-                alert('Pendaftaran gagal dikirim: ' + (error && error.message ? error.message : 'periksa koneksi internet dan URL Web App.'));
-            } finally {
-                if (submitButton) { submitButton.disabled = false; submitButton.textContent = originalButtonText; }
-            }
-        });
-
-        /* RATING DAN ULASAN DEMO: tersimpan di browser ini */
-        const reviewStorageKey = 'wifiBogorDepokReviewsV1';
-        function readReviews() {
-            try { return JSON.parse(localStorage.getItem(reviewStorageKey) || '[]'); }
-            catch (error) { return []; }
-        }
-        function renderReviews() {
-            const reviews = readReviews();
-            const list = document.getElementById('reviewList');
-            const average = document.getElementById('averageRating');
-            const stars = document.getElementById('averageStars');
-            const count = document.getElementById('reviewCount');
-            if (!list || !average || !stars || !count) return;
-            if (!reviews.length) {
-                average.textContent = '—'; stars.textContent = '☆☆☆☆☆'; count.textContent = 'Belum ada ulasan';
-                list.innerHTML = '<div class="empty-reviews">Belum ada ulasan. Jadilah yang pertama memberikan rating dan komentar!</div>';
-                return;
-            }
-            const avg = reviews.reduce((sum, item) => sum + Number(item.rating), 0) / reviews.length;
-            average.textContent = avg.toFixed(1);
-            stars.textContent = '★'.repeat(Math.round(avg)) + '☆'.repeat(5 - Math.round(avg));
-            count.textContent = reviews.length + (reviews.length === 1 ? ' ulasan' : ' ulasan');
-            list.innerHTML = '';
-            reviews.slice().reverse().forEach(function (item) {
-                const card = document.createElement('article'); card.className = 'review-card';
-                const top = document.createElement('div'); top.className = 'review-card-top';
-                const name = document.createElement('strong'); name.textContent = item.name;
-                const date = document.createElement('time'); date.textContent = item.date;
-                top.append(name, date);
-                const rating = document.createElement('div'); rating.className = 'stars'; rating.textContent = '★'.repeat(Number(item.rating)) + '☆'.repeat(5 - Number(item.rating));
-                const comment = document.createElement('p'); comment.textContent = item.comment;
-                card.append(top, rating, comment);
-                if (item.area) { const area = document.createElement('div'); area.className = 'review-area'; area.textContent = '📍 ' + item.area; card.appendChild(area); }
-                list.appendChild(card);
-            });
-        }
-        const reviewForm = document.getElementById('reviewForm');
-        if (reviewForm) reviewForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-            const selected = reviewForm.querySelector('input[name="rating"]:checked');
-            const name = document.getElementById('reviewName').value.trim();
-            const area = document.getElementById('reviewArea').value.trim();
-            const comment = document.getElementById('reviewComment').value.trim();
-            if (!selected || !name || !comment) { alert('Silakan pilih rating, isi nama, dan tulis komentar.'); return; }
-            const reviews = readReviews();
-            reviews.push({ rating: Number(selected.value), name: name, area: area, comment: comment, date: new Date().toLocaleDateString('id-ID', {day:'2-digit', month:'short', year:'numeric'}) });
-            try {
-                localStorage.setItem(reviewStorageKey, JSON.stringify(reviews));
-                reviewForm.reset(); renderReviews();
-            } catch (error) {
-                alert('Ulasan tidak dapat disimpan di browser ini. Coba gunakan browser lain.');
-            }
-        });
-        renderReviews();
-
-    </script>
-</body>
-</html>ice-width, initial-scale=1.0" name="viewport"/>
-<title>WiFi Bogor-Depok | Internet Cepat &amp; Stabil</title>
-<meta content="WiFi Bogor-Depok - Internet cepat, stabil dan terjangkau untuk rumah, keluarga dan usaha." name="description"/>
-<style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            color: #222;
-            background: #000000;
-            overflow-x: hidden;
-        }
-
-
-        /* =================================
-           NAVBAR
-        ================================= */
-
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-
-            width: 100%;
-            padding: 15px 7%;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            background: rgba(0, 0, 0, 0.9);
-            backdrop-filter: blur(15px);
-
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-
-            z-index: 999;
-        }
-
-        .brand {
-            font-size: 22px;
-            font-weight: bold;
-            color: #1769c2;
-        }
-
-        .brand span {
-            color: #35a65a;
-        }
-
-        .menu {
-            display: flex;
-            gap: 28px;
-        }
-
-        .menu a {
-            text-decoration: none;
-            color: #f1e0ba;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .menu a:hover {
-            color: #1769c2;
-        }
-
-        /* =================================
-           POPUP PROMO
-        ================================= */
-
-        .popup-overlay {
-            position: fixed;
-            inset: 0;
-
-            z-index: 99999;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            padding: 20px;
-
-            background: rgba(0,0,0,0.78);
-            backdrop-filter: blur(7px);
-
-            opacity: 0;
-            visibility: hidden;
-
-            transition: opacity 0.35s ease,
-                        visibility 0.35s ease;
-        }
-
-        .popup-overlay.show {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .popup-box {
-            position: relative;
-
-            width: 100%;
-            max-width: 430px;
-
-            background: rgb(225, 210, 180);
-
-            border-radius: 25px;
-
-            overflow: hidden;
-
-            box-shadow:
-                0 25px 80px #f3c6666f;
-
-            transform: scale(0.8) translateY(30px);
-
-            transition: 0.35s ease;
-        }
-
-        .popup-overlay.show .popup-box {
-            transform: scale(1) translateY(0);
-        }
-
-        .popup-close {
-            position: absolute;
-
-            top: 12px;
-            right: 12px;
-
-            width: 40px;
-            height: 40px;
-
-            border: none;
-            border-radius: 50%;
-
-            background: rgba(32, 31, 31, 0.65);
-
-            color: rgb(244, 241, 241);
-
-            font-size: 27px;
-            line-height: 40px;
-
-            cursor: pointer;
-
-            z-index: 10;
-
-            transition: 0.3s;
-        }
-
-        .popup-close:hover {
-            background: #050505;
-            transform: rotate(90deg);
-        }
-
-        .popup-image {
-            width: 100%;
-            display: block;
-        }
-
-        .popup-content {
-            padding: 25px;
-
-            text-align: center;
-        }
-
-        .popup-content h2 {
-            color: #003a73;
-
-            margin-bottom: 10px;
-
-            font-size: 25px;
-        }
-
-        .popup-content p {
-            color: #666;
-
-            line-height: 1.6;
-
-            margin-bottom: 20px;
-        }
-
-        .popup-wa:hover {
-            transform: translateY(-3px);
-
-            box-shadow:
-                0 10px 25px rgba(54, 13, 202, 0.3);
-        }
-
-        .popup-later:hover {
-            color: #dae1e8;
-        }
-
-
-        /* =================================
-           HERO
-        ================================= */
-
-        .hero {
-            min-height: 100vh;
-
-            padding: 130px 8% 80px;
-
-            display: flex;
-            align-items: center;
-
-            position: relative;
-
-            background:
-                radial-gradient(
-                    circle at 10% 20%,
-                    rgba(255, 232, 118, 0.18),
-                    transparent 30%
-                ),
-
-                radial-gradient(
-                    circle at 90% 80%,
-                    rgba(245, 217, 3, 0.18),
-                    transparent 30%
-                ),
-
-                linear-gradient(
-                    135deg,
-                    #121212,
-                    #000000
-                );
-        }
-
-
-        .hero::before {
-            content: "";
-
-            position: absolute;
-
-            width: 400px;
-            height: 400px;
-
-            border-radius: 50%;
-
-            background: rgba(231, 242, 132, 0.08);
-
-            top: -150px;
-            right: -150px;
-        }
-
-        .hero::after {
-            content: "";
-
-            position: absolute;
-
-            width: 300px;
-            height: 300px;
-
-            border-radius: 50%;
-
-            background: rgba(66,168,95,0.08);
-
-            bottom: -120px;
-            left: -100px;
-        }
-
-
-        .hero-container {
-
-            width: 100%;
-            max-width: 1200px;
-
-            margin: auto;
-
-            display: grid;
-
-            grid-template-columns:
-                0.9fr 1.1fr;
-
-            gap: 80px;
-
-            align-items: center;
-
-            position: relative;
-
-            z-index: 2;
-        }
-
-        
-        /* =================================
-           LOGO
-        ================================= */
-
-        .logo-wrapper {
-            display: flex;
-
-            justify-content: center;
-            align-items: center;
-        }
-
-        .logo-circle {
-
-            width: 390px;
-            height: 390px;
-
-            border-radius: 50%;
-
-            background-image:
-                url("06.jpeg");
-
-            background-size: cover;
-
-            background-position: center;
-
-            background-repeat: no-repeat;
-
-            background-color: rgb(245, 217, 3, 0.18);
-
-            border: 10px solid
-                rgba(245, 217, 3, 0.18);
-
-            box-shadow:
-                0 25px 70px
-                rgba(137, 126, 0, 0.525);
-
-            animation:
-                floating 5s ease-in-out infinite;
-
-            position: relative;
-        }
-
-        .logo-circle::after {
-
-            content: "";
-
-            position: absolute;
-
-            inset: -15px;
-
-            border-radius: 50%;
-
-            border: 2px solid
-                rgba(23,105,194,0.15);
-
-            animation:
-                pulse 3s infinite;
-        }
-
-
-        /* =================================
-           HERO TEXT
-        ================================= */
-
-        .badge {
-
-            display: inline-block;
-
-            padding: 9px 18px;
-
-            border-radius: 30px;
-
-            background:
-                rgba(66,168,95,0.12);
-
-            color: #adada9;
-
-            font-weight: bold;
-
-            margin-bottom: 18px;
-        }
-
-        .hero h1 {
-
-            font-size: 60px;
-
-            line-height: 1.05;
-
-            color: #1769c2;
-
-            margin-bottom: 20px;
-        }
-
-        .hero h1 span {
-            color: #35a65a;
-        }
-
-        .hero-description {
-
-            font-size: 18px;
-
-            line-height: 1.8;
-
-            color: #adada9;
-
-            max-width: 650px;
-
-            margin-bottom: 30px;
-        }
-
-
-        /* =================================
-           BUTTON
-        ================================= */
-
-        .buttons {
-
-            display: flex;
-
-            gap: 15px;
-
-            flex-wrap: wrap;
-        }
-
-        .btn {
-
-            display: inline-flex;
-
-            align-items: center;
-
-            gap: 8px;
-
-            padding: 15px 27px;
-
-            border-radius: 40px;
-
-            text-decoration: none;
-
-            font-weight: bold;
-
-            transition: 0.3s;
-        }
-
-        .btn-primary {
-
-            color: white;
-
-            background:
-                linear-gradient(
-                    90deg,
-                    #767617,
-                    #000000
-                );
-
-            box-shadow:
-                0 10px 25px
-                rgba(137, 126, 0, 0.525);;
-
-            border: 2px solid (137, 126, 0, 0.525);
-        }
-
-        .btn-primary:hover {
-
-            transform: translateY(-15px);
-
-            box-shadow:
-                0 15px 35px
-                rgba(23, 194, 23, 0.35);
-        }
-
-        .btn-secondary {
-
-            color: #fafcfe;
-
-            background: 
-                linear-gradient(
-                    90deg,
-                    #767617,
-                    #000000
-                );
-
-            box-shadow:
-                0 10px 25px
-                rgba(137, 126, 0, 0.525);
-
-            border: 2px solid (137, 126, 0, 0.525);
-        }
-
-        .btn-secondary:hover {
-
-            transform: translateY(-15px);
-
-            box-shadow:
-                0 15px 35px
-                rgba(23, 194, 23, 0.35);
-        }
-
-
-        /* =================================
-           STAT
-        ================================= */
-
-        .stats {
-
-            display: flex;
-
-            gap: 35px;
-
-            margin-top: 35px;
-
-            flex-wrap: wrap;
-        }
-
-        .stat h3 {
-
-            font-size: 25px;
-
-            color: #1769c2;
-        }
-
-        .stat p {
-
-            font-size: 13px;
-
-            color: #adada9;
-;
-
-            margin-top: 4px;
-        }
-
-
-        /* =================================
-           SECTION
-        ================================= */
-
-        section {
-            scroll-margin-top: 80px;
-        }
-
-
-        /* =================================
-           PAKET
-        ================================= */
-        .paket-section {
-            display: none; /* Paket disembunyikan sampai domisili dipilih */
-            padding: 100px 7%;
-
-            background: rgb(0, 0, 0);
-
-            position: relative;
-        }
-
-        .section-title {
-
-            text-align: center;
-
-            margin-bottom: 55px;
-        }
-
-        .section-title .small {
-
-            color: #42a85f;
-
-            font-weight: bold;
-
-            letter-spacing: 3px;
-
-            text-transform: uppercase;
-        }
-
-        .section-title h2 {
-
-            font-size: 45px;
-
-            color: #1769c2;
-
-            margin: 10px 0;
-        }
-
-        .section-title h2 span {
-
-            color: #42a85f;
-        }
-
-        .section-title p {
-
-            color: #777;
-
-            font-size: 17px;
-        }
-
-
-        /* =================================
-           POSTER GRID
-        ================================= */
-
-        .poster-grid {
-
-            max-width: 1200px;
-
-            margin: auto;
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(2, 1fr);
-
-            gap: 40px;
-        }
-
-        .poster-card {
-
-            width: 100%;
-            height: 620px;
-
-            display: flex;
-            flex-direction: column;
-
-            background: rgb(61, 60, 60);
-
-            border-radius: 25px;
-
-            padding: 12px;
-
-            box-shadow:
-            0 15px 50px
-            rgba(0,0,0,0.12);
-
-            transition: 0.4s;
-
-            overflow: hidden;
-
-            border: 1px solid #ffffff;
-        }
-        
-
-        .poster-card:hover {
-
-            transform: translateY(-12px);
-
-            box-shadow:
-                0 25px 60px
-                rgba(0,0,0,0.18);
-        }
-
-        .poster-img {
-
-            width: 100%;
-            height: 450px;
-
-            display: block;
-
-            object-fit: cover;
-            object-position: center;
-
-            border-radius: 18px;
-
-            transition: 0.4s;
-
-            flex-shrink: 0;
-        }
-
-        .poster-card:hover .poster-img {
-
-            transform: scale(1.02);
-        }
-
-        .poster-content {
-
-            flex: 1;
-
-            padding: 22px;
-
-            text-align: center;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .poster-content h3 {
-
-            font-size: 23px;
-
-            color: #ffffff;
-
-            margin-bottom: 8px;
-        }
-
-        .poster-content p {
-
-            color: #6e6c6c;
-
-            line-height: 1.6;
-
-            margin-bottom: 20px;
-        }
-
-        .poster-btn {
-
-            display: inline-block;
-
-            padding: 18px 40px;
-
-            border-radius: 30px;
-
-            background:
-                linear-gradient(
-                    90deg,
-                    #232323,
-                    #232323
-                );
-
-                box-shadow:
-                0 12px 25px
-                rgba(233, 221, 87, 0.525);
-
-            border: 5px solid #a39427a6;
-
-            color: rgba(255, 255, 255, 0.895);
-
-            text-decoration: none;
-
-            font-weight: bold;
-
-            transition: 0.3s;
-        }
-
-        .poster-btn:hover {
-
-            transform: scale(1.05);
-        }
-
-
-        /* =================================
-           KEUNGGULAN
-        ================================= */
-
-        .features {
-
-            padding: 100px 7%;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #092034,
-                    #000000
-                );
-        }
-
-        .feature-grid {
-
-            max-width: 1100px;
-
-            margin: auto;
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(3,1fr);
-
-            gap: 25px;
-        }
-
-        .feature {
-
-            background:
-                rgba(185, 183, 183, 0.9);
-
-            padding: 35px 25px;
-
-            border-radius: 20px;
-
-            text-align: center;
-
-            box-shadow:
-                0 10px 30px
-                rgba(0,0,0,0.07);
-
-            transition: 0.3s;
-        }
-
-        .feature:hover {
-
-            transform: translateY(-8px);
-        }
-
-        .feature-icon {
-
-            width: 70px;
-            height: 70px;
-
-            margin:
-                auto auto 18px;
-
-            border-radius: 50%;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            font-size: 32px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #767617,
-                    #000000
-                );
-
-            color: rgb(0, 0, 0);
-        }
-
-        .feature h3 {
-
-            color: #1769c2;
-
-            margin-bottom: 10px;
-        }
-
-        .feature p {
-
-            color: #666;
-
-            line-height: 1.6;
-        }
-
-
-        /* =================================
-           CTA
-        ================================= */
-
-        .cta {
-
-            padding: 100px 20px;
-
-            text-align: center;
-
-            color: white;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #020202,
-                    #0f4254,
-                    #000101
-                );
-
-            position: relative;
-
-            overflow: hidden;
-        }
-
-        .cta h2 {
-
-            font-size: 45px;
-
-            margin-bottom: 15px;
-        }
-
-        .cta p {
-
-            font-size: 18px;
-
-            margin-bottom: 30px;
-        }
-
-        .cta .btn {
-
-            background: white;
-
-            color: #1769c2;
-
-            padding: 16px 30px;
-        }
-
-        .cta .btn:hover {
-
-            transform: translateY(-5px);
-
-            box-shadow:
-                0 15px 30px
-                rgba(0,0,0,0.2);
-        }
-
-
-        /* =================================
-           FOOTER
-        ================================= */
-
-        footer {
-
-            padding: 25px;
-
-            text-align: center;
-
-            background: #fff;
-
-            color: #777;
-
-            font-size: 14px;
-        }
-
-
-        /* =================================
-           ANIMATION
-        ================================= */
-
-        @keyframes floating {
-
-            0%,100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-15px);
-            }
-        }
-
-        @keyframes pulse {
-
-            0% {
-
-                transform: scale(1);
-
-                opacity: 0.8;
-            }
-
-            100% {
-
-                transform: scale(1.08);
-
-                opacity: 0;
-            }
-        }
-
-
-
-        /* =================================
-           TOMBOL MUSIK
-        ================================= */
-
-        .music-button {
-            position: fixed;
-            right: 25px;
-            bottom: 25px;
-            width: 55px;
-            height: 55px;
-            border: none;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #000000, #e0ca65);
-            color: white;
-            font-size: 25px;
-            cursor: pointer;
-            z-index: 100000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.35);
-            transition: 0.3s ease;
-        }
-
-        .music-button:hover {
-            transform: scale(1.1);
-        }
-
-        .music-button:active {
-            transform: scale(0.95);
-        }
-
-        /* =================================
-           MOBILE
-        ================================= */
-
-
-        /* RESPONSIVE HP & TABLET */
-        .menu-toggle { display:none; border:0; background:transparent; color:#f1e0ba; font-size:28px; cursor:pointer; padding:6px; }
-        img { max-width:100%; height:auto; }
-        a, button { -webkit-tap-highlight-color:transparent; }
-
-        @media (max-width:850px) {
-            nav { padding:12px 5%; min-height:62px; }
-            .brand { font-size:18px; white-space:nowrap; }
-            .menu-toggle { display:block; z-index:1001; }
-            .menu { position:absolute; top:100%; right:5%; left:5%; display:none; flex-direction:column; gap:0; padding:10px; background:rgba(10,10,10,.98); border:1px solid rgba(245,217,3,.2); border-radius:16px; box-shadow:0 15px 35px rgba(0,0,0,.4); }
-            .menu.active { display:flex; }
-            .menu a { display:block; padding:13px 15px; font-size:14px; border-radius:10px; }
-            .menu a:hover { background:rgba(255,255,255,.08); }
-            .hero { min-height:auto; padding:115px 5% 65px; }
-            .hero-container { grid-template-columns:1fr; gap:35px; text-align:center; }
-            .logo-circle { width:min(72vw,300px); height:min(72vw,300px); border-width:7px; }
-            .hero h1 { font-size:clamp(34px,9vw,48px); line-height:1.1; }
-            .hero-description { font-size:16px; line-height:1.7; margin-left:auto; margin-right:auto; }
-            .buttons { justify-content:center; }
-            .btn { min-height:48px; padding:13px 20px; }
-            .stats { justify-content:center; gap:25px; }
-            .paket-section, .features { padding:70px 5%; }
-            .section-title { margin-bottom:35px; }
-            .section-title h2 { font-size:clamp(30px,8vw,40px); }
-            .section-title p { font-size:15px; line-height:1.6; }
-            .poster-grid { grid-template-columns:1fr; gap:25px; max-width:600px; }
-            .poster-card { padding:8px; border-radius:18px; }
-            .poster-content { padding:16px 10px 18px; }
-            .poster-content h3 { font-size:20px; }
-            .poster-btn { width:100%; padding:14px 18px; border-width:3px; }
-            .feature-grid { grid-template-columns:1fr; max-width:600px; gap:18px; }
-            .feature { padding:28px 20px; }
-            .cta { padding:70px 5%; }
-            .cta h2 { font-size:clamp(30px,8vw,40px); }
-            .cta p { font-size:16px; line-height:1.6; }
-            .music-button { width:50px; height:50px; right:16px; bottom:16px; font-size:22px; }
-            .popup-overlay { padding:12px; }
-            .popup-box { max-width:min(94vw,390px); max-height:92vh; overflow-y:auto; border-radius:20px; }
-            .popup-content { padding:16px; }
-            .popup-content h2 { font-size:20px; }
-            .popup-content p { font-size:14px; line-height:1.5; }
-        }
-        @media (max-width:480px) {
-            .hero { padding-top:100px; }
-            .logo-circle { width:min(68vw,240px); height:min(68vw,240px); }
-            .badge { font-size:12px; padding:8px 12px; }
-            .hero-description { font-size:15px; }
-            .buttons { flex-direction:column; width:100%; max-width:360px; margin:auto; }
-            .btn { width:100%; justify-content:center; }
-            .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
-            .stat h3 { font-size:19px; }
-            .stat p { font-size:11px; }
-            .paket-section, .features { padding:55px 4%; }
-            .poster-grid { gap:18px; }
-            .feature-icon { width:60px; height:60px; font-size:27px; }
-            footer { padding:20px 12px; font-size:12px; }
-        }
-        @media (min-width:851px) { .menu a { white-space:nowrap; } }
-        @media(max-width:850px) {
-
-            nav {
-
-                padding: 15px 5%;
-            }
-
-            .menu {
-
-                gap: 12px;
-            }
-
-            .menu a {
-
-                font-size: 12px;
-            }
-
-            .hero {
-
-                padding:
-                    120px 6% 70px;
-            }
-
-            .hero-container {
-
-                grid-template-columns: 1fr;
-
-                text-align: center;
-
-                gap: 50px;
-            }
-
-            .logo-circle {
-
-                width: 280px;
-
-                height: 280px;
-            }
-
-            .hero h1 {
-
-                font-size: 42px;
-            }
-
-            .hero-description {
-
-                font-size: 16px;
-            }
-
-            .buttons {
-
-                justify-content: center;
-            }
-
-            .stats {
-
-                justify-content: center;
-            }
-
-            .poster-grid {
-
-                grid-template-columns: 1fr;
-            }
-
-            .feature-grid {
-
-                grid-template-columns: 1fr;
-            }
-
-            .section-title h2 {
-
-                font-size: 34px;
-            }
-
-            .cta h2 {
-
-                font-size: 34px;
-            }
-
-            .popup-box {
-
-                max-width: 360px;
-            }
-
-            .popup-content {
-
-                padding: 20px;
-            }
-        }
-
-
-        @media(max-width:500px) {
-
-            .brand {
-
-                font-size: 17px;
-            }
-
-            .menu {
-
-                gap: 8px;
-            }
-
-            .menu a {
-
-                font-size: 10px;
-            }
-
-            .logo-circle {
-
-                width: 240px;
-
-                height: 240px;
-            }
-
-            .hero h1 {
-
-                font-size: 36px;
-            }
-
-            .stats {
-
-                gap: 20px;
-            }
-
-            .popup-box {
-
-                max-width: 330px;
-            }
-
-            .popup-content h2 {
-
-                font-size: 21px;
-            }
-        }
-
-
-
-        /* AREA CHECKER & ULASAN */
-        .area-section, .review-section { padding: 85px 7%; background:#080d12; color:#f5f7fa; }
-        .area-wrap, .review-wrap { max-width:1100px; margin:auto; }
-        .area-panel { display:grid; grid-template-columns:1fr 1.1fr; gap:28px; align-items:center; }
-        .area-copy h2, .review-heading h2 { font-size:clamp(30px,4vw,43px); color:#f5d903; margin:12px 0; }
-        .area-copy p, .review-heading p { color:#c1c8d0; line-height:1.75; }
-        .area-form, .review-form { background:#121a22; border:1px solid #293744; padding:28px; border-radius:22px; box-shadow:0 18px 45px rgba(0,0,0,.22); }
-        .form-field { margin-bottom:16px; }
-        .form-field label { display:block; color:#f3f4f6; font-weight:700; margin-bottom:8px; }
-        .form-field input, .form-field select, .form-field textarea { width:100%; padding:13px 14px; border:1px solid #394957; border-radius:11px; background:#080d12; color:#fff; font:inherit; outline:none; }
-        .form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color:#f5d903; box-shadow:0 0 0 3px rgba(245,217,3,.12); }
-        .form-field textarea { min-height:105px; resize:vertical; }
-        .area-submit, .review-submit { width:100%; border:0; border-radius:12px; padding:14px 18px; font-weight:800; cursor:pointer; background:linear-gradient(90deg,#f5d903,#d4a900); color:#101010; font-size:15px; transition:.2s; }
-        .area-submit:hover, .review-submit:hover { transform:translateY(-2px); }
-        .area-result { display:none; margin-top:16px; padding:14px; border-radius:12px; line-height:1.6; background:#172a20; color:#d8fbe2; border:1px solid #2e6943; }
-        .area-note { font-size:12px!important; margin-top:12px; color:#9ca8b4!important; }
-        .review-section { background:linear-gradient(135deg,#0d1c28,#030608); }
-        .review-heading { text-align:center; max-width:720px; margin:0 auto 34px; }
-        .review-summary { display:flex; justify-content:center; align-items:center; gap:14px; margin-top:18px; }
-        .review-score { font-size:42px; font-weight:900; color:#f5d903; }
-        .stars { color:#f5d903; letter-spacing:2px; font-size:20px; }
-        .review-layout { display:grid; grid-template-columns:.85fr 1.15fr; gap:25px; align-items:start; }
-        .rating-input { display:flex; gap:7px; flex-direction:row-reverse; justify-content:flex-end; margin:4px 0 18px; }
-        .rating-input input { position:absolute; opacity:0; pointer-events:none; }
-        .rating-input label { cursor:pointer; font-size:31px; color:#53606c; transition:.15s; }
-        .rating-input label:hover, .rating-input label:hover ~ label, .rating-input input:checked ~ label { color:#f5d903; }
-        .review-list { display:grid; gap:14px; }
-        .review-card { background:#121a22; border:1px solid #293744; border-radius:16px; padding:20px; }
-        .review-card-top { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:9px; }
-        .review-card strong { color:#fff; }
-        .review-card time { color:#8c9aa7; font-size:12px; }
-        .review-card p { color:#c7d0d8; line-height:1.65; overflow-wrap:anywhere; }
-        .review-area { font-size:12px; color:#9eacb8; margin-top:10px; }
-        .empty-reviews { padding:25px; border:1px dashed #394957; border-radius:16px; color:#aab6c1; text-align:center; }
-        .review-warning { color:#9ca8b4; font-size:12px; line-height:1.6; margin-top:12px; }
-        @media(max-width:800px) { .area-section,.review-section{padding:65px 5%;} .area-panel,.review-layout{grid-template-columns:1fr;} .area-form,.review-form{padding:21px;} }
-
-
-
-        /* ==========================================
-           RESPONSIVE FINAL OVERRIDES
-           Laptop, tablet, and mobile phone
-        ========================================== */
-        :root { color-scheme: dark; }
-        html { width:100%; max-width:100%; scroll-padding-top:85px; }
-        body { width:100%; min-width:320px; max-width:100%; overflow-x:clip; }
-        img, video, iframe { max-width:100%; }
-        input, select, textarea, button { max-width:100%; }
-        section { width:100%; }
-        .hero-container, .poster-grid, .feature-grid, .area-wrap, .review-wrap { min-width:0; }
-        .hero-container > *, .poster-card, .feature, .area-panel > *, .review-layout > * { min-width:0; }
-        .hero h1 { font-size:clamp(2.15rem, 5vw, 3.75rem); overflow-wrap:anywhere; }
-        .section-title h2, .cta h2 { font-size:clamp(1.8rem, 4vw, 2.8rem); overflow-wrap:anywhere; }
-        .hero-description, .section-title p, .feature p, .area-copy p, .review-heading p { overflow-wrap:anywhere; }
-        .poster-card { height:auto; min-height:0; }
-        .poster-img { height:auto; aspect-ratio: 4 / 3; object-fit:contain; }
-        .poster-content { gap:14px; }
-        .poster-btn { max-width:100%; overflow-wrap:anywhere; }
-        .area-form, .review-form { min-width:0; }
-        .review-card-top { flex-wrap:wrap; }
-        .rating-input { flex-direction:row-reverse; justify-content:flex-end; flex-wrap:wrap; }
-        .rating-input label { font-size:clamp(1.7rem, 6vw, 2rem); }
-        .review-summary { flex-wrap:wrap; }
-        .form-field input, .form-field select, .form-field textarea { min-height:46px; font-size:16px; }
-        .form-field textarea { min-height:120px; }
-        .btn, .poster-btn, .area-submit, .review-submit { min-height:46px; }
-        nav { gap:16px; }
-        .brand { line-height:1.25; }
-
-        @media (min-width:1200px) {
-            .hero-container { gap:clamp(35px, 5vw, 80px); }
-            .logo-circle { width:min(32vw, 390px); height:min(32vw, 390px); }
-            .poster-grid { grid-template-columns:repeat(2, minmax(0, 1fr)); }
-        }
-        @media (max-width:850px) {
-            nav { padding:12px 5%; }
-            .menu { max-width:90vw; }
-            .hero { min-height:auto; }
-            .hero-container { grid-template-columns:minmax(0,1fr); gap:32px; }
-            .logo-wrapper { order:0; }
-            .hero-container > div:last-child { order:1; }
-            .logo-circle { width:min(65vw, 280px); height:min(65vw, 280px); }
-            .poster-grid { grid-template-columns:minmax(0,1fr); }
-            .feature-grid { grid-template-columns:minmax(0,1fr); }
-            .area-panel, .review-layout { grid-template-columns:minmax(0,1fr); }
-            .area-section, .review-section { padding:64px 5%; }
-        }
-        @media (max-width:600px) {
-            html { scroll-padding-top:72px; }
-            nav { min-height:62px; padding:10px 4%; }
-            .brand { font-size:clamp(15px, 4vw, 18px); white-space:normal; }
-            .menu { right:4%; left:4%; max-width:none; }
-            .menu a { font-size:14px; padding:12px; }
-            .hero { padding:100px 5% 55px; }
-            .hero-container { gap:25px; }
-            .logo-circle { width:min(62vw, 230px); height:min(62vw, 230px); }
-            .hero h1 { font-size:clamp(2rem, 9vw, 2.7rem); }
-            .hero-description { font-size:15px; line-height:1.65; }
-            .buttons { width:100%; max-width:380px; margin-inline:auto; flex-direction:column; gap:12px; }
-            .buttons .btn { width:100%; justify-content:center; }
-            .stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
-            .stat h3 { font-size:clamp(16px, 4.5vw, 21px); overflow-wrap:anywhere; }
-            .stat p { font-size:11px; }
-            .paket-section, .features { padding:56px 5%; }
-            .poster-card { padding:8px; }
-            .poster-img { aspect-ratio:4 / 3; height:auto; }
-            .poster-content { padding:15px 10px; }
-            .poster-btn { width:100%; padding:13px 14px; font-size:14px; }
-            .feature { padding:25px 18px; }
-            .area-section, .review-section { padding:52px 4%; }
-            .area-form, .review-form { padding:18px; border-radius:16px; }
-            .area-copy h2, .review-heading h2 { font-size:clamp(27px, 8vw, 36px); }
-            .review-summary { gap:10px; }
-            .review-score { font-size:36px; }
-            .review-card { padding:15px; }
-            .cta { padding:58px 5%; }
-            .cta p { font-size:16px; }
-            .popup-overlay { padding:10px; }
-            .popup-box { width:100%; max-width:380px; max-height:90dvh; overflow-y:auto; }
-            .popup-image { height:auto; object-fit:contain; }
-            .popup-content { padding:16px; }
-            .music-button { right:12px; bottom:12px; width:46px; height:46px; }
-        }
-        @media (max-width:380px) {
-            .brand { font-size:14px; }
-            .menu-toggle { font-size:25px; }
-            .hero { padding-inline:4%; }
-            .hero h1 { font-size:31px; }
-            .stats { gap:6px; }
-            .stat h3 { font-size:15px; }
-            .stat p { font-size:10px; }
-            .area-form, .review-form { padding:14px; }
-            .form-field input, .form-field select, .form-field textarea { padding:11px; }
-            .review-card-top { align-items:flex-start; }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
-        }
-
-    
-        /* ==========================================
-           RESPONSIVE STABILITY PATCH
-           Desktop, laptop, tablet, and mobile
-        ========================================== */
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        html {
-            width: 100%;
-            max-width: 100%;
-            overflow-x: clip;
-            -webkit-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-            scroll-padding-top: 90px;
-        }
-
-        body {
-            width: 100%;
-            min-width: 320px;
-            max-width: 100%;
-            overflow-x: clip;
-        }
-
-        img, video, iframe, canvas, svg {
-            max-width: 100%;
-        }
-
-        input, select, textarea, button {
-            font: inherit;
-            max-width: 100%;
-        }
-
-        section {
-            width: 100%;
-            min-width: 0;
-        }
-
-        .hero-container,
-        .poster-grid,
-        .feature-grid,
-        .area-wrap,
-        .review-wrap,
-        .area-panel,
-        .review-layout {
-            min-width: 0;
-        }
-
-        .hero-container > *,
-        .poster-card,
-        .feature,
-        .area-panel > *,
-        .review-layout > *,
-        .poster-content {
-            min-width: 0;
-        }
-
-        .hero h1,
-        .section-title h2,
-        .cta h2,
-        .brand,
-        .hero-description,
-        .section-title p,
-        .feature p,
-        .area-copy p,
-        .review-heading p,
-        .poster-content h3 {
-            overflow-wrap: anywhere;
-        }
-
-        .hero-container {
-            grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
-            gap: clamp(24px, 5vw, 70px);
-        }
-
-        .logo-circle {
-            width: min(32vw, 390px);
-            height: auto;
-            aspect-ratio: 1 / 1;
-        }
-
-        .poster-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .poster-card {
-            height: auto;
-            min-height: 0;
-        }
-
-        .poster-img {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 4 / 3;
-            object-fit: contain;
-        }
-
-        .poster-content {
-            flex: 1;
-            gap: 14px;
-        }
-
-        .poster-btn {
-            max-width: 100%;
-            overflow-wrap: anywhere;
-        }
-
-        .feature-grid {
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-        }
-
-        .area-panel {
-            grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
-        }
-
-        .review-layout {
-            grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
-        }
-
-        .area-form,
-        .review-form {
-            min-width: 0;
-        }
-
-        .form-field input,
-        .form-field select,
-        .form-field textarea {
-            width: 100%;
-            min-width: 0;
-            min-height: 46px;
-            font-size: 16px;
-        }
-
-        .form-field textarea {
-            min-height: 120px;
-        }
-
-        .review-card-top {
-            flex-wrap: wrap;
-        }
-
-        .nav-placeholder {
-            display: none;
-        }
-
-        nav {
-            gap: 16px;
-        }
-
-        .brand {
-            min-width: 0;
-            line-height: 1.25;
-        }
-
-        .menu a {
-            white-space: nowrap;
-        }
-
-        .popup-overlay {
-            padding: max(10px, env(safe-area-inset-top)) 12px;
-        }
-
-        .popup-box {
-            width: 100%;
-            max-width: 430px;
-            max-height: 90vh;
-            max-height: 90dvh;
-            overflow-y: auto;
-            overscroll-behavior: contain;
-        }
-
-        .popup-image {
-            display: block;
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-        }
-
-        .music-button {
-            right: max(12px, env(safe-area-inset-right));
-            bottom: max(12px, env(safe-area-inset-bottom));
-        }
-
-        @media (max-width: 1024px) {
-            nav {
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-
-            .hero {
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-
-            .hero-container {
-                grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-                gap: 28px;
-            }
-
-            .logo-circle {
-                width: min(38vw, 320px);
-            }
-
-            .hero h1 {
-                font-size: clamp(2rem, 4.8vw, 3.2rem);
-            }
-
-            .menu {
-                gap: clamp(8px, 1.5vw, 20px);
-            }
-
-            .menu a {
-                font-size: clamp(11px, 1.2vw, 14px);
-            }
-
-            .poster-grid {
-                gap: 24px;
-            }
-        }
-
-        @media (max-width: 850px) {
-            nav {
-                min-height: 62px;
-                padding: 10px 5%;
-            }
-
-            .menu-toggle {
-                display: block;
-                flex: 0 0 auto;
-                min-width: 44px;
-                min-height: 44px;
-            }
-
-            .menu {
-                position: absolute;
-                top: calc(100% + 6px);
-                right: 4%;
-                left: 4%;
-                display: none;
-                flex-direction: column;
-                align-items: stretch;
-                gap: 2px;
-                max-width: none;
-                padding: 10px;
-                background: rgba(10, 10, 10, .98);
-                border: 1px solid rgba(245, 217, 3, .2);
-                border-radius: 16px;
-                box-shadow: 0 15px 35px rgba(0, 0, 0, .4);
-            }
-
-            .menu.active {
-                display: flex;
-            }
-
-            .menu a {
-                display: block;
-                padding: 12px 14px;
-                font-size: 14px;
-                white-space: normal;
-            }
-
-            .hero {
-                min-height: auto;
-                padding: 105px 5% 60px;
-            }
-
-            .hero-container {
-                grid-template-columns: minmax(0, 1fr);
-                gap: 30px;
-                text-align: center;
-            }
-
-            .logo-wrapper {
-                order: 0;
-            }
-
-            .hero-container > div:last-child {
-                order: 1;
-            }
-
-            .logo-circle {
-                width: min(65vw, 280px);
-            }
-
-            .hero h1 {
-                font-size: clamp(2.1rem, 7vw, 3rem);
-            }
-
-            .hero-description {
-                margin-left: auto;
-                margin-right: auto;
-                font-size: 16px;
-            }
-
-            .buttons,
-            .stats {
-                justify-content: center;
-            }
-
-            .paket-section,
-            .features {
-                padding: 65px 5%;
-            }
-
-            .poster-grid,
-            .feature-grid,
-            .area-panel,
-            .review-layout {
-                grid-template-columns: minmax(0, 1fr);
-            }
-
-            .poster-grid {
-                max-width: 600px;
-            }
-
-            .feature-grid {
-                max-width: 600px;
-            }
-
-            .area-section,
-            .review-section {
-                padding: 60px 5%;
-            }
-
-            .cta {
-                padding: 70px 5%;
-            }
-        }
-
-        @media (max-width: 600px) {
-            html {
-                scroll-padding-top: 72px;
-            }
-
-            .brand {
-                font-size: clamp(14px, 4vw, 18px);
-            }
-
-            .hero {
-                padding: 96px 5% 50px;
-            }
-
-            .hero-container {
-                gap: 24px;
-            }
-
-            .logo-circle {
-                width: min(62vw, 230px);
-            }
-
-            .badge {
-                font-size: 12px;
-                padding: 8px 12px;
-                line-height: 1.5;
-            }
-
-            .hero h1 {
-                font-size: clamp(1.9rem, 8.5vw, 2.6rem);
-                line-height: 1.12;
-            }
-
-            .hero-description {
-                font-size: 15px;
-                line-height: 1.65;
-            }
-
-            .buttons {
-                width: 100%;
-                max-width: 380px;
-                margin-inline: auto;
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            .buttons .btn {
-                width: 100%;
-                min-height: 48px;
-                justify-content: center;
-                text-align: center;
-            }
-
-            .stats {
-                display: grid;
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-                gap: 10px;
-            }
-
-            .stat h3 {
-                font-size: clamp(15px, 4.4vw, 20px);
-                overflow-wrap: anywhere;
-            }
-
-            .stat p {
-                font-size: 11px;
-                overflow-wrap: anywhere;
-            }
-
-            .section-title {
-                margin-bottom: 32px;
-            }
-
-            .section-title h2,
-            .cta h2 {
-                font-size: clamp(1.75rem, 7.5vw, 2.4rem);
-            }
-
-            .section-title p,
-            .cta p {
-                font-size: 15px;
-                line-height: 1.6;
-            }
-
-            .poster-card {
-                padding: 8px;
-                border-radius: 18px;
-            }
-
-            .poster-img {
-                aspect-ratio: 4 / 3;
-            }
-
-            .poster-content {
-                padding: 15px 10px;
-            }
-
-            .poster-content h3 {
-                font-size: 20px;
-            }
-
-            .poster-btn {
-                width: 100%;
-                padding: 13px 14px;
-                border-width: 3px;
-                font-size: 14px;
-            }
-
-            .feature {
-                padding: 25px 18px;
-            }
-
-            .area-section,
-            .review-section {
-                padding: 50px 4%;
-            }
-
-            .area-form,
-            .review-form {
-                padding: 16px;
-                border-radius: 16px;
-            }
-
-            .area-copy h2,
-            .review-heading h2 {
-                font-size: clamp(1.65rem, 7.5vw, 2.2rem);
-            }
-
-            .review-summary {
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-
-            .review-score {
-                font-size: 36px;
-            }
-
-            .review-card {
-                padding: 15px;
-            }
-
-            .cta {
-                padding: 55px 5%;
-            }
-
-            .popup-content {
-                padding: 16px;
-            }
-
-            footer {
-                padding: 20px 12px;
-                font-size: 12px;
-                line-height: 1.6;
-            }
-        }
-
-        @media (max-width: 380px) {
-            nav {
-                padding-left: 4%;
-                padding-right: 4%;
-            }
-
-            .brand {
-                font-size: 13px;
-            }
-
-            .hero {
-                padding-left: 4%;
-                padding-right: 4%;
-            }
-
-            .hero h1 {
-                font-size: clamp(1.75rem, 8vw, 2rem);
-            }
-
-            .stats {
-                gap: 6px;
-            }
-
-            .stat h3 {
-                font-size: 14px;
-            }
-
-            .stat p {
-                font-size: 10px;
-            }
-
-            .area-form,
-            .review-form {
-                padding: 13px;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            *,
-            *::before,
-            *::after {
-                scroll-behavior: auto !important;
-                animation-duration: .01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: .01ms !important;
-            }
-        }
-
-    </style>
-</head>
-<body>
-<!-- =================================
-         MUSIK WEBSITE
-    ================================= -->
-<audio autoplay="" id="musikWeb" loop="" muted="">
-<source src="v1.mpeg" type="audio/mpeg"/>
-        Browser Anda tidak mendukung audio.
-    </audio>
-<!-- Tombol musik -->
-<button aria-label="Matikan Musik" class="music-button" id="musicButton" title="Matikan Musik" type="button">
-        🔊
-    </button>
-<!-- =================================
-         POPUP PROMO 3.jpeg
-    ================================= -->
-<div class="popup-overlay" id="promoPopup">
-<div class="popup-box">
-<button class="popup-close" onclick="closePopup()">
-                ×
-            </button>
-<img alt="Promo WiFi Bogor-Depok" class="popup-image" src="11.jpeg"/>
-<div class="popup-content">
-<h2>
-                    🔥 PROMO SPESIAL
-                </h2>
-<p>
-                    Dapatkan promo internet terbaik
-                    dari WiFi Bogor-Depok.
-                </p>
-<a class="poster-btn" href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok%2C%20saya%20ingin%20ambil%20promo%20" rel="noopener noreferrer">
-                    📲 Ambil Promo
-                </a>
-</div>
-</div>
-</div>
-<!-- =================================
-         NAVBAR
-    ================================= -->
-<nav>
-<div class="brand">
-
-            WiFi
-            <span>Bogor-Depok</span>
-</div>
-<button aria-expanded="false" aria-label="Buka menu" class="menu-toggle" id="menuToggle">☰</button>
-<div class="menu"><a href="#about">Home</a><a href="#cek-area">Cek Area</a><a href="#keunggulan">Keunggulan</a><a href="#ulasan">Rating &amp; Ulasan</a><a href="#kontak">Kontak</a></div>
-</nav><section class="hero" id="about">
-<div class="hero-container">
-<!-- LOGO -->
-<div class="logo-wrapper">
-<div class="logo-circle"></div>
-</div>
-<!-- TEXT -->
-<div>
-<div class="badge">
-
-                    📶 INTERNET FIBER
-                    BOGOR &amp; DEPOK
-
-                </div>
-<h1>
-
-                    WiFi
-                    <span>Bogor-Depok</span>
-</h1>
-<p class="hero-description">
-
-                    Nikmati koneksi internet cepat,
-                    stabil, dan nyaman untuk kebutuhan
-                    rumah, pekerjaan, pendidikan,
-                    hiburan, dan bisnis Anda.
-
-                </p>
-<div class="buttons">
-<a class="btn btn-primary" href="#cek-area">
-                        📍 Cek Wilayah &amp; Paket
-                    </a>
-<a class="btn btn-secondary" href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok,%20saya%20ingin%20informasi%20paket%20internet." target="_blank">
-                        💬 Hubungi Kami
-                    </a>
-</div>
-<div class="stats">
-<div class="stat">
-<h3>
-                            200+
-                        </h3>
-<p>
-                            Mbps
-                        </p>
-</div>
-<div class="stat">
-<h3>
-                            24/7
-                        </h3>
-<p>
-                            Koneksi
-                        </p>
-</div>
-<div class="stat">
-<h3>
-                            Bogor
-                        </h3>
-<p>
-                            &amp; Depok
-                        </p>
-</div>
-</div>
-</div>
-</div>
-</section><section class="area-section" id="cek-area">
-<div class="area-wrap area-panel">
-<div class="area-copy">
-<div class="section-title" style="text-align:left;margin-bottom:20px">
-<div class="small">CEK JANGKAUAN JARINGAN</div>
-<h2 style="color:#fff">Cek Ketersediaan <span style="color:#f5d903">Layanan</span></h2>
-</div>
-<p>Pilih kota/kabupaten dan kecamatan domisili terlebih dahulu. Setelah wilayah dipilih dan tombol ditekan, pilihan paket akan ditampilkan. Selanjutnya, pilih “Langganan Sekarang” untuk mengisi form pendaftaran.</p>
-<p style="margin-top:14px;color:#f5d903;font-weight:700">📍 Bogor • Kabupaten Bogor • Depok</p>
-</div>
-<form class="area-form" id="areaForm">
-<div class="form-field">
-<label for="areaCity">Kota / Kabupaten</label>
-<select id="areaCity" required="">
-<option value="">Pilih kota/kabupaten</option>
-<option value="Kota Bogor">Kota Bogor</option>
-<option value="Kabupaten Bogor">Kabupaten Bogor</option>
-<option value="Kota Depok">Kota Depok</option>
-</select>
-</div>
-<div class="form-field">
-<label for="areaDistrict">Kecamatan</label>
-<select disabled="" id="areaDistrict" required="">
-<option value="">Pilih kota/kabupaten terlebih dahulu</option>
-</select>
-</div>
-<div class="form-field">
-<label for="areaVillage">Kelurahan / Desa (opsional)</label>
-<input id="areaVillage" maxlength="80" placeholder="Contoh: Cibinong atau Beji" type="text"/>
-</div>
-<div class="form-field">
-<label for="areaAddress">Alamat / patokan (opsional)</label>
-<input id="areaAddress" maxlength="160" placeholder="Nama jalan, perumahan, atau patokan" type="text"/>
-</div>
-<button class="area-submit" type="submit">🔎 Lihat Paket di Wilayah Saya</button>
-<div aria-live="polite" class="area-result" id="areaResult" role="status"></div>
-<p class="area-note">Catatan: daftar paket mengikuti data yang diatur pada website.</p>
-</form>
-</div>
-</section><section class="area-section" id="pendaftaran" style="display:none">
-<div class="area-wrap" style="max-width:760px">
-<div class="section-title">
-<div class="small">PENDAFTARAN PELANGGAN</div>
-<h2 style="color:#fff">Form <span style="color:#f5d903">Pendaftaran</span></h2>
-<p>Lengkapi data berikut untuk melanjutkan permohonan pemasangan WiFi.</p>
-</div>
-<form class="area-form" id="registrationForm">
-<div class="form-field"><label for="regName">Nama lengkap</label><input autocomplete="name" id="regName" maxlength="100" placeholder="Masukkan nama lengkap" required="" type="text"/></div>
-<div class="form-field"><label for="regPhone">Nomor WhatsApp aktif</label><input autocomplete="tel" id="regPhone" maxlength="20" placeholder="Contoh: 08xxxxxxxxxx" required="" type="tel"/></div>
-<div class="form-field"><label for="regCity">Kota / Kabupaten</label><input id="regCity" readonly="" required="" type="text"/></div>
-<div class="form-field"><label for="regDistrict">Kecamatan</label><input id="regDistrict" readonly="" required="" type="text"/></div>
-<div class="form-field"><label for="regVillage">Kelurahan / Desa</label><input id="regVillage" maxlength="80" placeholder="Masukkan kelurahan/desa" type="text"/></div>
-<div class="form-field"><label for="regAddress">Alamat lengkap / patokan</label><textarea id="regAddress" maxlength="300" placeholder="Nama jalan, nomor rumah, perumahan, RT/RW, dan patokan" required=""></textarea></div>
-<div class="form-field"><label for="regPackage">Paket yang dipilih</label><select id="regPackage" required=""><option value="">Pilih paket</option><option value="Paket 1">Paket 1</option><option value="Paket 2">Paket 2</option><option value="Paket 3">Paket 3</option><option value="Paket 4">Paket 4</option><option value="Paket 5">Paket 5</option></select></div>
-<div class="form-field"><label for="regNotes">Catatan tambahan (opsional)</label><textarea id="regNotes" maxlength="300" placeholder="Informasi tambahan untuk tim pemasangan"></textarea></div>
-<button class="area-submit" type="submit">📲 Kirim Pendaftaran via WhatsApp</button>
-</form>
-</div>
-</section><section class="features" id="keunggulan">
-<div class="section-title">
-<div class="small">
-                KENAPA KAMI?
+        <div class="buttons">
+          <a class="btn btn-primary" href="#cek-area">📍 Cek Wilayah &amp; Paket</a>
+          <a class="btn btn-secondary" href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok%2C%20saya%20ingin%20informasi%20paket%20internet" target="_blank" rel="noopener noreferrer">💬 Hubungi Kami</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><h3>200+</h3><p>Mbps</p></div>
+          <div class="stat"><h3>24/7</h3><p>Koneksi</p></div>
+          <div class="stat"><h3>Bogor</h3><p>&amp; Depok</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CEK AREA DAN PAKET -->
+  <section class="area-section" id="cek-area">
+    <div class="area-wrap area-panel">
+      <div class="area-copy">
+        <div class="section-title" style="text-align:left;margin-bottom:20px">
+          <div class="small">CEK JANGKAUAN JARINGAN</div>
+          <h2 style="color:#fff">Cek Ketersediaan <span style="color:#f5d903">Layanan</span></h2>
+        </div>
+        <p>Pilih kota/kabupaten dan kecamatan domisili terlebih dahulu. Setelah wilayah dipilih, daftar paket akan ditampilkan. Selanjutnya, pilih “Langganan Sekarang” untuk mengisi formulir pendaftaran.</p>
+        <p style="margin-top:14px;color:#f5d903;font-weight:700">📍 Bogor • Kabupaten Bogor • Depok</p>
+      </div>
+
+      <form class="area-form" id="areaForm">
+        <div class="form-field">
+          <label for="areaCity">Kota / Kabupaten</label>
+          <select id="areaCity" required>
+            <option value="">Pilih kota/kabupaten</option>
+            <option value="Kota Bogor">Kota Bogor</option>
+            <option value="Kabupaten Bogor">Kabupaten Bogor</option>
+            <option value="Kota Depok">Kota Depok</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="areaDistrict">Kecamatan</label>
+          <select id="areaDistrict" required disabled>
+            <option value="">Pilih kota/kabupaten terlebih dahulu</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="areaVillage">Kelurahan / Desa (opsional)</label>
+          <input id="areaVillage" type="text" maxlength="80" placeholder="Contoh: Cibinong atau Beji">
+        </div>
+        <div class="form-field">
+          <label for="areaAddress">Alamat / patokan (opsional)</label>
+          <input id="areaAddress" type="text" maxlength="160" placeholder="Nama jalan, perumahan, atau patokan">
+        </div>
+        <button class="area-submit" type="submit">🔎 Lihat Paket di Wilayah Saya</button>
+        <div class="area-result" id="areaResult" role="status" aria-live="polite"></div>
+        <p class="area-note">Catatan: daftar paket mengikuti data yang diatur pada website. Daftar paket tidak otomatis memastikan jaringan tersedia di alamat Anda.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FORM PENDAFTARAN -->
+  <section class="area-section" id="pendaftaran" style="display:none">
+    <div class="area-wrap" style="max-width:760px">
+      <div class="section-title">
+        <div class="small">PENDAFTARAN PELANGGAN</div>
+        <h2 style="color:#fff">Form <span style="color:#f5d903">Pendaftaran</span></h2>
+        <p>Lengkapi data berikut untuk melanjutkan permohonan pemasangan WiFi.</p>
+      </div>
+
+      <form class="area-form" id="registrationForm">
+        <div class="form-field">
+          <label for="regName">Nama lengkap</label>
+          <input id="regName" name="nama" type="text" maxlength="100" autocomplete="name" placeholder="Masukkan nama lengkap" required>
+        </div>
+        <div class="form-field">
+          <label for="regPhone">Nomor telepon aktif</label>
+          <input id="regPhone" name="telepon" type="tel" maxlength="20" autocomplete="tel" placeholder="Contoh: 08xxxxxxxxxx" required>
+        </div>
+        <div class="form-field">
+          <label for="regCity">Kota / Kabupaten</label>
+          <input id="regCity" name="kota" type="text" readonly required>
+        </div>
+        <div class="form-field">
+          <label for="regDistrict">Kecamatan</label>
+          <input id="regDistrict" name="kecamatan" type="text" readonly required>
+        </div>
+        <div class="form-field">
+          <label for="regVillage">Kelurahan / Desa</label>
+          <input id="regVillage" name="kelurahan" type="text" maxlength="80" placeholder="Masukkan kelurahan/desa">
+        </div>
+        <div class="form-field">
+          <label for="regAddress">Alamat lengkap / patokan</label>
+          <textarea id="regAddress" name="alamat" maxlength="300" placeholder="Nama jalan, nomor rumah, perumahan, RT/RW, dan patokan" required></textarea>
+        </div>
+        <div class="form-field">
+          <label for="regPackage">Paket yang dipilih</label>
+          <select id="regPackage" name="paket" required>
+            <option value="">Pilih paket</option>
+            <option value="Paket 1">Paket 1</option>
+            <option value="Paket 2">Paket 2</option>
+            <option value="Paket 3">Paket 3</option>
+            <option value="Paket 4">Paket 4</option>
+            <option value="Paket 5">Paket 5</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="regPayment">Metode pembayaran</label>
+          <select id="regPayment" name="metode_pembayaran" required>
+            <option value="">Pilih metode pembayaran</option>
+            <option value="Transfer bank">Transfer bank</option>
+            <option value="QRIS">QRIS</option>
+            <option value="E-wallet">E-wallet</option>
+            <option value="Midtrans">Midtrans</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="regNotes">Catatan tambahan (opsional)</label>
+          <textarea id="regNotes" name="catatan" maxlength="300" placeholder="Informasi tambahan untuk tim pemasangan"></textarea>
+        </div>
+        <button class="area-submit" type="submit">Kirim Pendaftaran</button>
+        <p class="area-note">Pendaftaran akan dikirim ke Google Sheets. Pembayaran online belum aktif sampai integrasi gateway pembayaran dikonfigurasi.</p>
+        <div id="registrationStatus" class="area-result" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- KEUNGGULAN -->
+  <section class="features" id="keunggulan">
+    <div class="section-title">
+      <div class="small">KENAPA KAMI?</div>
+      <h2>Internet untuk <span>Semua</span></h2>
+      <p>Dirancang untuk mendukung aktivitas digital Anda.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>Cepat</h3>
+        <p>Nikmati akses internet dengan kecepatan tinggi untuk berbagai kebutuhan digital.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📶</div>
+        <h3>Stabil</h3>
+        <p>Koneksi stabil untuk streaming, bekerja, belajar, dan bermain.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🌐</div>
+        <h3>Terhubung</h3>
+        <p>Menghubungkan keluarga, pekerjaan, dan bisnis dengan dunia digital.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RATING DAN ULASAN -->
+  <section class="review-section" id="ulasan">
+    <div class="review-wrap">
+      <div class="review-heading">
+        <div class="small">PENGALAMAN PELANGGAN</div>
+        <h2>Rating &amp; <span style="color:#f5d903">Ulasan</span></h2>
+        <p>Bagikan pengalaman Anda menggunakan WiFi Bogor-Depok agar calon pelanggan lain mendapat gambaran yang lebih baik.</p>
+        <div class="review-summary">
+          <div class="review-score" id="averageRating">—</div>
+          <div style="text-align:left">
+            <div class="stars" id="averageStars">☆☆☆☆☆</div>
+            <div id="reviewCount" style="font-size:13px;color:#aab6c1">Belum ada ulasan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-layout">
+        <form class="review-form" id="reviewForm">
+          <h3 style="color:#fff;margin-bottom:20px">Tulis Ulasan Anda</h3>
+          <div class="form-field">
+            <label>Berikan rating</label>
+            <div class="rating-input" aria-label="Pilih rating dari 1 sampai 5">
+              <input id="rate5" name="rating" type="radio" value="5" required><label for="rate5" title="5 bintang">★</label>
+              <input id="rate4" name="rating" type="radio" value="4"><label for="rate4" title="4 bintang">★</label>
+              <input id="rate3" name="rating" type="radio" value="3"><label for="rate3" title="3 bintang">★</label>
+              <input id="rate2" name="rating" type="radio" value="2"><label for="rate2" title="2 bintang">★</label>
+              <input id="rate1" name="rating" type="radio" value="1"><label for="rate1" title="1 bintang">★</label>
             </div>
-<h2>
-                Internet untuk
-                <span>Semua</span>
-</h2>
-<p>
-                Dirancang untuk mendukung
-                aktivitas digital Anda.
-            </p>
-</div>
-<div class="feature-grid">
-<div class="feature">
-<div class="feature-icon">
-                    ⚡
-                </div>
-<h3>
-                    Cepat
-                </h3>
-<p>
-                    Nikmati akses internet
-                    dengan kecepatan tinggi
-                    untuk berbagai kebutuhan
-                    digital.
-                </p>
-</div>
-<div class="feature">
-<div class="feature-icon">
-                    📶
-                </div>
-<h3>
-                    Stabil
-                </h3>
-<p>
-                    Koneksi stabil untuk
-                    streaming, bekerja,
-                    belajar dan bermain.
-                </p>
-</div>
-<div class="feature">
-<div class="feature-icon">
-                    🌐
-                </div>
-<h3>
-                    Terhubung
-                </h3>
-<p>
-                    Menghubungkan keluarga,
-                    pekerjaan dan bisnis
-                    dengan dunia digital.
-                </p>
-</div>
-</div>
-</section><section class="review-section" id="ulasan">
-<div class="review-wrap">
-<div class="review-heading">
-<div class="small">PENGALAMAN PELANGGAN</div>
-<h2>Rating &amp; <span style="color:#f5d903">Ulasan</span></h2>
-<p>Bagikan pengalaman Anda menggunakan WiFi Bogor-Depok agar calon pelanggan lain bisa mendapatkan gambaran yang lebih baik.</p>
-<div class="review-summary">
-<div class="review-score" id="averageRating">—</div>
-<div style="text-align:left"><div class="stars" id="averageStars">☆☆☆☆☆</div><div id="reviewCount" style="font-size:13px;color:#aab6c1">Belum ada ulasan</div></div>
-</div>
-</div>
-<div class="review-layout">
-<form class="review-form" id="reviewForm">
-<h3 style="color:#fff;margin-bottom:20px">Tulis Ulasan Anda</h3>
-<div class="form-field">
-<label>Berikan rating</label>
-<div aria-label="Pilih rating dari 1 sampai 5" class="rating-input">
-<input id="rate5" name="rating" required="" type="radio" value="5"/><label for="rate5" title="5 bintang">★</label>
-<input id="rate4" name="rating" type="radio" value="4"/><label for="rate4" title="4 bintang">★</label>
-<input id="rate3" name="rating" type="radio" value="3"/><label for="rate3" title="3 bintang">★</label>
-<input id="rate2" name="rating" type="radio" value="2"/><label for="rate2" title="2 bintang">★</label>
-<input id="rate1" name="rating" type="radio" value="1"/><label for="rate1" title="1 bintang">★</label>
-</div>
-</div>
-<div class="form-field"><label for="reviewName">Nama</label><input id="reviewName" maxlength="50" placeholder="Nama Anda" required="" type="text"/></div>
-<div class="form-field"><label for="reviewArea">Wilayah (opsional)</label><input id="reviewArea" maxlength="80" placeholder="Contoh: Cibinong, Kabupaten Bogor" type="text"/></div>
-<div class="form-field"><label for="reviewComment">Komentar</label><textarea id="reviewComment" maxlength="600" placeholder="Ceritakan pengalaman Anda..." required=""></textarea></div>
-<button class="review-submit" type="submit">Kirim Ulasan</button>
-<p class="review-warning">Demo ini menyimpan ulasan di browser/perangkat yang digunakan (localStorage), bukan ke server. Ulasan belum otomatis terlihat di perangkat lain.</p>
-</form>
-<div>
-<h3 style="color:#fff;margin:0 0 16px">Ulasan Pelanggan</h3>
-<div class="review-list" id="reviewList"><div class="empty-reviews">Belum ada ulasan. Jadilah yang pertama memberikan rating dan komentar!</div></div>
-</div>
-</div>
-</div>
-</section><section class="cta" id="kontak">
-<h2>
-            Siap Terhubung?
-        </h2>
-<p>
-            Dapatkan informasi paket dan
-            ketersediaan jaringan
-            WiFi Bogor-Depok.
-        </p>
-<a class="btn" href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok,%20saya%20ingin%20informasi%20berlangganan." target="_blank">
-            💬 Chat WhatsApp Sekarang
-        </a>
-</section>
-<!-- =================================
-         HERO
-    ================================= -->
+          </div>
+          <div class="form-field">
+            <label for="reviewName">Nama</label>
+            <input id="reviewName" type="text" maxlength="50" placeholder="Nama Anda" required>
+          </div>
+          <div class="form-field">
+            <label for="reviewArea">Wilayah (opsional)</label>
+            <input id="reviewArea" type="text" maxlength="80" placeholder="Contoh: Cibinong, Kabupaten Bogor">
+          </div>
+          <div class="form-field">
+            <label for="reviewComment">Komentar</label>
+            <textarea id="reviewComment" maxlength="600" placeholder="Ceritakan pengalaman Anda..." required></textarea>
+          </div>
+          <button class="review-submit" type="submit">Kirim Ulasan</button>
+          <p class="review-warning">Ulasan versi ini tersimpan di browser/perangkat yang digunakan (localStorage), bukan di server. Ulasan belum otomatis terlihat di perangkat lain.</p>
+        </form>
 
-<!-- FORM PENDAFTARAN LANGGANAN -->
+        <div>
+          <h3 style="color:#fff;margin:0 0 16px">Ulasan Pelanggan</h3>
+          <div class="review-list" id="reviewList">
+            <div class="empty-reviews">Belum ada ulasan. Jadilah yang pertama memberikan rating dan komentar!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- =================================
-         KEUNGGULAN
-    ================================= -->
+  <!-- KONTAK -->
+  <section class="cta" id="kontak">
+    <h2>Siap Terhubung?</h2>
+    <p>Dapatkan informasi paket dan ketersediaan jaringan WiFi Bogor-Depok.</p>
+    <a class="btn" href="https://wa.me/6285718561080?text=Halo%20WiFi%20Bogor-Depok%2C%20saya%20ingin%20informasi%20berlangganan" target="_blank" rel="noopener noreferrer">💬 Chat WhatsApp Sekarang</a>
+  </section>
 
-<!-- =================================
-         KONTAK
-    ================================= -->
-<!-- CEK KETERSEDIAAN AREA -->
+  <!-- FOOTER -->
+  <footer>© 2026 WiFi Bogor-Depok • Connecting Bogor &amp; Depok</footer>
 
-<!-- RATING DAN KOMENTAR PELANGGAN -->
+  <script>
+    "use strict";
 
+    // URL Google Apps Script Web App. Pastikan deployment aktif dan aksesnya sesuai.
+    const GOOGLE_SHEETS_WEB_APP_URL =
+      "https://script.google.com/macros/s/AKfycbwo60idij9gxIsGRujsLeNFpopfVnsjcOcQ9Bz3Nfqx2AgnvtiS8iUq0F_o5wjeEd_D/exec";
 
-<!-- =================================
-         FOOTER
-    ================================= -->
-<footer>
+    // DATA KECAMATAN
+    const areaOptions = {
+      "Kota Bogor": [
+        "Bogor Barat", "Bogor Selatan", "Bogor Tengah",
+        "Bogor Timur", "Bogor Utara", "Tanah Sareal"
+      ],
+      "Kabupaten Bogor": [
+        "Babakan Madang", "Bojonggede", "Caringin", "Cariu", "Ciampea",
+        "Ciawi", "Cibinong", "Cibungbulang", "Cigombong", "Cigudeg",
+        "Cijeruk", "Cileungsi", "Ciomas", "Cisarua", "Ciseeng",
+        "Citeureup", "Dramaga", "Gunung Putri", "Gunung Sindur", "Jasinga",
+        "Jonggol", "Kemang", "Klapanunggal", "Leuwiliang", "Leuwisadeng",
+        "Megamendung", "Nanggung", "Pamijahan", "Parung", "Parung Panjang",
+        "Ranca Bungur", "Rumpin", "Sukajaya", "Sukamakmur", "Sukaraja",
+        "Tajurhalang", "Tamansari", "Tanjungsari", "Tenjo", "Tenjolaya"
+      ],
+      "Kota Depok": [
+        "Beji", "Bojongsari", "Cilodong", "Cimanggis", "Cinere",
+        "Cipayung", "Limo", "Pancoran Mas", "Sawangan", "Sukmajaya", "Tapos"
+      ]
+    };
 
-        © 2026 WiFi Bogor-Depok
-        • Connecting Bogor &amp; Depok
+    // Paket default untuk wilayah yang belum diatur secara khusus.
+    // Contoh: "Cibinong": [1, 2, 4]
+    const areaPackageData = {
+      default: [1, 2, 3, 4, 5]
+    };
 
-    </footer>
-<!-- =================================
-         JAVASCRIPT POPUP
-    ================================= -->
-<script>
+    const packageImageFiles = {
+      1: "01.jpeg",
+      2: "02.jpeg",
+      3: "03.jpeg",
+      4: "04.jpeg",
+      5: "05.jpeg"
+    };
 
+    // MENU RESPONSIF
+    const menuToggle = document.getElementById("menuToggle");
+    const menu = document.querySelector(".menu");
 
+    if (menuToggle && menu) {
+      menuToggle.addEventListener("click", () => {
+        const opened = menu.classList.toggle("active");
+        menuToggle.setAttribute("aria-expanded", String(opened));
+        menuToggle.textContent = opened ? "✕" : "☰";
+      });
 
-        /* MENU HP */
-        const menuToggle = document.getElementById("menuToggle");
-        const menu = document.querySelector(".menu");
-        if (menuToggle && menu) {
-            menuToggle.addEventListener("click", function () {
-                const opened = menu.classList.toggle("active");
-                menuToggle.setAttribute("aria-expanded", opened ? "true" : "false");
-                menuToggle.innerHTML = opened ? "✕" : "☰";
-            });
-            menu.querySelectorAll("a").forEach(function (link) {
-                link.addEventListener("click", function () {
-                    menu.classList.remove("active");
-                    menuToggle.setAttribute("aria-expanded", "false");
-                    menuToggle.innerHTML = "☰";
-                });
-            });
+      menu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.remove("active");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.textContent = "☰";
+        });
+      });
+    }
+
+    // MUSIK AUTOPLAY
+    const musik = document.getElementById("musikWeb");
+    const tombolMusik = document.getElementById("musicButton");
+
+    function updateMusicButton(isPlaying) {
+      tombolMusik.textContent = isPlaying ? "🔊" : "🔇";
+      tombolMusik.title = isPlaying ? "Matikan musik" : "Nyalakan musik";
+      tombolMusik.setAttribute("aria-label", isPlaying ? "Matikan musik" : "Nyalakan musik");
+    }
+
+    if (musik && tombolMusik) {
+      // Autoplay tanpa suara biasanya diizinkan browser.
+      musik.muted = true;
+      musik.play().then(() => {
+        updateMusicButton(false);
+      }).catch((error) => {
+        console.info("Autoplay musik ditolak browser:", error);
+        updateMusicButton(false);
+      });
+
+      tombolMusik.addEventListener("click", async () => {
+        try {
+          if (musik.paused || musik.muted) {
+            musik.muted = false;
+            await musik.play();
+            updateMusicButton(true);
+          } else {
+            musik.pause();
+            updateMusicButton(false);
+          }
+        } catch (error) {
+          console.error("Musik gagal diputar:", error);
+          updateMusicButton(false);
+        }
+      });
+
+      // Percobaan mengaktifkan suara setelah interaksi pertama pengguna.
+      document.addEventListener("pointerdown", async () => {
+        if (musik.paused || musik.muted) {
+          try {
+            musik.muted = false;
+            await musik.play();
+            updateMusicButton(true);
+          } catch (error) {
+            console.info("Musik menunggu klik tombol musik.");
+          }
+        }
+      }, { once: true });
+    }
+
+    // POPUP PROMO
+    const promoPopup = document.getElementById("promoPopup");
+    const popupClose = document.getElementById("popupClose");
+
+    function closePopup() {
+      if (!promoPopup) return;
+      promoPopup.classList.remove("show");
+      promoPopup.setAttribute("aria-hidden", "true");
+    }
+
+    window.addEventListener("load", () => {
+      window.setTimeout(() => {
+        if (promoPopup) {
+          promoPopup.classList.add("show");
+          promoPopup.setAttribute("aria-hidden", "false");
+        }
+      }, 500);
+    });
+
+    if (popupClose) popupClose.addEventListener("click", closePopup);
+
+    if (promoPopup) {
+      promoPopup.addEventListener("click", (event) => {
+        if (event.target === promoPopup) closePopup();
+      });
+    }
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closePopup();
+    });
+
+    // PILIH KECAMATAN BERDASARKAN KOTA/KABUPATEN
+    const areaCity = document.getElementById("areaCity");
+    const areaDistrict = document.getElementById("areaDistrict");
+
+    if (areaCity && areaDistrict) {
+      areaCity.addEventListener("change", () => {
+        areaDistrict.replaceChildren();
+
+        const firstOption = document.createElement("option");
+        firstOption.value = "";
+        firstOption.textContent = areaCity.value
+          ? "Pilih kecamatan"
+          : "Pilih kota/kabupaten terlebih dahulu";
+        areaDistrict.appendChild(firstOption);
+
+        (areaOptions[areaCity.value] || []).forEach((district) => {
+          const option = document.createElement("option");
+          option.value = district;
+          option.textContent = district;
+          areaDistrict.appendChild(option);
+        });
+
+        areaDistrict.disabled = !areaCity.value;
+      });
+    }
+
+    // TAMPILKAN DAFTAR PAKET
+    const areaForm = document.getElementById("areaForm");
+    const areaResult = document.getElementById("areaResult");
+
+    if (areaForm && areaResult) {
+      areaForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const city = areaCity.value;
+        const district = areaDistrict.value;
+        const village = document.getElementById("areaVillage").value.trim();
+
+        if (!city || !district) return;
+
+        const configuredPackages = areaPackageData[district];
+        const packageIds = Array.isArray(configuredPackages)
+          ? configuredPackages
+          : areaPackageData.default;
+        const isAreaConfigured = Array.isArray(configuredPackages);
+
+        areaResult.replaceChildren();
+        areaResult.style.display = "block";
+        areaResult.style.background = "#121a22";
+        areaResult.style.borderColor = "#394957";
+        areaResult.style.color = "#f5f7fa";
+
+        const heading = document.createElement("h3");
+        heading.textContent = "Daftar WiFi";
+        heading.style.cssText = "margin:0 0 8px;color:#f5d903;font-size:20px";
+
+        const location = document.createElement("p");
+        location.textContent = `${district}, ${city}${village ? " — " + village : ""}`;
+        location.style.cssText = "margin:0 0 14px;color:#c1c8d0";
+
+        const note = document.createElement("p");
+        note.textContent = isAreaConfigured
+          ? "Paket di bawah ini tercatat untuk kecamatan yang dipilih."
+          : "Paket berikut adalah daftar umum website, bukan konfirmasi cakupan jaringan di alamat Anda.";
+        note.style.cssText = "margin:0 0 16px;font-size:12px;color:#c1c8d0";
+
+        areaResult.append(heading, location, note);
+
+        if (!packageIds.length) {
+          const empty = document.createElement("p");
+          empty.textContent = "Belum ada paket yang tercatat untuk wilayah ini.";
+          areaResult.appendChild(empty);
+          return;
         }
 
-        /* =================================
-           KONTROL MUSIK
-        ================================= */
+        const grid = document.createElement("div");
+        grid.style.cssText = "display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px";
 
-        const musik = document.getElementById("musikWeb");
-        const tombolMusik = document.getElementById("musicButton");
+        packageIds.forEach((id) => {
+          const card = document.createElement("div");
+          card.style.cssText = "background:#080d12;border:1px solid #394957;border-radius:12px;padding:10px;overflow:hidden";
 
-        if (musik && tombolMusik) {
+          const img = document.createElement("img");
+          img.src = packageImageFiles[id];
+          img.alt = `Informasi Paket ${id}`;
+          img.loading = "lazy";
+          img.style.cssText = "display:block;width:100%;height:auto;max-height:170px;object-fit:contain;border-radius:8px";
+          img.addEventListener("error", () => {
+            img.alt = `Gambar Paket ${id} tidak ditemukan`;
+            img.style.display = "none";
+          });
 
-            // Coba nyalakan musik otomatis saat halaman dibuka.
-            // Browser dapat memblokir autoplay bersuara.
-            musik.muted = true;
-            musik.play().then(function () {
-                musik.muted = false;
-                tombolMusik.innerHTML = "🔊";
-                tombolMusik.title = "Matikan Musik";
-                tombolMusik.setAttribute("aria-label", "Matikan Musik");
-            }).catch(function () {
-                tombolMusik.innerHTML = "🔇";
-                tombolMusik.title = "Nyalakan Musik";
-                tombolMusik.setAttribute("aria-label", "Nyalakan Musik");
-            });
+          const label = document.createElement("div");
+          label.textContent = `Paket ${id}`;
+          label.style.cssText = "margin-top:8px;text-align:center;font-weight:800;color:#f5d903";
 
-            tombolMusik.addEventListener("click", function () {
-                if (musik.paused) {
-                    musik.muted = false;
-                    musik.play().then(function () {
-                        tombolMusik.innerHTML = "🔊";
-                        tombolMusik.title = "Matikan Musik";
-                        tombolMusik.setAttribute("aria-label", "Matikan Musik");
-                    });
-                } else {
-                    musik.pause();
-                    tombolMusik.innerHTML = "🔇";
-                    tombolMusik.title = "Nyalakan Musik";
-                    tombolMusik.setAttribute("aria-label", "Nyalakan Musik");
-                }
-            });
-        }
+          const subscribe = document.createElement("button");
+          subscribe.type = "button";
+          subscribe.className = "poster-btn subscribe-btn";
+          subscribe.dataset.package = String(id);
+          subscribe.textContent = "📝 Langganan Sekarang";
+          subscribe.style.cssText = "display:block;width:100%;margin-top:10px;border:0;cursor:pointer;font-size:12px";
 
-        /* Popup otomatis muncul saat website dibuka */
+          card.append(img, label, subscribe);
+          grid.appendChild(card);
+        });
 
-        window.addEventListener(
-            "load",
-            function() {
+        areaResult.appendChild(grid);
+        window.setTimeout(() => {
+          areaResult.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }, 100);
+      });
+    }
 
-                setTimeout(
-                    function() {
+    // TOMBOL LANGGANAN MENGISI FORM PENDAFTARAN
+    if (areaResult) {
+      areaResult.addEventListener("click", (event) => {
+        const button = event.target.closest(".subscribe-btn");
+        if (!button) return;
 
-                        const popup =
-                            document.getElementById(
-                                "promoPopup"
-                            );
+        const registrationSection = document.getElementById("pendaftaran");
+        document.getElementById("regPackage").value = `Paket ${button.dataset.package}`;
+        document.getElementById("regCity").value = areaCity.value;
+        document.getElementById("regDistrict").value = areaDistrict.value;
+        document.getElementById("regVillage").value = document.getElementById("areaVillage").value.trim();
+        document.getElementById("regAddress").value = document.getElementById("areaAddress").value.trim();
 
-                        if (popup) {
+        registrationSection.style.display = "block";
+        window.setTimeout(() => {
+          registrationSection.scrollIntoView({ behavior: "smooth", block: "start" });
+          document.getElementById("regName").focus({ preventScroll: true });
+        }, 100);
+      });
+    }
 
-                            popup.classList.add(
-                                "show"
-                            );
+    // KIRIM PENDAFTARAN KE GOOGLE SHEETS
+    const registrationForm = document.getElementById("registrationForm");
+    const registrationStatus = document.getElementById("registrationStatus");
 
-                        }
+    if (registrationForm) {
+      registrationForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
 
-                    },
-                    500
-                );
+        const submitButton = registrationForm.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.textContent;
 
-            }
-        );
-
-
-        /* Tutup popup */
-
-        function closePopup() {
-
-            const popup =
-                document.getElementById(
-                    "promoPopup"
-                );
-
-            if (popup) {
-
-                popup.classList.remove(
-                    "show"
-                );
-
-            }
-
-        }
-
-
-        /* Klik area luar popup */
-
-        document.addEventListener(
-            "click",
-            function(event) {
-
-                const popup =
-                    document.getElementById(
-                        "promoPopup"
-                    );
-
-                if (
-                    popup &&
-                    event.target === popup
-                ) {
-
-                    closePopup();
-
-                }
-
-            }
-        );
-
-
-        /* Tekan ESC untuk menutup */
-
-        document.addEventListener(
-            "keydown",
-            function(event) {
-
-                if (
-                    event.key === "Escape"
-                ) {
-
-                    closePopup();
-
-                }
-
-            }
-        );
-
-
-
-        /* CEK WILAYAH: daftar kecamatan untuk pilihan pengguna */
-        const areaOptions = {
-            "Kota Bogor": ["Bogor Barat", "Bogor Selatan", "Bogor Tengah", "Bogor Timur", "Bogor Utara", "Tanah Sareal"],
-            "Kabupaten Bogor": ["Babakan Madang", "Bojonggede", "Caringin", "Cariu", "Ciampea", "Ciawi", "Cibinong", "Cibungbulang", "Cigombong", "Cigudeg", "Cijeruk", "Cileungsi", "Ciomas", "Cisarua", "Ciseeng", "Citeureup", "Dramaga", "Gunung Putri", "Gunung Sindur", "Jasinga", "Jonggol", "Kemang", "Klapanunggal", "Leuwiliang", "Leuwisadeng", "Megamendung", "Nanggung", "Pamijahan", "Pamijahan", "Parung", "Parung Panjang", "Ranca Bungur", "Rumpin", "Sukajaya", "Sukamakmur", "Sukaraja", "Tajurhalang", "Tamansari", "Tanjungsari", "Tenjo", "Tenjolaya"],
-            "Kota Depok": ["Beji", "Bojongsari", "Cilodong", "Cimanggis", "Cinere", "Cipayung", "Limo", "Pancoran Mas", "Sawangan", "Sukmajaya", "Tapos"]
+        const fields = {
+          nama: document.getElementById("regName").value.trim(),
+          telepon: document.getElementById("regPhone").value.trim(),
+          kota: document.getElementById("regCity").value.trim(),
+          kecamatan: document.getElementById("regDistrict").value.trim(),
+          kelurahan: document.getElementById("regVillage").value.trim() || "-",
+          alamat: document.getElementById("regAddress").value.trim(),
+          paket: document.getElementById("regPackage").value,
+          metode_pembayaran: document.getElementById("regPayment").value,
+          catatan: document.getElementById("regNotes").value.trim() || "-",
+          sumber: "Website WiFi Bogor-Depok"
         };
-        const areaCity = document.getElementById('areaCity');
-        const areaDistrict = document.getElementById('areaDistrict');
-        if (areaCity && areaDistrict) {
-            areaCity.addEventListener('change', function () {
-                areaDistrict.innerHTML = '';
-                const first = document.createElement('option');
-                first.value = '';
-                first.textContent = this.value ? 'Pilih kecamatan' : 'Pilih kota/kabupaten terlebih dahulu';
-                areaDistrict.appendChild(first);
-                (areaOptions[this.value] || []).forEach(function (district) {
-                    const option = document.createElement('option');
-                    option.value = district;
-                    option.textContent = district;
-                    areaDistrict.appendChild(option);
-                });
-                areaDistrict.disabled = !this.value;
-            });
+
+        if (!fields.nama || !fields.telepon || !fields.kota || !fields.kecamatan ||
+            !fields.alamat || !fields.paket || !fields.metode_pembayaran) {
+          alert("Mohon lengkapi semua kolom wajib.");
+          return;
         }
-        /* CEK PAKET BERDASARKAN WILAYAH — data dapat disesuaikan admin */
-        const areaForm = document.getElementById('areaForm');
-        const areaPackageData = {
-            // Ganti daftar paket per kecamatan sesuai cakupan jaringan yang benar.
-            // Contoh: "Cibinong": [1, 2, 4]
-            "default": [1, 2, 3, 4, 5]
-        };
-        const packageImageFiles = {
-            1: '01.jpeg', 2: '02.jpeg', 3: '03.jpeg', 4: '04.jpeg', 5: '05.jpeg'
-        };
-        if (areaForm) areaForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-            const city = areaCity.value;
-            const district = areaDistrict.value;
-            const village = document.getElementById('areaVillage').value.trim();
-            if (!city || !district) return;
 
-            // Pilihan paket hanya ditampilkan di kolom Daftar WiFi setelah domisili dipilih.
-            const result = document.getElementById('areaResult');
-            const configuredPackages = areaPackageData[district];
-            const packageIds = Array.isArray(configuredPackages) ? configuredPackages : areaPackageData.default;
-            const isAreaConfigured = Array.isArray(configuredPackages);
-            result.innerHTML = '';
-            result.style.display = 'block';
-            result.style.background = '#121a22';
-            result.style.borderColor = '#394957';
-            result.style.color = '#f5f7fa';
-
-            const heading = document.createElement('h3');
-            heading.style.cssText = 'margin:0 0 8px;color:#f5d903;font-size:20px';
-            heading.textContent = 'Daftar WiFi';
-            const location = document.createElement('p');
-            location.style.cssText = 'margin:0 0 14px;color:#c1c8d0';
-            location.textContent = district + ', ' + city + (village ? ' — ' + village : '');
-            const note = document.createElement('p');
-            note.style.cssText = 'margin:0 0 16px;font-size:12px;color:#c1c8d0';
-            note.textContent = isAreaConfigured
-                ? 'Paket di bawah ini tercatat untuk kecamatan yang dipilih.'
-                : 'Data paket khusus kecamatan ini belum diatur. Berikut daftar paket umum di website, bukan konfirmasi cakupan jaringan di alamat Anda.';
-            result.append(heading, location, note);
-
-            if (!packageIds.length) {
-                const empty = document.createElement('p');
-                empty.textContent = 'Belum ada paket yang tercatat untuk wilayah ini. Silakan periksa kembali nanti.';
-                result.appendChild(empty);
-                return;
-            }
-
-            const grid = document.createElement('div');
-            grid.style.cssText = 'display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px';
-            packageIds.forEach(function (id) {
-                const card = document.createElement('div');
-                card.style.cssText = 'background:#080d12;border:1px solid #394957;border-radius:12px;padding:10px;overflow:hidden';
-                const img = document.createElement('img');
-                img.src = packageImageFiles[id];
-                img.alt = 'Informasi Paket ' + id;
-                img.loading = 'lazy';
-                img.style.cssText = 'display:block;width:100%;height:auto;max-height:170px;object-fit:contain;border-radius:8px';
-                const label = document.createElement('div');
-                label.style.cssText = 'margin-top:8px;text-align:center;font-weight:800;color:#f5d903';
-                label.textContent = 'Paket ' + id;
-                const subscribe = document.createElement('button');
-                subscribe.type = 'button';
-                subscribe.className = 'poster-btn subscribe-btn';
-                subscribe.setAttribute('data-package', String(id));
-                subscribe.textContent = '💬 Langganan Sekarang';
-                subscribe.style.cssText = 'display:block;width:100%;margin-top:10px;border:0;cursor:pointer;font-size:12px';
-                card.append(img, label, subscribe);
-                grid.appendChild(card);
-            });
-            result.appendChild(grid);
-            setTimeout(function () {
-                result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }, 100);
-        });
-
-        /* LANGGANAN: tombol pada kolom Daftar WiFi membuka form pendaftaran */
-        document.getElementById('areaResult').addEventListener('click', function (event) {
-            const button = event.target.closest('.subscribe-btn');
-            if (!button) return;
-            const packageId = button.getAttribute('data-package');
-                const regSection = document.getElementById('pendaftaran');
-                const paketSelect = document.getElementById('regPackage');
-                if (paketSelect) paketSelect.value = 'Paket ' + packageId;
-
-                document.getElementById('regCity').value = areaCity ? areaCity.value : '';
-                document.getElementById('regDistrict').value = areaDistrict ? areaDistrict.value : '';
-                document.getElementById('regVillage').value = document.getElementById('areaVillage').value.trim();
-                document.getElementById('regAddress').value = document.getElementById('areaAddress').value.trim();
-
-                if (regSection) {
-                    regSection.style.display = 'block';
-                    setTimeout(function () {
-                        regSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        document.getElementById('regName').focus({ preventScroll: true });
-                    }, 100);
-                }
-        });
-
-        /*
-         * URL Web App Google Apps Script.
-         * URL /dev yang diberikan hanya untuk pengujian editor.
-         * Di sini dipasang versi /exec dengan ID deployment yang diberikan.
-         * Jika Google menampilkan URL /exec berbeda pada Deploy > Manage deployments,
-         * ganti konstanta ini dengan URL /exec resmi tersebut.
-         */
-        const GOOGLE_SHEETS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwo60idij9gxIsGRujsLeNFpopfVnsjcOcQ9Bz3Nfqx2AgnvtiS8iUq0F_o5wjeEd_D/exec';
-        const registrationForm = document.getElementById('registrationForm');
-        if (registrationForm) registrationForm.addEventListener('submit', async function (event) {
-            event.preventDefault();
-            const fields = {
-                nama: document.getElementById('regName').value.trim(),
-                telepon: document.getElementById('regPhone').value.trim(),
-                kota: document.getElementById('regCity').value.trim(),
-                kecamatan: document.getElementById('regDistrict').value.trim(),
-                kelurahan: document.getElementById('regVillage').value.trim() || '-',
-                alamat: document.getElementById('regAddress').value.trim(),
-                paket: document.getElementById('regPackage').value,
-                catatan: document.getElementById('regNotes').value.trim() || '-'
-            };
-            const message = [
-                'Halo WiFi Bogor-Depok, saya ingin mendaftar langganan internet.', '',
-                'Nama: ' + fields.nama,
-                'Nomor WhatsApp: ' + fields.telepon,
-                'Domisili: ' + fields.kelurahan + ', ' + fields.kecamatan + ', ' + fields.kota,
-                'Alamat: ' + fields.alamat,
-                'Paket pilihan: ' + fields.paket,
-                'Catatan: ' + fields.catatan
-            ].join('\n');
-            const waUrl = 'https://wa.me/6285718561080?text=' + encodeURIComponent(message);
-            const waWindow = window.open('about:blank', '_blank');
-            const submitButton = registrationForm.querySelector('button[type="submit"]');
-            const originalButtonText = submitButton ? submitButton.textContent : '';
-            if (submitButton) { submitButton.disabled = true; submitButton.textContent = 'Mengirim pendaftaran...'; }
-            try {
-                if (!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/.test(GOOGLE_SHEETS_WEB_APP_URL)) {
-                    throw new Error('URL Web App tidak valid. Gunakan URL produksi yang berakhiran /exec.');
-                }
-                if (!fields.nama || !fields.telepon || !fields.kota || !fields.kecamatan || !fields.alamat || !fields.paket) {
-                    throw new Error('Mohon lengkapi semua kolom wajib sebelum mengirim.');
-                }
-                const body = new URLSearchParams({ ...fields, sumber: 'Website WiFi Bogor-Depok' });
-                /* no-cors membuat respons server tidak bisa dibaca browser; pengiriman tidak bisa dipastikan dari halaman ini. */
-                await fetch(GOOGLE_SHEETS_WEB_APP_URL, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
-                    body: body.toString(),
-                    redirect: 'follow'
-                });
-                if (waWindow) waWindow.location.href = waUrl; else window.location.href = waUrl;
-                alert('Permintaan pendaftaran telah dikirim dari website. Karena Google Apps Script memakai koneksi lintas-domain, halaman ini tidak dapat memastikan penyimpanan berhasil. Mohon cek Google Sheets; WhatsApp akan dibuka untuk mengirim pesan ke admin.');
-            } catch (error) {
-                if (waWindow) waWindow.close();
-                console.error('Gagal mengirim pendaftaran:', error);
-                alert('Pendaftaran gagal dikirim: ' + (error && error.message ? error.message : 'periksa koneksi internet dan URL Web App.'));
-            } finally {
-                if (submitButton) { submitButton.disabled = false; submitButton.textContent = originalButtonText; }
-            }
-        });
-
-        /* RATING DAN ULASAN DEMO: tersimpan di browser ini */
-        const reviewStorageKey = 'wifiBogorDepokReviewsV1';
-        function readReviews() {
-            try { return JSON.parse(localStorage.getItem(reviewStorageKey) || '[]'); }
-            catch (error) { return []; }
+        if (!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/.test(GOOGLE_SHEETS_WEB_APP_URL)) {
+          alert("URL Google Apps Script tidak valid. Gunakan URL deployment yang berakhiran /exec.");
+          return;
         }
-        function renderReviews() {
-            const reviews = readReviews();
-            const list = document.getElementById('reviewList');
-            const average = document.getElementById('averageRating');
-            const stars = document.getElementById('averageStars');
-            const count = document.getElementById('reviewCount');
-            if (!list || !average || !stars || !count) return;
-            if (!reviews.length) {
-                average.textContent = '—'; stars.textContent = '☆☆☆☆☆'; count.textContent = 'Belum ada ulasan';
-                list.innerHTML = '<div class="empty-reviews">Belum ada ulasan. Jadilah yang pertama memberikan rating dan komentar!</div>';
-                return;
-            }
-            const avg = reviews.reduce((sum, item) => sum + Number(item.rating), 0) / reviews.length;
-            average.textContent = avg.toFixed(1);
-            stars.textContent = '★'.repeat(Math.round(avg)) + '☆'.repeat(5 - Math.round(avg));
-            count.textContent = reviews.length + (reviews.length === 1 ? ' ulasan' : ' ulasan');
-            list.innerHTML = '';
-            reviews.slice().reverse().forEach(function (item) {
-                const card = document.createElement('article'); card.className = 'review-card';
-                const top = document.createElement('div'); top.className = 'review-card-top';
-                const name = document.createElement('strong'); name.textContent = item.name;
-                const date = document.createElement('time'); date.textContent = item.date;
-                top.append(name, date);
-                const rating = document.createElement('div'); rating.className = 'stars'; rating.textContent = '★'.repeat(Number(item.rating)) + '☆'.repeat(5 - Number(item.rating));
-                const comment = document.createElement('p'); comment.textContent = item.comment;
-                card.append(top, rating, comment);
-                if (item.area) { const area = document.createElement('div'); area.className = 'review-area'; area.textContent = '📍 ' + item.area; card.appendChild(area); }
-                list.appendChild(card);
-            });
-        }
-        const reviewForm = document.getElementById('reviewForm');
-        if (reviewForm) reviewForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-            const selected = reviewForm.querySelector('input[name="rating"]:checked');
-            const name = document.getElementById('reviewName').value.trim();
-            const area = document.getElementById('reviewArea').value.trim();
-            const comment = document.getElementById('reviewComment').value.trim();
-            if (!selected || !name || !comment) { alert('Silakan pilih rating, isi nama, dan tulis komentar.'); return; }
-            const reviews = readReviews();
-            reviews.push({ rating: Number(selected.value), name: name, area: area, comment: comment, date: new Date().toLocaleDateString('id-ID', {day:'2-digit', month:'short', year:'numeric'}) });
-            try {
-                localStorage.setItem(reviewStorageKey, JSON.stringify(reviews));
-                reviewForm.reset(); renderReviews();
-            } catch (error) {
-                alert('Ulasan tidak dapat disimpan di browser ini. Coba gunakan browser lain.');
-            }
-        });
-        renderReviews();
 
-    </script>
+        submitButton.disabled = true;
+        submitButton.textContent = "Mengirim pendaftaran...";
+        registrationStatus.textContent = "Sedang mengirim data pendaftaran…";
+        registrationStatus.style.display = "block";
+
+        try {
+          // mode no-cors membuat respons tidak bisa dibaca browser.
+          // Pastikan Apps Script menerima parameter form-urlencoded.
+          await fetch(GOOGLE_SHEETS_WEB_APP_URL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+            },
+            body: new URLSearchParams(fields).toString()
+          });
+
+          registrationStatus.textContent =
+            "Permintaan pengiriman telah dilakukan. Karena browser tidak dapat membaca respons Google Apps Script dalam mode no-cors, periksa Google Sheets untuk memastikan data benar-benar tersimpan. Pembayaran online belum diproses oleh kode ini.";
+          registrationForm.reset();
+        } catch (error) {
+          console.error("Gagal mengirim pendaftaran:", error);
+          registrationStatus.textContent =
+            "Pengiriman gagal. Periksa koneksi internet, URL Web App, dan izin deployment Google Apps Script.";
+        } finally {
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
+        }
+      });
+    }
+
+    // RATING DAN ULASAN LOKAL (LOCALSTORAGE)
+    const reviewStorageKey = "wifiBogorDepokReviewsV1";
+
+    function readReviews() {
+      try {
+        const stored = JSON.parse(localStorage.getItem(reviewStorageKey) || "[]");
+        return Array.isArray(stored) ? stored : [];
+      } catch (error) {
+        return [];
+      }
+    }
+
+    function renderReviews() {
+      const reviews = readReviews();
+      const list = document.getElementById("reviewList");
+      const average = document.getElementById("averageRating");
+      const stars = document.getElementById("averageStars");
+      const count = document.getElementById("reviewCount");
+
+      if (!list || !average || !stars || !count) return;
+
+      if (!reviews.length) {
+        average.textContent = "—";
+        stars.textContent = "☆☆☆☆☆";
+        count.textContent = "Belum ada ulasan";
+        list.replaceChildren();
+
+        const empty = document.createElement("div");
+        empty.className = "empty-reviews";
+        empty.textContent = "Belum ada ulasan. Jadilah yang pertama memberikan rating dan komentar!";
+        list.appendChild(empty);
+        return;
+      }
+
+      const avg = reviews.reduce((sum, item) => sum + Number(item.rating), 0) / reviews.length;
+      average.textContent = avg.toFixed(1);
+      stars.textContent = "★".repeat(Math.round(avg)) + "☆".repeat(5 - Math.round(avg));
+      count.textContent = `${reviews.length} ulasan`;
+      list.replaceChildren();
+
+      reviews.slice().reverse().forEach((item) => {
+        const card = document.createElement("article");
+        card.className = "review-card";
+
+        const top = document.createElement("div");
+        top.className = "review-card-top";
+
+        const name = document.createElement("strong");
+        name.textContent = item.name;
+
+        const date = document.createElement("time");
+        date.textContent = item.date;
+        top.append(name, date);
+
+        const rating = document.createElement("div");
+        rating.className = "stars";
+        rating.textContent = "★".repeat(Number(item.rating)) + "☆".repeat(5 - Number(item.rating));
+
+        const comment = document.createElement("p");
+        comment.textContent = item.comment;
+
+        card.append(top, rating, comment);
+
+        if (item.area) {
+          const area = document.createElement("div");
+          area.className = "review-area";
+          area.textContent = `📍 ${item.area}`;
+          card.appendChild(area);
+        }
+
+        list.appendChild(card);
+      });
+    }
+
+    const reviewForm = document.getElementById("reviewForm");
+
+    if (reviewForm) {
+      reviewForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const selected = reviewForm.querySelector('input[name="rating"]:checked');
+        const name = document.getElementById("reviewName").value.trim();
+        const area = document.getElementById("reviewArea").value.trim();
+        const comment = document.getElementById("reviewComment").value.trim();
+
+        if (!selected || !name || !comment) {
+          alert("Silakan pilih rating, isi nama, dan tulis komentar.");
+          return;
+        }
+
+        const reviews = readReviews();
+        reviews.push({
+          rating: Number(selected.value),
+          name,
+          area,
+          comment,
+          date: new Date().toLocaleDateString("id-ID", {
+            day: "2-digit",
+            month: "short",
+            year: "numeric"
+          })
+        });
+
+        try {
+          localStorage.setItem(reviewStorageKey, JSON.stringify(reviews));
+          reviewForm.reset();
+          renderReviews();
+        } catch (error) {
+          alert("Ulasan tidak dapat disimpan di browser ini. Coba gunakan browser lain.");
+        }
+      });
+    }
+
+    renderReviews();
+  </script>
 </body>
 </html>
