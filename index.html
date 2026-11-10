@@ -77,7 +77,30 @@
     .hero-container {
         max-width: 800px;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+    
+    /* Logo Wrapper Asli */
+    .logo-wrapper {
+        margin-bottom: 20px;
+    }
+    .logo-circle {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #f5d903 0%, #ff9800 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(245, 217, 3, 0.3);
+    }
+    .logo-circle::after {
+        content: "📶";
+        font-size: 36px;
+    }
+
     .badge {
         display: inline-block;
         background: rgba(245, 217, 3, 0.1);
@@ -131,6 +154,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         gap: 15px;
+        width: 100%;
         max-width: 500px;
         margin: 0 auto;
     }
@@ -459,6 +483,11 @@
     <!-- HERO -->
     <section class="hero" id="about">
         <div class="hero-container">
+            <!-- LOGO ASLI -->
+            <div class="logo-wrapper">
+                <div class="logo-circle"></div>
+            </div>
+            
             <div class="badge">📶 INTERNET FIBER BOGOR &amp; DEPOK</div>
             <h1>WiFi <span>Bogor-Depok</span></h1>
             <p class="hero-description">Nikmati koneksi internet cepat, stabil, dan nyaman untuk kebutuhan rumah, pekerjaan, pendidikan, hiburan, dan bisnis Anda.</p>
@@ -619,7 +648,6 @@
                 musik.play().then(() => {
                     tombolMusik.innerHTML = "🔊";
                 }).catch(() => {
-                    // Ter Terblokir browser, aktifkan via interaksi pertama
                     tombolMusik.innerHTML = "🔇";
                     document.body.addEventListener("click", () => {
                         musik.play();
@@ -759,7 +787,6 @@
             alert('Ulasan berhasil dikirim dan ditampilkan untuk publik!');
         });
 
-        // Muat ulasan saat halaman dibuka
         loadReviews();
     </script>
 </body>
