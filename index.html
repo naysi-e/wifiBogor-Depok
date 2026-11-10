@@ -82,9 +82,7 @@
         align-items: center;
     }
     
-    /* =================================
-       LOGO MENGGUNAKAN GAMBAR 06.jpeg
-    ================================= */
+    /* Logo 06.jpeg */
     .logo-wrapper {
         display: flex;
         justify-content: center;
@@ -415,4 +413,371 @@
     .music-button {
         position: fixed;
         bottom: 20px;
-        right:
+        right: 20px;
+        background: #f5d903;
+        border: none;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 20px;
+        z-index: 1500;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 25px;
+        background: #080d12;
+        color: #8b9bb4;
+        font-size: 13px;
+        border-top: 1px solid #1a2634;
+    }
+</style>
+</head>
+<body>
+
+    <!-- MUSIK WEBSITE -->
+    <audio id="musikWeb" loop>
+        <source src="v1.mpeg" type="audio/mpeg"/>
+        Browser Anda tidak mendukung audio.
+    </audio>
+
+    <button aria-label="Matikan/Nyalakan Musik" class="music-button" id="musicButton" title="Kontrol Musik" type="button">
+        🔇
+    </button>
+
+    <!-- POPUP PROMO -->
+    <div class="popup-overlay" id="promoPopup">
+        <div class="popup-box">
+            <button class="popup-close" onclick="closePopup()">×</button>
+            <img alt="Promo WiFi Bogor-Depok" src="11.jpeg" style="width:100%; height:auto; display:block;"/>
+            <div class="popup-content">
+                <h2>🔥 PROMO SPESIAL</h2>
+                <p>Dapatkan promo internet terbaik dari WiFi Bogor-Depok.</p>
+                <a class="poster-btn" href="https://wa.me/6287773037785?text=Halo%20WiFi%20Bogor-Depok%2C%20saya%20ingin%20ambil%20promo%20" rel="noopener noreferrer">
+                    📲 Ambil Promo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="brand">WiFi <span>Bogor-Depok</span></div>
+        <button aria-expanded="false" aria-label="Buka menu" class="menu-toggle" id="menuToggle">☰</button>
+        <div class="menu">
+            <a href="#about">Home</a>
+            <a href="#cek-area">Cek Area</a>
+            <a href="#keunggulan">Keunggulan</a>
+            <a href="#ulasan">Rating &amp; Ulasan</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="about">
+        <div class="hero-container">
+            <!-- LOGO MENGGUNAKAN 06.jpeg -->
+            <div class="logo-wrapper">
+                <img src="06.jpeg" alt="Logo WiFi Bogor-Depok" class="logo-img"/>
+            </div>
+            
+            <div class="badge">📶 INTERNET FIBER BOGOR &amp; DEPOK</div>
+            <h1>WiFi <span>Bogor-Depok</span></h1>
+            <p class="hero-description">Nikmati koneksi internet cepat, stabil, dan nyaman untuk kebutuhan rumah, pekerjaan, pendidikan, hiburan, dan bisnis Anda.</p>
+            <div class="buttons">
+                <a class="btn btn-primary" href="#cek-area">📍 Cek Wilayah &amp; Paket</a>
+                <a class="btn btn-secondary" href="https://wa.me/6287773037785?text=Halo%20WiFi%20Bogor-Depok,%20saya%20ingin%20informasi%20paket%20internet." target="_blank">💬 Hubungi Kami</a>
+            </div>
+            <div class="stats">
+                <div class="stat"><h3>200+</h3><p>Mbps</p></div>
+                <div class="stat"><h3>24/7</h3><p>Koneksi</p></div>
+                <div class="stat"><h3>Bogor</h3><p>&amp; Depok</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEK AREA -->
+    <section class="area-section" id="cek-area">
+        <div class="area-wrap">
+            <div class="section-title" style="text-align:left; margin-bottom:20px;">
+                <div class="small">CEK JANGKAUAN JARINGAN</div>
+                <h2 style="color:#fff">Cek Ketersediaan <span style="color:#f5d903">Layanan</span></h2>
+            </div>
+            <form class="area-form" id="areaForm">
+                <div class="form-field">
+                    <label for="areaCity">Kota / Kabupaten</label>
+                    <select id="areaCity" required>
+                        <option value="">Pilih kota/kabupaten</option>
+                        <option value="Kota Bogor">Kota Bogor</option>
+                        <option value="Kabupaten Bogor">Kabupaten Bogor</option>
+                        <option value="Kota Depok">Kota Depok</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="areaDistrict">Kecamatan</label>
+                    <select disabled id="areaDistrict" required>
+                        <option value="">Pilih kota/kabupaten terlebih dahulu</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="areaVillage">Kelurahan / Desa (opsional)</label>
+                    <input id="areaVillage" maxlength="80" placeholder="Contoh: Cibinong atau Beji" type="text"/>
+                </div>
+                <button class="area-submit" type="submit">🔎 Lihat Paket di Wilayah Saya</button>
+                <div aria-live="polite" class="area-result" id="areaResult" role="status"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FORM PENDAFTARAN -->
+    <section class="area-section" id="pendaftaran" style="display:none">
+        <div class="area-wrap" style="max-width:760px">
+            <div class="section-title">
+                <div class="small">PENDAFTARAN PELANGGAN</div>
+                <h2 style="color:#fff">Form <span style="color:#f5d903">Pendaftaran</span></h2>
+            </div>
+            <form class="area-form" id="registrationForm">
+                <div class="form-field"><label for="regName">Nama lengkap</label><input id="regName" required type="text"/></div>
+                <div class="form-field"><label for="regPhone">Nomor WhatsApp aktif</label><input id="regPhone" required type="tel"/></div>
+                <div class="form-field"><label for="regCity">Kota / Kabupaten</label><input id="regCity" readonly type="text"/></div>
+                <div class="form-field"><label for="regDistrict">Kecamatan</label><input id="regDistrict" readonly type="text"/></div>
+                <div class="form-field"><label for="regPackage">Paket yang dipilih</label><input id="regPackage" readonly type="text"/></div>
+                <div class="form-field">
+                    <label for="regDuration">Pilihan masa berlangganan</label>
+                    <select id="regDuration" required>
+                        <option value="">Pilih masa berlangganan</option>
+                        <option value="1 bulan">1 bulan</option>
+                        <option value="3 bulan">3 bulan</option>
+                        <option value="6 bulan">6 bulan</option>
+                        <option value="12 bulan">12 bulan</option>
+                    </select>
+                </div>
+                <button class="area-submit" type="submit">💬 Kirim Pendaftaran via WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section class="features" id="keunggulan">
+        <div class="section-title">
+            <div class="small">KENAPA KAMI?</div>
+            <h2>Internet untuk <span>Semua</span></h2>
+        </div>
+        <div class="feature-grid">
+            <div class="feature"><div class="feature-icon">⚡</div><h3>Cepat</h3><p>Akses internet berkecepatan tinggi untuk digital Anda.</p></div>
+            <div class="feature"><div class="feature-icon">📶</div><h3>Stabil</h3><p>Koneksi stabil untuk streaming, bekerja, dan belajar.</p></div>
+            <div class="feature"><div class="feature-icon">🌐</div><h3>Terhubung</h3><p>Menghubungkan keluarga dan bisnis dengan dunia.</p></div>
+        </div>
+    </section>
+
+    <!-- RATING & ULASAN -->
+    <section class="review-section" id="ulasan">
+        <div class="review-wrap">
+            <div class="section-title">
+                <div class="small">PENGALAMAN PELANGGAN</div>
+                <h2>Rating &amp; <span style="color:#f5d903">Ulasan Publik</span></h2>
+            </div>
+            <div class="review-layout">
+                <form class="review-form" id="reviewForm">
+                    <h3 style="color:#fff; margin-bottom:15px; font-size:16px;">Tulis Ulasan Anda</h3>
+                    <div class="form-field">
+                        <label>Berikan rating</label>
+                        <div class="rating-input">
+                            <input id="rate5" name="rating" required type="radio" value="5"/><label for="rate5" title="5 bintang">★</label>
+                            <input id="rate4" name="rating" type="radio" value="4"/><label for="rate4" title="4 bintang">★</label>
+                            <input id="rate3" name="rating" type="radio" value="3"/><label for="rate3" title="3 bintang">★</label>
+                            <input id="rate2" name="rating" type="radio" value="2"/><label for="rate2" title="2 bintang">★</label>
+                            <input id="rate1" name="rating" type="radio" value="1"/><label for="rate1" title="1 bintang">★</label>
+                        </div>
+                    </div>
+                    <div class="form-field"><label for="reviewName">Nama</label><input id="reviewName" maxlength="50" required type="text"/></div>
+                    <div class="form-field"><label for="reviewComment">Komentar</label><textarea id="reviewComment" maxlength="600" required rows="3"></textarea></div>
+                    <button class="review-submit" type="submit">Kirim Ulasan</button>
+                </form>
+                
+                <div class="review-list-container">
+                    <div class="review-summary">
+                        <div class="review-score" id="averageRating">0.0</div>
+                        <div>
+                            <div class="stars" id="averageStars">☆☆☆☆☆</div>
+                            <div id="reviewCount" style="font-size:13px; color:#aab6c1;">0 ulasan</div>
+                        </div>
+                    </div>
+                    <h3 style="color:#fff; margin-bottom:12px; font-size:16px;">Ulasan Pengunjung Lain</h3>
+                    <div id="reviewList" style="max-height: 300px; overflow-y: auto;">
+                        <div style="font-size:13px; color:#aab6c1;">Belum ada ulasan.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK & FOOTER -->
+    <section class="hero" id="kontak" style="padding: 40px 5%;">
+        <h2>Siap Terhubung?</h2>
+        <p style="color:#c1c8d0; margin: 10px 0 20px;">Dapatkan informasi paket dan ketersediaan jaringan.</p>
+        <a class="btn btn-primary" href="https://wa.me/6287773037785?text=Halo%20WiFi%20Bogor-Depok,%20saya%20ingin%20informasi%20berlangganan." target="_blank">💬 Chat WhatsApp Sekarang</a>
+    </section>
+
+    <footer>
+        © 2026 WiFi Bogor-Depok • Connecting Bogor &amp; Depok
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        /* Menu Toggle HP */
+        const menuToggle = document.getElementById("menuToggle");
+        const menu = document.querySelector(".menu");
+        if (menuToggle && menu) {
+            menuToggle.addEventListener("click", () => menu.classList.toggle("active"));
+        }
+
+        /* Kontrol Musik & Autoplay Aman */
+        const musik = document.getElementById("musikWeb");
+        const tombolMusik = document.getElementById("musicButton");
+        
+        window.addEventListener("DOMContentLoaded", () => {
+            if (musik) {
+                musik.play().then(() => {
+                    tombolMusik.innerHTML = "🔊";
+                }).catch(() => {
+                    tombolMusik.innerHTML = "🔇";
+                    // Musik akan otomatis menyala saat ada interaksi pertama user (klik/sentuh layar)
+                    const playOnInteraction = () => {
+                        musik.play().then(() => {
+                            tombolMusik.innerHTML = "🔊";
+                        }).catch(e => console.log(e));
+                        window.removeEventListener("click", playOnInteraction);
+                        window.removeEventListener("touchstart", playOnInteraction);
+                    };
+                    window.addEventListener("click", playOnInteraction);
+                    window.addEventListener("touchstart", playOnInteraction);
+                });
+            }
+        });
+
+        tombolMusik.addEventListener("click", () => {
+            if (musik.paused) {
+                musik.play().then(() => {
+                    tombolMusik.innerHTML = "🔊";
+                });
+            } else {
+                musik.pause();
+                tombolMusik.innerHTML = "🔇";
+            }
+        });
+
+        /* Popup Promo */
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                const popup = document.getElementById("promoPopup");
+                if (popup) popup.classList.add("show");
+            }, 500);
+        });
+        function closePopup() {
+            document.getElementById("promoPopup").classList.remove("show");
+        }
+
+        /* Data Area & Paket */
+        const areaOptions = {
+            "Kota Bogor": ["Bogor Barat", "Bogor Selatan", "Bogor Tengah", "Bogor Timur", "Bogor Utara", "Tanah Sareal"],
+            "Kabupaten Bogor": ["Babakan Madang", "Bojonggede", "Cibinong", "Cileungsi", "Gunung Putri", "Sukaraja"],
+            "Kota Depok": ["Beji", "Cimanggis", "Cinere", "Pancoran Mas", "Sukmajaya"]
+        };
+        const areaCity = document.getElementById('areaCity');
+        const areaDistrict = document.getElementById('areaDistrict');
+        
+        if (areaCity && areaDistrict) {
+            areaCity.addEventListener('change', function () {
+                areaDistrict.innerHTML = '<option value="">Pilih kecamatan</option>';
+                (areaOptions[this.value] || []).forEach(district => {
+                    const opt = document.createElement('option');
+                    opt.value = district;
+                    opt.textContent = district;
+                    areaDistrict.appendChild(opt);
+                });
+                areaDistrict.disabled = !this.value;
+            });
+        }
+
+        const packageNames = { 0: 'Mini 30', 1: 'Streaming 200', 2: 'Streaming 250', 3: 'Streaming 300' };
+        
+        const areaForm = document.getElementById('areaForm');
+        if (areaForm) {
+            areaForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const city = areaCity.value;
+                const district = areaDistrict.value;
+                if (!city || !district) return;
+
+                const result = document.getElementById('areaResult');
+                result.style.display = 'block';
+                result.style.background = '#0b1118';
+                result.innerHTML = `<h3 style="color:#f5d903; margin-bottom:10px;">Paket Tersedia di ${district}, ${city}</h3>` +
+                    `<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px;">` +
+                    Object.keys(packageNames).map(id => `
+                        <div style="background:#121a22; padding:12px; border-radius:8px; border:1px solid #394957; text-align:center;">
+                            <strong>${packageNames[id]}</strong>
+                            <button type="button" class="poster-btn" style="margin-top:8px; padding:6px; font-size:12px;" onclick="selectPackage('${packageNames[id]}', '${city}', '${district}')">Pilih</button>
+                        </div>`).join('') + `</div>`;
+            });
+        }
+
+        function selectPackage(pkg, city, district) {
+            document.getElementById('regCity').value = city;
+            document.getElementById('regDistrict').value = district;
+            document.getElementById('regPackage').value = pkg;
+            const regSec = document.getElementById('pendaftaran');
+            regSec.style.display = 'block';
+            regSec.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        const registrationForm = document.getElementById('registrationForm');
+        if (registrationForm) {
+            registrationForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const text = `Halo WiFi Bogor-Depok, saya ingin mendaftar.\nNama: ${document.getElementById('regName').value}\nNo WA: ${document.getElementById('regPhone').value}\nWilayah: ${document.getElementById('regDistrict').value}, ${document.getElementById('regCity').value}\nPaket: ${document.getElementById('regPackage').value}\nDurasi: ${document.getElementById('regDuration').value}`;
+                window.location.href = `https://wa.me/6287773037785?text=${encodeURIComponent(text)}`;
+            });
+        }
+
+        /* Public LocalStorage Reviews */
+        function loadReviews() {
+            const reviews = JSON.parse(localStorage.getItem('wifi_reviews') || '[]');
+            const listEl = document.getElementById('reviewList');
+            const countEl = document.getElementById('reviewCount');
+            const avgEl = document.getElementById('averageRating');
+            const starsEl = document.getElementById('averageStars');
+
+            if (!listEl) return;
+
+            if (reviews.length === 0) {
+                listEl.innerHTML = '<div style="font-size:13px; color:#aab6c1;">Belum ada ulasan.</div>';
+                if (avgEl) avgEl.textContent = '0.0';
+                if (starsEl) starsEl.textContent = '☆☆☆☆☆';
+                if (countEl) countEl.textContent = '0 ulasan';
+                return;
+            }
+
+            let totalScore = 0;
+            listEl.innerHTML = reviews.map(r => {
+                totalScore += r.score;
+                return `<div class="review-card">
+                    <div style="display:flex; justify-content:space-between;">
+                        <h4>${r.name}</h4>
+                        <span class="stars-output">${'★'.repeat(r.score)}</span>
+                    </div>
+                    <p>${r.comment}</p>
+                </div>`;
+            }).join('');
+
+            const avg = (totalScore / reviews.length).toFixed(1);
+            if (avgEl) avgEl.textContent = avg;
+            if (countEl) countEl.textContent = `${reviews.length} ulasan`;
+            if (starsEl) starsEl.textContent = '★'.repeat(Math.round(avg)) + '☆'.repeat(5 - Math.round(avg));
+        }
+
+        const reviewForm = document.getElementById('reviewForm
